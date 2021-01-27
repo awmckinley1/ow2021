@@ -1,0 +1,230 @@
+# The Wave-Particle duality {#sec:ch17-waveparticle}
+
+*Textbook link: Tipler and Mosca, Chapter 34*
+
+So far, we have spoken about light as an electromagnetic wave; indeed it was demonstrated to have wave behaviour by Thomas Young in 1801 with his double-slit experiment. We covered the background to this experiment in Section \@ref(sec:ch13-twoslitinterference) and demonstrated how this shows the wave nature of light using our knowledge of superposition.  Prior to Young's demonstration however there had been much debate about whether light was a wave or a particle.
+
+In 1905, Einstein reintroduced the idea that light might behave as a particle, suggesting that light is quantised into photons of discrete energies; this offered an explanation for the photoelectric effect (the emission of electrons from a metal surface by light of certain frequencies or higher).
+
+In this argument, the energy of a photon is related to the frequency $\nu$ (Greek letter *nu*) *via* Einstein's relation (Equation \@ref(eq:ch17-planck1)):
+
+\begin{equation}
+E = h \nu = \frac{hc}{\lambda} = \hbar \omega
+(\#eq:ch17-planck1)
+\end{equation}
+
+In this relationship, $h$ is Planck's constant ($h = 6.626 \times 10^{-34}$ J s) and $\hbar$ is the reduced Planck constant, $\hbar = \frac{h}{2\pi}$.
+
+As we have two experiments, each of which demonstrates that light behaves as either a wave or as a particle depending on the circumstances, but neither wave nor particle behaviour adequately describes the behaviour of light in all situations.  Generally however, we can say that the interaction between light and matter can be described by its particle properties, while the propagation of light can be described by its wave properties.
+
+## The de Broglie hypothesis {#sec:ch17-debrogliehyp1}
+
+In 1924, Louis de Broglie suggested that if something which was previously understood to be a wave (light) can have particle properties, could something already understood to be a particle (*i.e.* matter) also have wave properties? He therefore postulated that particles might posess a wavelength related to its linear momentum $p$, described in Equation \@ref(eq:ch17-debroglie1):
+
+\begin{equation}
+\lambda = \frac{h}{p}
+(\#eq:ch17-debroglie1)
+\end{equation}
+
+Conversely, determination of the linear momentum of a wave could be determined by Equation \@ref(eq:ch17-debroglie2):
+
+\begin{equation}
+p = \frac{h}{\lambda} = \hbar k
+(\#eq:ch17-debroglie2)
+\end{equation}
+
+This creates the relationship between the linear momentum of a wave $p$ and its wave number $k$ (see Equation \@ref(eq:ch7-tranversesine4) for more on the wave number).
+
+De Broglie went further, using the Einstein relation (Equation \@ref(eq:ch17-planck1)) to define the frequency $\nu$ as in Equation \@ref(eq:ch17-planck2), where $E$ is the **total** energy; *i.e.* not just the kinetic energy, but also the potential energy and any other energy terms (including rest mass energy):
+
+
+\begin{equation}
+\nu = \frac{E}{h}
+(\#eq:ch17-planck2)
+\end{equation}
+
+However, in a non-relativistic case (the only case we are considering), then the rest mass can be subtracted form this, resetting the energy scale to a new zero point. Of course, this will also change the frequency $\nu$ compared to a particle where we included the rest-mass energy. This is ok; we simply think of the frequency of the associated wave as being another measure of the energy of the particle for whatever energies we are considering.
+
+In non-relativistic cases, the rest-mass energy is often just ignored without comment and, for our purposes, we wil do the same.  This means we consider $E$ to simply consist of the sum of the kinetic and potential energies of hte particle and ignore any other energies in the system. For particles, their momentum is not ambiguous and its relationship wiht wavelength is clear; this is therefore more ulseful than thinking about energy and frequency for most cases.
+
+These equations are thought to apply to all particles, **including photons**. Therefore, via de Broglie's equation, photons must therefore carry momentum (Equation \@ref(eq:ch17-debroglie2b)), leading to the idea of radiation pressure *i.e.* that a beam of light exerts a pressure on any surface it strikes.
+
+\begin{equation}
+p = \frac{h}{\lambda} = \frac{E}{c}
+(\#eq:ch17-debroglie2b)
+\end{equation}
+
+For macroscopic objects the de Broglie wavelenght is vanishingly small *e.g.* for a golfball $\lambda \approx 10^{-34}$ m, and the macroscopic object behaves distinctly like a particle.  However, for subatomic particles, the wavelength can have relatively large values in the nanometre range, leading to observable wave effects.
+
+Today, the wave-nature of particles is well established, with electron and neutron diffraction experiments becoming routine.  However, a question remains:
+
+* If a particle is a wave, what is the nature of the wave, and what is the wave equation which governs it?
+
+## The wavefunction and its interpretation{#sec:ch17-wavefunction1}
+
+*Tipler and Mosca 34.5*
+
+The **wavefunction** is a concept which we use to describe the wave behaviour of particles; it can be thought of as a '*guiding wave*', and from it we can determine a full mathematical description of the particle's behaviour and properties. It uses the Greek letter $\psi$ (psi) and is dependent on a particle's position in space; $\psi(x)$ in one dimension, up to $\psi(x,y,z)$ in three dimensions.  
+
+If a particle does behave like a wave, what does the wavefunction, $\psi(x)$, look like and what does it actually mean?  There are a numnber of interpretations depending on what we are considering:
+
+* For waves on a string, $\psi(x)$ is the displacement of the string;
+* For a soundwave, it is either the lateral displacement of the molecules, or the pressure at a given point;
+* For an electromagnetic wave (light), it is either the electric or the magnetic field vector.
+
+Recall that, for any wave, its power is proportional to the square of the amplitude, $\textsf{power} \propto \textsf{amplitude}^2$ (Section \@ref(sec:ch7-transportenergypower)). In the context of light, we additionally said that the power was proportional to the intensity (Section \@ref(sec:ch13-twoslitinterference)) and that the intensity was proportional to the number of photons.  I ttherefore follows that the number of photons is proportional to the square of the amplitude of the wavefunction; *i.e.*:
+
+\begin{equation}
+N \propto \psi^2 (x)
+\end{equation}
+
+The probability of finding a **single** photon in a small volume element, $\textrm{d}x$, is written as $P(x) \mathrm{d}x$. Since $P(x)$ is proportional to the number of photons, it follows that:
+
+\begin{equation}
+P(x) \propto \psi^2 (x)
+\end{equation}
+
+In fact, we write this as a direct equality, and then apply a normalisation condition to the wavefunction, so that we can say that all of the probabilities add to one, *i.e.* the particle must be somewhere!
+
+\begin{equation}
+\int_{-\infty}^{\infty} \psi^2 (x) \mathrm{d}x = 1
+\end{equation}
+
+We can therefore interpret the square of a particle's wavefunction as a measure of the probability of finding the particle at a particular location.
+
+The wavefunction is also a solution of the **Schr&ouml;dinger wave equation**; a fundamental equation describing the propagation and evolution of the wavefunction of a particle.  It effectively tells us how the probability of finding a particle at any point in space changes with time; we will come back to this concept presently.
+
+## Heisenberg's Uncertainty Principle {#sec:ch17-heisenberg1}
+
+*Tipler and Mosca 34.6*
+
+The central idea within the wave-particle duality is that if a particle's behaviour can be fully described using a wave representation, it will be governed by all of the physics we already know for waves.  In particular, the wavefunction will be subject to the bandwidth theorem (Section \@ref(sec:ch11-bandwidththeorem)), reproduced in Equation \@ref(eq:ch17-heisenberg1):
+
+\begin{equation}
+ \Delta x \Delta k \approx 2\pi
+ (\#eq:ch17-heisenberg1)
+\end{equation}
+
+The de Broglie relation introduced in Equation \@ref(eq:ch17-debroglie2) can be rearranged to its form in Equation \@ref(eq:ch17-heisenberg2)
+
+\begin{equation}
+k = \frac{p}{\hbar}
+(\#eq:ch17-heisenberg2)
+\end{equation}
+
+Combining Equations \@ref(eq:ch17-heisenberg1) and \@ref(eq:ch17-heisenberg2) gives us the famous Heisenberg relation, Equation \@ref(eq:ch17-heisenberg3):
+
+\begin{equation}
+ \Delta x \Delta p \approx h
+ (\#eq:ch17-heisenberg3)
+\end{equation}
+
+The relationship we show in Equation \@ref(eq:ch17-heisenberg3) is only an approximation because the precise form of the Heisenberg relation depends on the definition of the width of the wavefunction; *e.g.* if $\Delta x$ and $\Delta p$ are defined as standard deviations in measurements, we obtain:
+
+\begin{equation}
+ \Delta x \Delta p \geq \frac{1}{2}\hbar
+ (\#eq:ch17-heisenberg4)
+\end{equation}
+
+**For the purposes of this course, unless explicitly asked, either formulation shown in Equation \@ref(eq:ch17-heisenberg3) or \@ref(eq:ch17-heisenberg4) is acceptabler, but be clear which you are using.**
+
+If we choose to express the uncertainty principle in words, we can state it as:
+
+> It is not possible to measure both the position of a particle and its linear momentum simultaneously to an arbitrary position.
+
+In other words: the precision with which we measure one characteristic affects the precision with which we are able to measure the other.
+
+Heisenberg's uncertainty principle is a natural consequence of the bandwidth theorem as it is a natural consequence of the wave-type behaviour of a particle.  
+
+We have considered position and linear momentum as intrinsically "particulate behaviour"; how does this then relate to the measurement of a wave, in which we measure frequency and time?  We now revert to the other representation of the bandwidth theorem:
+
+\begin{equation}
+\Delta t \Delta \omega \approx 2\pi
+\end{equation}
+
+We can then make some substitutions to consider the energy of particles. Since:
+
+\begin{equation}
+E = h\nu = h \times \frac{\omega}{2\pi} = \hbar \omega
+\end{equation}
+
+Therefore, via substitution:
+
+\begin{equation}
+\Delta t \Delta E \approx h
+\end{equation}
+
+...or, if we are considering standard deviations:
+
+\begin{equation}
+ \Delta t \Delta E \geq \frac{1}{2}\hbar
+\end{equation}
+
+
+## The "Particle in a box" problem {#sec:ch17-particlebox}
+
+The "Particle in a box" model is a useful model for considering how a particle behaves when it is confined within spatial limits; for example an electron trapped within an atom, a proton confined within a nucleus, and so on.  There are numerous discussions of the model, all of varying complexity, however they all rely on the same basic assumptions:
+
+1. The "box" is a defined region of space, whether in one, two or three dimensions;
+1. Inside the "box", the potential is zero (so it can only carry kinetic energy)
+1. Outside the "box", the potential is infinite; thereby constraining the particle within the box
+1. At the boundary of the box, the wavefunction drops to zero:
+    * Wavefunctions must be continuous; the wavefunction is zero outside the box, so a discontinuity would result if the wavefunction did not drop to zero towards the boundary.
+
+These conditions constrain the wavefunction to specified wavelengths within the box; if we are required to have a node at the edges of the box, we can only fit a "whole number of half-wavelengths" in the box; if we consider a one dimension box we consider the shapes of the wave within the box to be akin to the form of a standing wave on a stretched string.  This means only certain frequencies - and hence certain energies - are permitted within the box, and we have **quantised energies**.
+
+We can arrive to this result by another discussion:
+
+1. Particles are represented by wave-packets; these propagate through a systme as a "fuzzy cloud" of probabilities.  We know the particle exists somewhere within the envelope of the wavepacket, but we don't know exactly where.
+1. The "box" is a region of space where the potential confines the particles (and hence their wavefunction).
+1. Imagining a one-dimensional box, a classical particle would simply bounce back and forth between the box, having any value of energy or momentum.
+1. A quantum particle also bounces back and forth, but now it is the wavepacket which is reflected by the walls of the box.  As with waves on a string, constructive and destructive interference occurs between incident and reflected waves.
+1. Only certain wavelengths interfere constructively, forming a standing wave pattern.
+
+Whichever explanation we follow, we end with the same result; that the wavefunction (and hence the energy) of a constrained particle is **quantised** by the existence of the boundary conditions.
+
+As we have mentioned, the wavefunction $\psi$ is zero at the edges of the box, meaning that any wave we observe must have a "whole number of half-wavelengths"; *i.e.* the possible wavelengths which will fit in a box of length $L$ are given by Equation \@ref(eq:ch17-partbox1):
+
+\begin{equation}
+\lambda_n = \frac{2L}{n} \quad \textsf{or} \quad L = n\frac{\lambda_n}{2} \quad \textsf{where} \quad n = 1,2,3, \dots
+(\#eq:ch17-partbox1)
+\end{equation}
+
+As we said that the potential within the box is zero, the total energy of the particle in the box is equal to its kinetic energy, *i.e.*:
+
+\begin{equation}
+E = \frac{p^2}{2m}
+\end{equation}
+
+
+Applying the de Broglie relation for momentum, we can find the energy of the $n$th harmonic (where $n$ is the quantum number for the system):
+
+\begin{equation}
+E_n = \frac{p_n^2}{2m} = \frac{\left(\frac{h}{\lambda_n}\right)^2}{2m}
+\end{equation}
+
+We can then substitute the expression for $\lambda_n$ from Equation \@ref(eq:ch17-partbox1) to give:
+
+\begin{equation}
+E_n = \frac{h^2}{2m\lambda_n^2} = \frac{n^2 h^2}{8mL^2}
+(\#eq:ch17-partbox2)
+\end{equation}
+
+In other words, Equation \@ref(eq:ch17-partbox1) shows how only energy levels $E_n$ are allowed when the particle is constrained in a one-dimensional box.  This model can be extended into two and then three dimensions to describe the allowed energy levels within an atom.  We can see that if we have a large box, the energy levels get closer and closer together which, at macroscopic dimensions, will resemble a continuum.  For small box sizes however (size of atoms, molecules etc.) the energy levels become widely spaced and energy quantisation dominates behaviour.
+
+**If the energy of the particle does not fit the $E_n$ formulation**, then the wavefunction will instead be given by a superposition of the alowed states:
+
+\begin{equation}
+\psi = c_1\psi_1 + c_2\psi_2 + c_3\psi3 + \dots
+\end{equation}
+
+**The position of the particle** cannot be exatly determined in a quantum mechanical system. While a classical particle could be anywhere within the box, the quantum particle's position is given when we determine its probability of existence *via* $\psi^2(x)$ (see Section \@ref(sec:ch17-wavefunction1)).  When we plot the square of the wavefunction we see that a quantum mechanical particle is more likely be be in certain regions in the box, and there will be nodes in the box where the particle will not reside (Figure \@ref(fig:ch17-partbox1)).
+
+**Figure to show particle distribution at different $n$**
+(\#fig:ch17-partbox1)
+
+For a large $n$, the maxima and minima of the quantity $\psi^2(x)$ become very close together and the particle is then likely to be found more-or-less anywhere wihtin the box, just as for a classical particle.
+
+This is an example of the **correspondence principle**:
+
+> In the linit of large quantum numbers, the classical and quantum mechanical calculations must yield the same results.

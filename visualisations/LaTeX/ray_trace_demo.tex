@@ -1,0 +1,47 @@
+\documentclass{standalone}
+\usepackage{pst-optic}
+
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\begin{document}
+
+\begin{pspicture}[showgrid=false](-8,-10)(8,4)
+\newpsstyle{opticalAxis}{linewidth=1pt,linecolor=black,linestyle= dotted}
+\rput(0,0){%
+	\lens[
+	lensType=CVG,
+	lensGlass,
+	lensWidth=0.5,
+	lensHeight=6,
+	lensColor=gray,
+	rayColor=blue,
+	focus=2,
+	AB=2,
+	OA = -5,
+	nameO= ,
+	nameF= F',
+	nameFi=F,
+	nameA= object,
+	nameAi = image,
+	nameB = ,
+	nameBi = ,
+	spotAi=90,
+	spotBi=270]}
+
+\rput(0,-6)	{
+\lensSPH[
+	lensType=CVG,
+	lensWidth=1.5,
+	AB=2,
+	OA = -5,
+	focus=-1,
+	nameO= ,
+	nameF= F',
+	nameFi=F,
+	]
+}
+\end{pspicture}
+
+\end{document}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Complex Numbers | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Complex Numbers | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Complex Numbers | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-shm-real.html"/>
+<link rel="next" href="sec-ch4-dampedoscillations.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:ch3-complexnumbers" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Complex Numbers</h1>
+<p><em>Textbook link: Jordan and Smith, Ch. 6</em></p>
+<p>As we move on with our descriptions of oscillations and, in particular, wave behaviour, the mathematics can become increasingly involved. We can greatly simplify the mathematics by using <strong>complex numbers</strong> in our derivations. For now, it is useful to quickly revisit the complex number concept.</p>
+<p>While the idea of a “complex number” sounds … <em>complex</em>, the use of these numbers becomes straightforward as we apply our familiar mathematical techniques. In the context of mathematics, the term <strong>complex</strong> simply means ‘more than one part’; therefore, a <strong>complex number</strong> is a number with more than one part. It is this two-component nature of a complex number which makes them so useful in many aspects of Physics, and particularly when describing wave behaviour.</p>
+<div id="sec:ch3-complexoverview" class="section level2">
+<h2><span class="header-section-number">3.1</span> Overview of complex numbers</h2>
+<p>The general form of a complex number <span class="math inline">\(z\)</span> is shown in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber1">(3.1)</a>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber1">\[\begin{equation}
+z = a + \mathrm{i}b
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>The symbol <span class="math inline">\(z\)</span> is a general term for a complex number, and has two components, a “real” component <span class="math inline">\(a\)</span> and an “imaginary” component, <span class="math inline">\(b\)</span>. The imaginary number, <span class="math inline">\(\mathrm{i}\)</span>, is defined using the process shown in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber2">(3.2)</a>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber2">\[\begin{equation}
+\begin{array}{rcl}
+x^2 &amp;=&amp; -1 \\
+x &amp;=&amp; \pm \mathrm{i}\\
+i^1 &amp;=&amp; -1
+\end{array}
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>The terms ‘real’ and ‘imaginary’ are nothing more than labels. Neither is any more or less “realistic” than the other nor is it any less valid. Some may claim that the number <span class="math inline">\(\mathrm{i}\)</span> is a ‘pretend’ number; however were this to be true, it would not be as useful as it is!<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>.</p>
+<p>The next useful concept to recall is the <strong>complex conjugate</strong>, <span class="math inline">\(z^*\)</span>. This is defined as in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber3">(3.3)</a>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber3">\[\begin{equation}
+\begin{array}{rcl}
+z &amp;=&amp; a + \mathrm{i}b \\
+z* &amp;=&amp; a - \mathrm{i}b \\
+zz^* &amp;=&amp; a^2 + b^2
+\end{array}
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>In general, for any complex number of the form <span class="math inline">\(z = a \pm \mathrm{i}b\)</span>, there exists its complex conjugate, <span class="math inline">\(z^* = a \mp \mathrm{i}b\)</span> such that <span class="math inline">\(zz^*\)</span> is a wholly real number and equal to <span class="math inline">\(a^2 + b^2\)</span>.</p>
+<p>The complex conjugate is particularly useful when finding fractions of complex numbers as it is used to make the denominator of the fraction wholly “real”.</p>
+</div>
+<div id="sec:ch3-complexusefulresults" class="section level2">
+<h2><span class="header-section-number">3.2</span> Useful results for complex numbers</h2>
+<p>There are a number of useful results worth remembering when handling complex numbers, and these are listed here.</p>
+<p>For a pair of complex numbers, <span class="math inline">\(z_1\)</span> and <span class="math inline">\(z_2\)</span>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber4">\[\begin{equation}
+\begin{array}{rcl}
+z_1 &amp;=&amp; a_1 + \mathrm{i}b_1 \\
+z_2 &amp;=&amp; a_2 + \mathrm{i}b_2 
+\end{array}
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>…we can establish the following principles:</p>
+<ul>
+<li>Equality:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\textrm{If} \hspace{15pt} a_1 = a_2 \hspace{15pt} \textbf{and} \hspace{15pt} b_1 = b_2  \hspace{15pt} \textrm{then}  \hspace{15pt} z_1 = z_2
+\end{equation}\]</span></p>
+<ul>
+<li>Addition and subtraction:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{rcl}
+z_1 + z_2 &amp;=&amp; (a_1 + a_2) + \mathrm{i}(b_1 + b_2) \\
+z_1 - z_2 &amp;=&amp; (a_1 - a_2) + \mathrm{i}(b_1 - b_2) \\
+\end{array}
+\end{equation}\]</span></p>
+<ul>
+<li>Products:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{rcl}
+z_1 \times  z_2 &amp;=&amp; (a_1 + \mathrm{i}b_1) (a_2 + \mathrm{i}b_2) \\
+ &amp;=&amp; (a_1 a_2 - b_1 b_2) + \mathrm{i}(a_1 b_2 + a_2 b_1) \\
+\end{array}
+\end{equation}\]</span></p>
+<ul>
+<li>Reciprocal:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\frac{1}{z} = \frac{z^* }{z z^* } = \frac{a - \mathrm{i}b }{a^2 + b^2 }
+\end{equation}\]</span></p>
+<ul>
+<li>Division:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\frac{z_1}{z_2} = \frac{z_1 z_2^* }{z_2 z_2^* } = \frac{(a_1 a_2 + b_1 b_2) - \mathrm{i}(a_1 b_2 - a_2 b_1)}{a_2^2 + b_2^2 }
+\end{equation}\]</span></p>
+<p>Other useful principles which involve the complex conjugate are listed in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber5">(3.5)</a> below:</p>
+<p><span class="math display" id="eq:ch3-complexnumber5">\[\begin{equation}
+\begin{array}{rcl}
+(z_1 + z_2)^* &amp;=&amp; z_1^* + z_2^*\\
+(z_1  z_2)^* &amp;=&amp; z_1^* + z_2^* \\
+\left( \dfrac{z_1}{z_2} \right)^* &amp;=&amp; \dfrac{z_1^* }{z_2^* } \\
+a = \mathrm{Re}(z) &amp;=&amp; \dfrac{1}{2}(z + z^* ) \\
+b = \mathrm{Im}(z) &amp;=&amp; \dfrac{1}{2}(z - z^* ) 
+\end{array}
+\tag{3.5}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch3-arganddiagram" class="section level2">
+<h2><span class="header-section-number">3.3</span> The Argand Diagram</h2>
+<p>Since a complex number consists of two independent components, we have another way to describe these numbers. Complex numbers can be plotted on a graph, with the ‘<strong>real</strong>’ component plotted on one axis (the <span class="math inline">\(x\)</span>-axis) and the ‘<strong>imaginary</strong>’ component plotted on the other axis (the <span class="math inline">\(y\)</span>-axis). This is the basis of the Argand diagram (Figure <a href="sec-ch3-complexnumbers.html#fig:ch3-argand1">3.1</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch3-argand1"></span>
+<img src="visualisations/ch3-complexnumbers1.svg" alt="A typical Argand diagram, showing the Real ('Re') axis and the Imaginary ('Im') axis. The point $P$ can be defined in '$x,y$' terms (the 'complex number'), or can be defined as polar '$r,\theta$' terms (termed 'modulus' and 'argument')" width="70%" />
+<p class="caption">
+Figure 3.1: A typical Argand diagram, showing the Real (‘Re’) axis and the Imaginary (‘Im’) axis. The point <span class="math inline">\(P\)</span> can be defined in ‘<span class="math inline">\(x,y\)</span>’ terms (the ‘complex number’), or can be defined as polar ‘<span class="math inline">\(r,\theta\)</span>’ terms (termed ‘modulus’ and ‘argument’)
+</p>
+</div>
+<p>This allows us to define a complex number in terms of a <strong>modulus</strong> (radial distance from the origin) and an <strong>argument</strong> (angle from the ‘real’ axis). Useful properties of the modulus are listed in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber6">(3.6)</a>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber6">\[\begin{equation}
+\begin{array}{rcl}
+|z^* | &amp;=&amp; |z| \\
+zz^* &amp;=&amp; |z^2| \\
+ |z_1 z_2| &amp;=&amp; |z_1 | |z_2| \\
+|\dfrac{z_1}{z_2}| &amp;=&amp; \dfrac{|z_1|}{|z_2|} \\
+\\
+|z_1 + z_2| &amp;\neq&amp; |z_1 | + |z_2|
+\end{array}
+\tag{3.6}
+\end{equation}\]</span></p>
+<p>The Argand diagram is a representation of the <strong>complex plane</strong>, through which it becomes possible to visualise properties of complex numbers. One example of this is the addition of complex numbers; these can be considered to behave as vectors (Figure <a href="sec-ch3-complexnumbers.html#fig:ch3-argandcomplexaddition1">3.2</a>)</p>
+<div class="figure" style="text-align: center"><span id="fig:ch3-argandcomplexaddition1"></span>
+<img src="visualisations/ch3-complexnumbers2.svg" alt="Addition of complex numbers $z_1$ and $z_2$ can be shown grapically on an Argand diagram; the separate consideration of the 'real' and 'imaginary' components is analogous to the separate consideration of vector components." width="70%" />
+<p class="caption">
+Figure 3.2: Addition of complex numbers <span class="math inline">\(z_1\)</span> and <span class="math inline">\(z_2\)</span> can be shown grapically on an Argand diagram; the separate consideration of the ‘real’ and ‘imaginary’ components is analogous to the separate consideration of vector components.
+</p>
+</div>
+</div>
+<div id="sec:ch3-polarcomplexnumbers" class="section level2">
+<h2><span class="header-section-number">3.4</span> Polar representation of complex numbers</h2>
+<p>As well as the <strong>cartesian interpretation</strong> of the Argand diagram, we can also consider a <strong>polar representation</strong> of a complex number; where instead of “real” and “imaginary” components acting as <span class="math inline">\((x,y)\)</span> coordinates, we define the position of the complex number on the complex plane as a radius and an angle, <span class="math inline">\(\theta\)</span>. We have already illustrated this in Figure <a href="sec-ch3-complexnumbers.html#fig:ch3-argand1">3.1</a></p>
+<p>In this representation, the complex number can be expressed a different way:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{rcl}
+&amp; z = a + \mathrm{i}b &amp; \\
+&amp; r = |z| = \sqrt{a^2 + b^2} &amp; \\
+a = r\cos \theta &amp; b = r \sin \theta &amp; \theta = \mathrm{arg} (z) = \arctan \left( \dfrac{b}{a} \right) \\
+&amp; z = r \cos \theta + \mathrm{i}|z| \sin \theta &amp;
+\end{array}
+\end{equation}\]</span></p>
+<p>Normally, <span class="math inline">\(\theta\)</span> will lie in the range such that <span class="math inline">\(-\pi &lt; \theta \leq \pi\)</span>, meaning that our complex number representation is now shown in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber7">(3.7)</a>:</p>
+<p><span class="math display" id="eq:ch3-complexnumber7">\[\begin{equation}
+\begin{array}{c}
+z = a + \mathrm{i}b = r \cos \theta + \mathrm{i} r \sin \theta \\
+z = r \left( \cos \theta + \mathrm{i} \sin \theta \right)
+\end{array}
+\tag{3.7}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch3-exponentialrepresentationcomplex" class="section level2">
+<h2><span class="header-section-number">3.5</span> Exponential representation of complex numbers</h2>
+<p>The exponential representation of a complex number takes the general form of <span class="math inline">\(z = Ae^{\mathrm{i}\theta}\)</span>. This is based on series expansions of <span class="math inline">\(\cos \theta\)</span> and <span class="math inline">\(\mathrm{i}\sin \theta\)</span>, which shows <em>De Moivre’s theorem</em>. Key results from this are shown in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-demoivre1">(3.8)</a>:</p>
+<p><span class="math display" id="eq:ch3-demoivre1">\[\begin{equation}
+\begin{array}{rcl}
+\mathrm{e}^{\mathrm{i}\theta} &amp;= &amp;\cos \theta + \mathrm{i}\sin \theta\\
+\left( \mathrm{e}^{\mathrm{i}\theta} \right)^n &amp;=&amp; \left( \cos \theta + \mathrm{i}\sin \theta \right)^n = \mathrm{e}^{\mathrm{i}n\theta} \\
+\left( \cos \theta + \mathrm{i}\sin \theta \right)^n &amp;=&amp;  \cos n\theta + \mathrm{i}\sin n \theta
+\end{array}
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>This means that we obtain the following representations for complex numbers:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{c}
+z = r \left( \cos \theta + \mathrm{i}\sin \theta \right) = r\mathrm{e}^{\mathrm{i}\theta}\\
+z^* = r \left( \cos \theta - \mathrm{i}\sin \theta \right) = r\mathrm{e}^{-\mathrm{i}\theta}\\
+\textrm{where:} \hspace{15pt} r = |z| \hspace{20pt} \theta = \textrm{arg}(z)
+\end{array}
+\end{equation}\]</span></p>
+<p>Combining these with Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber5">(3.5)</a> we also note the following useful results (Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexnumber8">(3.9)</a>)</p>
+<p><span class="math display" id="eq:ch3-complexnumber8">\[\begin{equation}
+\begin{array}{rcl}
+\cos \theta &amp;=&amp; \frac{1}{2} \left( \mathrm{e}^{\mathrm{i}\theta} + \mathrm{e}^{-\mathrm{i}\theta} \right)\\
+\sin \theta &amp;=&amp; \frac{1}{2\mathrm{i}} \left( \mathrm{e}^{\mathrm{i}\theta} - \mathrm{e}^{-\mathrm{i}\theta} \right)\\
+\end{array}
+\tag{3.9}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch3-complexreposcillation" class="section level2">
+<h2><span class="header-section-number">3.6</span> Complex representation of oscillations</h2>
+<p>Having quickly readdressed our understanding of complex numbers, we now turn our attention to the application of these in the context of oscillations and waves.</p>
+<p>Consider the general equation of SHM (Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexoscill1">(3.10)</a>, derived from Equation <a href="sec-shm.html#eq:shm-general-accelerationx2">(1.7)</a>)</p>
+<p><span class="math display" id="eq:ch3-complexoscill1">\[\begin{equation}
+\frac{\mathrm{d}^2 u}{\mathrm{d} t^2 } + \omega^2 u = 0
+\tag{3.10}
+\end{equation}\]</span></p>
+<p>As has been previously discussed, sinusoidal functions can form the basis of solutions to this differential equation; so both <span class="math inline">\(\cos \omega t\)</span> and <span class="math inline">\(\sin \omega t\)</span> are solutions to this equation. Therefore, any linear combination of these solutions will also be a solution, <em>i.e.</em> the linear combination shown here:</p>
+<p><span class="math display">\[\begin{equation}
+u = c_1 \cos \omega t + c_2 \sin \omega t
+\end{equation}\]</span></p>
+<p>… will also satisfy Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-complexoscill1">(3.10)</a>. This can be extended using De Moivre’s theorem (Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-demoivre1">(3.8)</a>) allowing an exponential representation of an oscillation as shown in Equation <a href="sec-ch3-complexnumbers.html#eq:ch3-demoivreoscillation1">(3.11)</a>:</p>
+<p><span class="math display" id="eq:ch3-demoivreoscillation1">\[\begin{equation}
+u = A (\cos \omega t + \mathrm{i} \sin \omega t) \equiv A \mathrm{e}^{\mathrm{i}\omega t}
+\tag{3.11}
+\end{equation}\]</span></p>
+<p>Therefore the solution <span class="math inline">\(u = A\mathrm{e}^{\mathrm{i}\omega t}\)</span> represents an oscillation with amplitude <span class="math inline">\(A\)</span> and frequency <span class="math inline">\(\omega\)</span></p>
+</div>
+<div id="take-home-points" class="section level2">
+<h2><span class="header-section-number">3.7</span> Take-home points</h2>
+<ul>
+<li>We can <strong>always</strong> represent an oscillation using a complex exponential function</li>
+<li>To obtain the actual physical displacement of the system we simply examine either the real or the imaginary part of the solution:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{lrcl}
+\textsf{Either:} &amp; \textrm{displacement} &amp;=&amp; \mathrm{Re}(u) = A \cos \omega t \\
+\textsf{or:} &amp; \textrm{displacement} &amp;=&amp; \mathrm{Im}(u) = A \sin \omega t
+\end{array}
+\end{equation}\]</span></p>
+<p>The main advantage of working with complex exponentials is that they are considerably easier to manipulate than the trigonometric functions sine and cosine. In general it is far easier to use this exponential notation when multiplying oscillations (such as you will explore in electrical circuits later). However, when adding oscillations or waves you may find it easier using a trigonometric identity.</p>
+<p>You should be comfortable using either approach to represent an oscillation.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p>Remember that negative numbers were once seen as ‘pretend numbers’, as you could not have negative eight apples. They have since become indispensable in many applications, not least financial transactions!<a href="sec-ch3-complexnumbers.html#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-shm-real.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch4-dampedoscillations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-complex-numbers.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

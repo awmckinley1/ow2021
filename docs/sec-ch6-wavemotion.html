@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Simple wave motion and the Wave Equation | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Simple wave motion and the Wave Equation | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Simple wave motion and the Wave Equation | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-ch5-forcedoscillations.html"/>
+<link rel="next" href="sec-ch7-harmonicwaves.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:ch6-wavemotion" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Simple wave motion and the Wave Equation</h1>
+<p><em>Textbook link: Tipler and Mosca, Section 15.1</em></p>
+<p>A wave is a means by which energy and momentum are carried through space, without transporting matter. When we consider a medium which carries a wave, the particles of that material oscillate about a mean position, but have an average displacement of zero; <em>i.e.</em> they always return to their starting position. A wave can be of any shape - there is no requirement for a wave to be sinusoidal, though this is the simplest shape which we can consider mathematically.</p>
+<p>We also consider waves to be either <strong>transverse</strong>; where the displacement of the medium is perpendicular to the direction of wave propagation (<em>e.g.</em> a wave travelling along a string), or they can be <strong>longitudinal</strong>; where the displacement of the medium is parallel to the direction of propagation (<em>e.g.</em> a sound wave passing through air).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch6-transversewaveill1"></span>
+<img src="visualisations/ch6-transversewave2.gif" alt="An animation to show the propagation of a wave through a material arising from an organised transverse oscillation of many particles. The two marked particles only move up and down, but the net effect of the organised motion is a propagation of energy to the right." width="70%" />
+<p class="caption">
+Figure 6.1: An animation to show the propagation of a wave through a material arising from an organised transverse oscillation of many particles. The two marked particles only move up and down, but the net effect of the organised motion is a propagation of energy to the right.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:ch6-longitudinalwaveill1"></span>
+<img src="visualisations/ch6-longitudinalwave1.gif" alt="An animation to show the propagation of a wave through a material arising from an organised longitudinal oscillation of many particles. The marked particle now  moves in the direction of propagation, but oscillates around a fixed point; the net effect of the organised motion is again a propagation of energy to the right." width="70%" />
+<p class="caption">
+Figure 6.2: An animation to show the propagation of a wave through a material arising from an organised longitudinal oscillation of many particles. The marked particle now moves in the direction of propagation, but oscillates around a fixed point; the net effect of the organised motion is again a propagation of energy to the right.
+</p>
+</div>
+<div id="a-note-on-transverse-waves" class="section level3 unnumbered">
+<h3>A note on transverse waves</h3>
+<p>In contrast with longitudinal waves, the medium carrying a transverse wave is displaced perpendicular to the direction of travel. This gives rise to the phenomenon of <strong>polarisation</strong>. A <em>plane of polarisation</em> is defined as a plane containing the displacement direction and the direction of propagation. For any given transverse wave, two orthogonal independent polarisations are possible. All other polarisations may be constructed from weighted combinations of these two basic polarisations. For electromagnetic waves, it is the <strong>electric field vector</strong> which defines the plane of polarisation in combination with the direction of propagation. We will revisit these properties of transverse waves as we go through our discussion.</p>
+</div>
+<div id="sec:ch6-wavepulses" class="section level2">
+<h2><span class="header-section-number">6.1</span> Wave pulses</h2>
+<p>Where a wave is a sustained periodic disturbance which propagates energy through a medium, a <strong>wave pulse</strong> in contrast is any localised non-periodic disturbance propagating an energy pulse through the medium. A typical pulse is shown in Figure <a href="sec-ch6-wavemotion.html#fig:ch6-wavepulse1">6.3</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch6-wavepulse1"></span>
+<img src="visualisations/ch6-wavepulse1.gif" alt="A wave pulse propagating through a system at velocity $v$; this causes a temporary transverse disturbance of molecules in the system from their origin." width="70%" />
+<p class="caption">
+Figure 6.3: A wave pulse propagating through a system at velocity <span class="math inline">\(v\)</span>; this causes a temporary transverse disturbance of molecules in the system from their origin.
+</p>
+</div>
+<p>We illustrate a pulse graphically as any function defined as <span class="math inline">\(y = f(x)\)</span>, where the <span class="math inline">\(+x\)</span> direction is the direction of propagation of the pulse. If the pulse propagates without changing shape, it becomes convenient to consider a moving reference frame within which the pulse is stationary; <em>i.e.</em> rather than imagining the pulse moving to the right along fixed axes, we keep the pulse stationary in our view and move the axes to the left.</p>
+<p>In the moving frame then, the pulse is described as <span class="math inline">\(y^\prime = f(x^\prime)\)</span> for all times, because the pulse does not change its shape.</p>
+<p>We can interconvert between the two frames of reference by the relation:</p>
+<p><span class="math display" id="eq:ch6-refframeconvert1">\[\begin{equation}
+x = x^\prime + vt
+\tag{6.1}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(v\)</span> is the velocity of the pulse. This allows us to convert the position in the moving reference frame, <span class="math inline">\(x^\prime\)</span>, back to the position in the fixed reference frame by adding the distance <span class="math inline">\(vt\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch6-referenceframes1"></span>
+<img src="visualisations/ch6-wavepulse2.gif" alt="Rather than imagining a moving wave pulse, we can consider it from the reference frame of the wave pulse; in this example the wave pulse is stationary, but the space moves past it." width="70%" />
+<p class="caption">
+Figure 6.4: Rather than imagining a moving wave pulse, we can consider it from the reference frame of the wave pulse; in this example the wave pulse is stationary, but the space moves past it.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:ch6-referenceframes2"></span>
+<img src="visualisations/ch6-wavepulse3.svg" alt="Another way of visualising the reference frames is to consider the $x',y'$ space moving relative to the stationary $x,y$ space; the offset between them can then be quantified as $vt$, where $v$ is the velocity of the wave pulse and $t$ is the time elapsed." width="70%" />
+<p class="caption">
+Figure 6.5: Another way of visualising the reference frames is to consider the <span class="math inline">\(x&#39;,y&#39;\)</span> space moving relative to the stationary <span class="math inline">\(x,y\)</span> space; the offset between them can then be quantified as <span class="math inline">\(vt\)</span>, where <span class="math inline">\(v\)</span> is the velocity of the wave pulse and <span class="math inline">\(t\)</span> is the time elapsed.
+</p>
+</div>
+<p>If the shape of the pulse in the moving frame is defined as <span class="math inline">\(y^\prime = f(x^\prime)\)</span> we can use Equation <a href="sec-ch6-wavemotion.html#eq:ch6-refframeconvert1">(6.1)</a> to find the shape of the pulse in the static frame, <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display" id="eq:ch6-refframeconvert2">\[\begin{equation}
+\begin{array}{rcl}
+y &amp;=&amp; f(x^\prime)\\
+&amp;=&amp; f(x - vt)
+\end{array}
+\tag{6.2}
+\end{equation}\]</span></p>
+<p>The relation described in Equation <a href="sec-ch6-wavemotion.html#eq:ch6-refframeconvert2">(6.2)</a> describes a wave moving to the <strong>RIGHT</strong>; for a pulse moving to the <strong>left</strong>, <span class="math inline">\(v\)</span> becomes negative, and hence:</p>
+<p><span class="math display">\[\begin{equation}
+y = f(x + vt)
+\end{equation}\]</span></p>
+<p>The function <span class="math inline">\(y = f(x \pm vt)\)</span> is known as the <strong>wave function</strong>; it describes the displacement of the medium, whether the transverse displacement of a string or the longitudinal displacement of air molecules in a sound wave.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>.</p>
+<p>The <em>wave function</em> is a solution of the <strong>wave equation</strong> (Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveequation1">(6.3)</a>):<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></p>
+<p><span class="math display" id="eq:ch6-waveequation1">\[\begin{equation}
+\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
+\tag{6.3}
+\end{equation}\]</span></p>
+<p><strong>Any</strong> function in the form <span class="math inline">\(y = f(x \pm vt)\)</span> is a solution of this wave equation; <em>i.e.</em> the wave equation describes the uniform propagation of <strong>any</strong> displacement, provided it does not change shape as it travels. There are numerous examples of such functions, including:</p>
+<ul>
+<li><span class="math inline">\(y = \exp(x-vt)^2\)</span></li>
+<li><span class="math inline">\(y = \frac{\sin(x-vt)}{x-vt}\)</span></li>
+<li><span class="math inline">\(y = \cos (x+vt)\)</span></li>
+</ul>
+</div>
+<div id="sec:ch6-derivingwaveequation" class="section level2">
+<h2><span class="header-section-number">6.2</span> Deriving the wave equation</h2>
+<p>To better understand the wave equation, it is useful to know its derivation. To do this, we shall first consider a segment of string from a curved part of a wave pulse (Figure <a href="sec-ch6-wavemotion.html#fig:ch6-waveeqnderiv1">6.6</a>):</p>
+<div class="figure" style="text-align: center"><span id="fig:ch6-waveeqnderiv1"></span>
+<img src="visualisations/LaTeX/ch6-waveequationderiv1.svg" alt="Here we consider a small portion of a string carrying a wave pulse; the tension in the string $F$ is constant throughout, but resolving the forces via the angles $\theta_1$ and $\theta_2$ allows us to determine the equation of motion on this segment. " width="70%" />
+<p class="caption">
+Figure 6.6: Here we consider a small portion of a string carrying a wave pulse; the tension in the string <span class="math inline">\(F\)</span> is constant throughout, but resolving the forces via the angles <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span> allows us to determine the equation of motion on this segment.
+</p>
+</div>
+<p>The length of this segement is <span class="math inline">\(\approx \Delta x\)</span> (for small angles), and the mass of this segment of string <span class="math inline">\(m = \mu \Delta x\)</span> (where <span class="math inline">\(\mu\)</span> is the mass per unit length). As we are considering a transverse wave, this segment of string will move vertically, and all forces acting on the segment arise from the tension force within the string. We can determine these forces by resolving the horizontal and vertical components of this force <span class="math inline">\(F\)</span> using the parameters laid out in Figure <a href="sec-ch6-wavemotion.html#fig:ch6-waveeqnderiv1">6.6</a>.</p>
+<p>By considering the net vertical force acting on this segment:</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv1">\[\begin{equation}
+\begin{array}{rcll}
+\sum F &amp;=&amp; F \sin \theta_2 - F \sin \theta_1 &amp;\\
+&amp;=&amp; F \left( \tan \theta_2 - \tan \theta_1 \right) &amp; \textsf{for small angles}
+\end{array}
+\tag{6.4}
+\end{equation}\]</span></p>
+<p>We can also determine an expression for the slope, <span class="math inline">\(S\)</span>, of the segment of string at a given point:</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv2">\[\begin{equation}
+S = \tan \theta = \frac{\partial y}{\partial x}
+\tag{6.5}
+\end{equation}\]</span></p>
+<p>This means we can now express the overall force acting on the segment in terms of the slope of the segment at its start and end points (assuming small angles!) by combining Equations <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv1">(6.4)</a> and <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv2">(6.5)</a> :</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv3">\[\begin{equation}
+\sum F = F(S_2 - S_1) = F \Delta S
+\tag{6.6}
+\end{equation}\]</span></p>
+<p>The quantity <span class="math inline">\(F\Delta S\)</span> in Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv3">(6.6)</a> is the net force acting on the segment; so we can now apply Newton’s second law:</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv4">\[\begin{equation}
+F\Delta S = m a = \mu \Delta x \frac{\partial^2 y}{\partial t^2}
+\tag{6.7}
+\end{equation}\]</span></p>
+<p>…or, to rearrange:</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv5">\[\begin{equation}
+\frac{\Delta S}{\Delta x} = \frac{\mu}{F} \frac{\partial^2 y}{\partial t^2}
+\tag{6.8}
+\end{equation}\]</span></p>
+<p>Since the slope <span class="math inline">\(\Delta S\)</span> of the segment is the ‘rate of change of <span class="math inline">\(y\)</span> with respect to <span class="math inline">\(x\)</span>’ (Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv2">(6.5)</a>), we can redefine the term in Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv4">(6.7)</a>; in the limit, as <span class="math inline">\(\Delta x \rightarrow 0\)</span>:</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv6">\[\begin{equation}
+\frac{\Delta S}{\Delta x} \approx \frac{\partial S}{\partial x} = \frac{\partial}{\partial x} \left( \frac{\partial y}{\partial x} \right) = \frac{\partial^2 y}{\partial x^2}
+\tag{6.9}
+\end{equation}\]</span></p>
+<p>Finally, by combining this result in Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv6">(6.9)</a> with the result in Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv5">(6.8)</a>, we obtain the wave equation for a stretched string (Equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv7">(6.10)</a>):</p>
+<p><span class="math display" id="eq:ch6-waveeqnderiv7">\[\begin{equation}
+\frac{\partial^2 y}{\partial x^2} = \frac{\mu}{F} \frac{\partial^2 y}{\partial t^2}
+\tag{6.10}
+\end{equation}\]</span></p>
+<p>As we mentioned in Section <a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses">6.1</a>, any function of the form <span class="math inline">\(y = f(x \pm vt)\)</span> will be a solution to the wave equation <a href="sec-ch6-wavemotion.html#eq:ch6-waveeqnderiv7">(6.10)</a>. In the case of the string, the solution will solve the wave equation provided that <span class="math inline">\(v^2 = \frac{F}{\mu}\)</span>.</p>
+</div>
+<div id="sec:ch6-waveequationproof2" class="section level2">
+<h2><span class="header-section-number">6.3</span> The wave equation - proof by substitution</h2>
+<p>In this section, we will show the proof of the wave equation which we determined graphically in Section <a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation">6.2</a>. Here we will use <em>partial differentiation</em>, explaining the <span class="math inline">\(\partial\)</span> notation we have already seen in this work.<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
+<p>Let’s work through this step by step:</p>
+<ol style="list-style-type: decimal">
+<li>Consider the general function <span class="math inline">\(y = \cos(x - vt)\)</span>. Differentiate this first with respect to <span class="math inline">\(x\)</span>:</li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\frac{\partial y}{\partial x} = -\sin(x - vt)
+\end{equation}\]</span></p>
+<p>The second derivative therefore becomes:</p>
+<p><span class="math display" id="eq:ch6-wavederivsubs1">\[\begin{equation}
+\frac{\partial^2 y}{\partial x^2} = -\cos(x - vt)
+\tag{6.11}
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Now we differentiate with respect to time <span class="math inline">\(t\)</span>:</li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\frac{\partial y}{\partial t} = v\sin(x - vt)
+\end{equation}\]</span></p>
+<p>… and find the second derivative:</p>
+<p><span class="math display" id="eq:ch6-wavederivsubs2">\[\begin{equation}
+\frac{\partial^2 y}{\partial t^2} = -v^2 \cos(x - vt)
+\tag{6.12}
+\end{equation}\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>We can now combine Equations <a href="sec-ch6-wavemotion.html#eq:ch6-wavederivsubs1">(6.11)</a> and <a href="sec-ch6-wavemotion.html#eq:ch6-wavederivsubs2">(6.12)</a> to eliminate the term <span class="math inline">\(\cos(x - vt)\)</span>, we obtain the wave equation as required:</li>
+</ol>
+<p><span class="math display" id="eq:ch6-wavederivsubs3">\[\begin{equation}
+\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
+\tag{6.13}
+\end{equation}\]</span></p>
+<p>Through unpacking of Equation <a href="sec-ch6-wavemotion.html#eq:ch6-wavederivsubs3">(6.13)</a> we can uncover how it might be adapted to obtain wave equations for other systems. The term <span class="math inline">\(x\)</span> represents the direction of propagation of the wave, while <span class="math inline">\(y\)</span> represents the disturbance of the particle carrying the wave (in the case of a transverse wave, this is perpendicular to the direction of propagation).</p>
+<p>For longitudinal sound waves, Equation <a href="sec-ch6-wavemotion.html#eq:ch6-wavederivsubs3">(6.13)</a> becomes:</p>
+<p><span class="math display" id="eq:ch6-wavederivsubs4">\[\begin{equation}
+\frac{\partial^2 s}{\partial x^2} = \frac{1}{v_s^2} \frac{\partial^2 s}{\partial t^2}
+\tag{6.14}
+\end{equation}\]</span></p>
+<p>In this example, <span class="math inline">\(s\)</span> is the displacement of molecules of the medium parallel to the direction of the propagation, while <span class="math inline">\(v_s\)</span> is the velocity of sound in the medium.</p>
+<p>For electromagnetic waves, Equation <a href="sec-ch6-wavemotion.html#eq:ch6-wavederivsubs3">(6.13)</a> becomes either:</p>
+<p><span class="math display" id="eq:ch6-wavederivsubs5">\[\begin{equation}
+\frac{\partial^2 E_z}{\partial x^2} = \frac{1}{c^2} \frac{\partial^2 E_z}{\partial t^2}
+\tag{6.15}
+\end{equation}\]</span></p>
+<p>…or</p>
+<p><span class="math display" id="eq:ch6-wavederivsubs5b">\[\begin{equation}
+\frac{\partial^2 B_y}{\partial x^2} = \frac{1}{c^2} \frac{\partial^2 B_y}{\partial t^2}
+\tag{6.16}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(E_z\)</span> and <span class="math inline">\(B_y\)</span> are the transverse components of the electric and magnetic field vectors (we will discuss this further later), and <span class="math inline">\(c\)</span> is the speed of light.</p>
+<p><strong>Note</strong>: The speed of propagation cannot be deduced from the wave equation, instead it must be obtained from a model of the system concerned.</p>
+</div>
+<div id="sec:ch6-phasevelocity" class="section level2">
+<h2><span class="header-section-number">6.4</span> The Phase Velocity - the velocity of waves</h2>
+<p>We define the phase velocity as the speed of propagation of any particular point on a wave. Since the wave propagates without changing shape, it does not matter which point we pick.</p>
+<p>The phase velocity will depend on a combination of the elastic and inertial terms.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch6-phasevelocity1"></span>
+<img src="visualisations/ch6-phasevelocity1.svg" alt="A reminder that every point in a wave pulse here moves at the same velocity $v$, such that the shape of the pulse is not changed." width="70%" />
+<p class="caption">
+Figure 6.7: A reminder that every point in a wave pulse here moves at the same velocity <span class="math inline">\(v\)</span>, such that the shape of the pulse is not changed.
+</p>
+</div>
+<p>For waves travelling on a string the phase velocity can be found from the tension in the string (<span class="math inline">\(F\)</span>) and the linear mass density (mass per unit length) of the string (<span class="math inline">\(\mu\)</span>):</p>
+<p><span class="math display">\[\begin{equation}
+v = \sqrt{\frac{F}{\mu}}
+\end{equation}\]</span></p>
+<p>This has parallels for soundwaves in a fluid, with phase velocity found from the bulk modulus <span class="math inline">\(B\)</span> (a factor describing the fluid’s resistance to compression) and the equilibrium density <span class="math inline">\(\rho\)</span> of the fluid:</p>
+<p><span class="math display">\[\begin{equation}
+v_s = \sqrt{\frac{B}{\rho}}
+\end{equation}\]</span></p>
+<p>We can go further to look at the propatgation of sound waves in an isotropic solid (solid of constant composition) - however we can only use this to consider a thin section, not a bulk solid (this is an acceptable model for considering earth tremors in the Earth’s crust). This time the phase velocity depends on the density of the solid <span class="math inline">\(\rho\)</span> and either the Young’s modulus (<span class="math inline">\(Y\)</span>, for longitudinal P waves) or the shear modulus (<span class="math inline">\(G\)</span>, for transverse S waves):</p>
+<p><span class="math display">\[\begin{equation}
+v_s = \sqrt{\frac{Y}{\rho}} \textrm{or} \sqrt{\frac{G}{\rho}}
+\end{equation}\]</span></p>
+<p>These equations descrie how wave phase velocities can be determined in solids and liquids; in a gas, we need to use other parameters, however the core relationship is still familiar:</p>
+<p><span class="math display">\[\begin{equation}
+v_s = \sqrt{\frac{\gamma RT}{M}} =  \sqrt{\frac{\gamma k_{\mathrm{B}}T}{m}}
+\end{equation}\]</span></p>
+<p>Here, the terms <span class="math inline">\(R\)</span>, <span class="math inline">\(T\)</span> and <span class="math inline">\(M\)</span> refer to the gas constant (units J K<sup>-1</sup> mol<sup>-1</sup>), absolute temperature (units K) and the molar mass of the gas (units kg mol<sup>-1</sup>) respectively<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>, while <span class="math inline">\(k_{\textrm{B}}\)</span> and <span class="math inline">\(m\)</span> refer to the Boltzmann constant (units J K<sup>-1</sup>) and the mass of an individual gas molecule (units kg).</p>
+<p>Finally, we can obtain a similar expression for the phase velocity of light waves:</p>
+<p><span class="math display">\[\begin{equation}
+c = \sqrt{\frac{1}{\mu_0 \epsilon_0}}
+\end{equation}\]</span></p>
+<p>…where _0 and _0 are the permeability of free space and the permittivity of free space respectively.</p>
+</div>
+<div id="sec:ch6-summary" class="section level2">
+<h2><span class="header-section-number">6.5</span> Summary</h2>
+<p>In this chapter, we have introduced the principle of waves and the wave equation. Waves carry energy and momentum through space by localised organised oscillations without net transport of matter. They can be transverse (oscillation perpendicular to direction of propagation) or longitudinal (oscillation parallel to direction of propagation), or can have a more complex displacement pattern. Waves do not have to be sinusoidal, and can have any shape.</p>
+<p>Any travelling wave can be described by the function in the form of <span class="math inline">\(y = f(x \pm vt)\)</span> which satisfies the wave equation, relating the displacement of the medium (<span class="math inline">\(y\)</span>) to the position of the wave (<span class="math inline">\(x\)</span>) and the phase velocity (<span class="math inline">\(v\)</span>).</p>
+<p><span class="math display">\[\begin{equation}
+\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
+\end{equation}\]</span></p>
+<p>Remember that the phase velocitycannot be predicted from the wave equation, but depends on the physics of the system. It generally results from a consideration of the elastic and inertial properties of the system. For waves on a string, <span class="math inline">\(v = \sqrt{\frac{F}{\mu}}\)</span>, where <span class="math inline">\(F\)</span> is the tension in the string and <span class="math inline">\(\mu\)</span> is the mass per unit length (linear mass density).</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="8">
+<li id="fn8"><p>It may seem counterintuitive that, for a wave moving with positive <span class="math inline">\(v\)</span>in the <span class="math inline">\(+x\)</span> direction, we subtract <span class="math inline">\(vt\)</span>; but try thinking this way: after time <span class="math inline">\(t\)</span>, the wave will have advanced further to the right. If, after one second, the shape of the wave has its peak at <span class="math inline">\(x_a\)</span>, after three seconds, the peak will have advanced to <span class="math inline">\(x_b = x_a + vt\)</span>; <strong>however</strong>, the value of the wavefunction at <span class="math inline">\(x_a\)</span> at this new time (<span class="math inline">\(x_a^\prime\)</span>) will have come from the value of the wavefunction three seconds earlier, to the <strong>left</strong> of the point; i.e. <span class="math inline">\(x_a^\prime = x_a - vt\)</span><a href="sec-ch6-wavemotion.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>The <span class="math inline">\(\partial\)</span> symbol refers to <em>partial differentiation</em>.<a href="sec-ch6-wavemotion.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Partial differentiation is needed when we have multivariate expressions. We can only differentiate one variable at a time, so <em>partial</em> differenation indicates that we are holding all other variables constant. In our wave equations, we have position and time variables, so when differentiating <span class="math inline">\(x\)</span> with respect to <span class="math inline">\(y\)</span>, we are holding the time <span class="math inline">\(t\)</span> constant.<a href="sec-ch6-wavemotion.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>Note that the molar mass is expressed in kg mol<sup>-1</sup> here, rather than the more common g mol<sup>-1</sup> ; the reason for this is to ensure continuity and present everything in SI units.<a href="sec-ch6-wavemotion.html#fnref11" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-ch5-forcedoscillations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch7-harmonicwaves.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-simple-wave-motion.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

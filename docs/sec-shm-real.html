@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 SHM in Real Systems | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 SHM in Real Systems | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 SHM in Real Systems | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-shm.html"/>
+<link rel="next" href="sec-ch3-complexnumbers.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:shm-real" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> SHM in Real Systems</h1>
+<p><em>Textbook link: Tipler and Mosca: Ch 14.2 to 14.4</em></p>
+<div id="general-motion-near-equilibrium" class="section level2">
+<h2><span class="header-section-number">2.1</span> General motion near equilibrium</h2>
+<p>A way of thinking about SHM is that it is a point mass oscillating within a potential energy field. As with any potential energy field, the force on this particle is given by the gradient of the potential energy and is directed down the potential energy slope. Mathematically, for a potential energy field, the force may be found as follows (Equation <a href="sec-shm-real.html#eq:ch2-forceenergyderiv1">(2.1)</a>):</p>
+<p><span class="math display" id="eq:ch2-forceenergyderiv1">\[\begin{equation}
+F = - \frac{\mathrm{d}U}{\mathrm{d}r}
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>In a one-dimensional system, this is expressed as follows (Equation <a href="sec-shm-real.html#eq:ch2-forceenergyderiv2">(2.2)</a>):</p>
+<p><span class="math display" id="eq:ch2-forceenergyderiv2">\[\begin{equation}
+F_x = - \frac{\mathrm{d}U}{\mathrm{d}x}
+\tag{2.2}
+\end{equation}\]</span></p>
+<p>As mentioned in Section <a href="sec-shm.html#sec:ch1-simpleshmexample">1.1</a>, under SHM the force is proportional to the displacement from the equilibrium position and in the opposite direction; i.e.:</p>
+<p><span class="math display" id="eq:ch2-hookeslaw1">\[\begin{equation}
+F_x = -kx
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>Applying the principle from Equation <a href="sec-shm-real.html#eq:ch2-forceenergyderiv1">(2.1)</a> we can therefore integrate this experession with respect to <span class="math inline">\(x\)</span> to obtain the expression for our potential energy. We covered this in Section <a href="sec-shm.html#sec:ch1-shm-energy1">1.9</a>, and we found the result (Equation <a href="sec-shm-real.html#eq:ch2-potentialfromforce1">(2.4)</a>; remember that, due to initial conditions, the constant of integration reduces to zero).</p>
+<p><span class="math display" id="eq:ch2-potentialfromforce1">\[\begin{equation}
+U  = \frac{1}{2}kx^2 
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>Simple inspection and recall of our mathematics knowledge tells us that this simple equation represents a parabola. This gives us a series of useful points to bear in mind:</p>
+<ul>
+<li>A parabolic potential energy function implies SHM and <em>vice versa</em>;</li>
+<li>For small amplitudes of oscillation, many potential energy functions may be <em>approximated</em> by a parabola (<em>e.g.</em> a pendulum, vibrating molecules)</li>
+<li>A system undergoing SHM is called a <strong>harmonic oscillator</strong>.</li>
+</ul>
+<p>The simplicity of the <strong>simple harmonic oscillator</strong> model is what makes it such a generally useful system to consider.</p>
+</div>
+<div id="sec:ch2-diatomicmolecule" class="section level2">
+<h2><span class="header-section-number">2.2</span> Example: a diatomic molecule</h2>
+<p>A diatomic molecule is a useful system to consider as an example because it can be very usefully approximated to a harmonic oscillator. The potential energy curve for a vibrating diatomic molecule (in this case the H_2_ hydrogen molecule) is shown in Figure <a href="sec-shm-real.html#fig:ch2-diatomicmolecule1">2.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch2-diatomicmolecule1"></span>
+<img src="visualisations/ch2-diatomicexamp.svg" alt="Comparing the Morse potential of the anharmonic oscillator with the harmonic approximation. Near equilibrium, the harmonic oscillator model approximates diatomic behaviour, however this rapidly deviates from reality. " width="70%" />
+<p class="caption">
+Figure 2.1: Comparing the Morse potential of the anharmonic oscillator with the harmonic approximation. Near equilibrium, the harmonic oscillator model approximates diatomic behaviour, however this rapidly deviates from reality.
+</p>
+</div>
+<p>The potential of a vibrating diatomic is known as the Morse potential; the form of this is outwith this discussion, however it is useful to think that, for small displacements around the equilibrium separation the potential energy curve approximates a parabola. We can therefore re-draw our potential energy curve as such, and show this in Figure <a href="#fig:ch2-diatomicmolecule2">2.2</a>.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>** Parabolic approximation of a diatomic molecule**
+</p>
+<p>The equation of the parabola shown in <a href="#fig:ch2-diatomicmolecule2">2.2</a> takes the following form:</p>
+<p><span class="math display" id="eq:ch2-diatomicmolecule1">\[\begin{equation}
+U(r) = A + B(r - r_0)^2
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are constants relating to the molecular system under consideration, and <span class="math inline">\(r_0\)</span> is the equilibrium bond length.</p>
+<p>The force on the bond can then be found from the first derivative of the bond potential described in Equation <a href="sec-shm-real.html#eq:ch2-diatomicmolecule1">(2.5)</a>:</p>
+<p><span class="math display" id="eq:ch2-diatomicmolecule2">\[\begin{equation}
+\begin{array}{rcl}
+F_r &amp;=&amp; - \dfrac{\mathrm{d}U}{\mathrm{d}r} \\
+\\
+&amp;=&amp; -2B(r-r_0)\\
+\end{array}
+\tag{2.6}
+\end{equation}\]</span></p>
+<p>Since the term <span class="math inline">\((r-r_0)\)</span> is the displacement from the equilibrium position, we see that the force, <span class="math inline">\(F_r\)</span> is a <strong>restoring force</strong> and is proportional to the displacement (and in the opposite direction!), telling us that the motion is SHM. In this example however, the parabolic approximation fails at larger amplitudes.</p>
+</div>
+<div id="sec:ch2-massverticalspring" class="section level2">
+<h2><span class="header-section-number">2.3</span> Example: Mass on a vertical spring</h2>
+<p>In Section <a href="sec-shm.html#sec:ch1-simpleshmexample">1.1</a> we considered a mass on a horizontal spring; there was only a single force acting on the mass (the force from the spring), however we are now considering a vertical spring and must consider the effects of gravity (Figure <a href="sec-shm-real.html#fig:ch2-massverticalspring1">2.3</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch2-massverticalspring1"></span>
+<img src="visualisations/LaTeX/ch2-blocksonvertspring1.svg" alt="A particle oscillating on a vertical spring.  There are two equilibrium positions corresponding to the equilibrium position of the unladen spring (a) and the equilibrium position of the mass loaded on spring (b), where the weight of the load is balanced by the force from the extended spring." width="70%" />
+<p class="caption">
+Figure 2.3: A particle oscillating on a vertical spring. There are two equilibrium positions corresponding to the equilibrium position of the unladen spring (a) and the equilibrium position of the mass loaded on spring (b), where the weight of the load is balanced by the force from the extended spring.
+</p>
+</div>
+<p>In this case we need to work through a slightly different process to find the equation of motion, chiefly because the equilibrium displacement of the mass (<span class="math inline">\(y_0\)</span>) is different from the equilibrium position of the spring.</p>
+<p>The equilibrium position of the mass <span class="math inline">\(y_0\)</span> is lower than the equilibrium extension of the spring (gravity on the mass causes the spring to stretch). This is found by relating the force from the spring and the force of gravity acting on the mass (Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring1">(2.7)</a>):</p>
+<p><span class="math display" id="eq:ch2-massverticalspring1">\[\begin{equation}
+\begin{array}{rcl}
+\mathrm{Force~due~to~spring~extension} &amp;=&amp; \mathrm{Gravity~acting~on~mass}\\
+k y_0 &amp;=&amp; mg\\
+y_0 &amp;=&amp; \dfrac{mg}{k}\\
+\end{array}
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>We now apply Newton’s Second Law to obtain an expression for the acceleration on the mass due to the forces acting on it (the spring force and gravity).</p>
+<p><span class="math display" id="eq:ch2-massverticalspring2">\[\begin{equation}
+\begin{array}{rcl}
+m\ddot{y}&amp;=&amp;  \textrm{spring force} + \textrm{gravity} \\
+m\dfrac{\mathrm{d}^2 y}{\mathrm{d} t^2} &amp;=&amp; -ky + mg\\
+\end{array}
+\tag{2.8}
+\end{equation}\]</span></p>
+<p>In this expression, <span class="math inline">\(y\)</span> is the total extension of the spring (the extension to the mass equilibrium point, <span class="math inline">\(y_0\)</span> plus the displacement from this point, <span class="math inline">\(y^\prime\)</span>).</p>
+<p>We now substitute a variable; since <span class="math inline">\(y = y_0 + y^\prime\)</span>, we substitute <span class="math inline">\(y\)</span> for <span class="math inline">\(y^\prime\)</span>:</p>
+<ul>
+<li><span class="math inline">\(y = y_0 + y^\prime\)</span></li>
+<li><span class="math inline">\(y^\prime = y - y_0\)</span></li>
+</ul>
+<p>Since <span class="math inline">\(y_0\)</span> is a constant:</p>
+<p><span class="math display">\[\begin{equation}
+\dfrac{\mathrm{d} y^\prime}{\mathrm{d} t} = \dfrac{\mathrm{d} y}{\mathrm{d} t} \hspace{10pt} \textrm{and} \hspace{10pt} \dfrac{\mathrm{d}^2 y^\prime}{\mathrm{d} t^2} = \dfrac{\mathrm{d}^2 y}{\mathrm{d} t^2}
+\end{equation}\]</span></p>
+<p>Replacing <span class="math inline">\(y\)</span> for <span class="math inline">\((y_0 + y^\prime)\)</span> in Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring2">(2.8)</a>, we obtain Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring3">(2.9)</a>:</p>
+<p><span class="math display" id="eq:ch2-massverticalspring3">\[\begin{equation}
+m\dfrac{\mathrm{d}^2 y^\prime}{\mathrm{d} t^2} = -k(y_0 + y^\prime) + mg
+\tag{2.9}
+\end{equation}\]</span></p>
+<p>Since <span class="math inline">\(ky_0 = mg\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring1">(2.7)</a>), we can therefore eliminate these terms from Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring3">(2.9)</a>, and rewrite as Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring4">(2.10)</a>:</p>
+<p><span class="math display" id="eq:ch2-massverticalspring4">\[\begin{equation}
+m\dfrac{\mathrm{d}^2 y^\prime}{\mathrm{d} t^2} = -k y^\prime
+\tag{2.10}
+\end{equation}\]</span></p>
+<p>This means that, in reference to Figure <a href="sec-shm-real.html#fig:ch2-massverticalspring1">2.3</a>, we still have SHM centered on the equilibrium position of the mass. This may seem like a self-evident result, however it is useful to recognise the role of gravity; its effect is to shift the equilibrium position of the oscillation from <span class="math inline">\(y = 0\)</span> (the equilibrium position of the spring) to <span class="math inline">\(y = y_0\)</span> (<span class="math inline">\(y^\prime = 0\)</span>).</p>
+<p>Let’s now consider the energy in this system. The system already contains some elastic energy as the spring is already stretched to <span class="math inline">\(y_0\)</span> by the gravity acting on the mass:</p>
+<p><span class="math display">\[\begin{equation}
+\textrm{elastic potential energy} = \frac{1}{2}ky^2 - \frac{1}{2}ky_0^2
+\end{equation}\]</span></p>
+<p>The gravitational potential energy (relative to the starting position <span class="math inline">\(y_0\)</span>) is given by:</p>
+<p><span class="math display">\[\begin{equation}
+\textrm{gravitational potential energy} = mg(y-y_0)
+\end{equation}\]</span></p>
+<p>The total potential energy is therefore given by Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring5">(2.11)</a>:</p>
+<p><span class="math display" id="eq:ch2-massverticalspring5">\[\begin{equation}
+U = \frac{1}{2}ky^2 - \frac{1}{2}ky_0^2 - mg(y-y_0)
+\tag{2.11}
+\end{equation}\]</span></p>
+<p>We can then show that the total potential energy expression in Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring5">(2.11)</a> can be simplified to that shown in Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring6">(2.12)</a>:</p>
+<p><span class="math display" id="eq:ch2-massverticalspring6">\[\begin{equation}
+U = \frac{1}{2} ky^{\prime 2}
+\tag{2.12}
+\end{equation}\]</span></p>
+<p><strong>You should ensure you understand how this simplification is done</strong>; this is left as an exercise.</p>
+<p>Overall, the expression for the total potential energy shown in Equation <a href="sec-shm-real.html#eq:ch2-massverticalspring6">(2.12)</a> will still yield a parabola and as such the oscillation is still a simple harmonic oscillation as before.</p>
+</div>
+<div id="sec:ch2-simplependulum" class="section level2">
+<h2><span class="header-section-number">2.4</span> The Simple Pendulum</h2>
+<p>A pendulum is a mechanically simple oscillating system; its oscillation can be considered SHM for small displacements. A simple pendulum is shown in Figure <a href="sec-shm-real.html#fig:ch2-simplependulum1">2.4</a>, and it is worth quickly revisiting this example as we will extend this in our futher examples.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch2-simplependulum1"></span>
+<img src="visualisations/LaTeX/ch2-simplependulum1.svg" alt="A simple pendulum, consisting of a mass $m$ swinging on a string of length $L$. At angle $\phi$, the weight of the mass $mg$ can be resolved into components to determine the mechanics of the system." width="70%" />
+<p class="caption">
+Figure 2.4: A simple pendulum, consisting of a mass <span class="math inline">\(m\)</span> swinging on a string of length <span class="math inline">\(L\)</span>. At angle <span class="math inline">\(\phi\)</span>, the weight of the mass <span class="math inline">\(mg\)</span> can be resolved into components to determine the mechanics of the system.
+</p>
+</div>
+<p>For small dispalcements (small <span class="math inline">\(\phi\)</span>), the equation of motion can be considered as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum1">(2.13)</a>:</p>
+<p><span class="math display" id="eq:ch2-simplependulum1">\[\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{g}{L}\sin \theta \approx -\frac{g \phi}{L} \textrm{for small} \phi
+\tag{2.13}
+\end{equation}\]</span></p>
+<p>This is SHM, with angular frequency <span class="math inline">\(\omega\)</span> and period <span class="math inline">\(T\)</span> found as in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.14)</a>:</p>
+<p><span class="math display" id="eq:ch2-simplependulum2">\[\begin{equation}
+\omega^2 = \frac{g}{L} \hspace{15pt} and \hspace{15pt} T = 2\pi \sqrt{\frac{L}{g}}
+\tag{2.14}
+\end{equation}\]</span></p>
+<p>The solution for the equation of motion of this system then becomes (Equation <a href="sec-shm-real.html#eq:ch2-simplependulum3">(2.15)</a>):</p>
+<p><span class="math display" id="eq:ch2-simplependulum3">\[\begin{equation}
+\phi = \phi_0 \cos (\omega t + \delta)
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(\phi_0\)</span> is the amplitude of the system and <span class="math inline">\(\delta\)</span> is the phase constant. Notice that, for the pendulum we express the amplitude in terms of the angle of the string rather than an absolute distance (shown as <span class="math inline">\(s\)</span> in Figure <a href="sec-shm-real.html#fig:ch2-simplependulum1">2.4</a>).</p>
+</div>
+<div id="sec:ch2-physicalpendulum" class="section level2">
+<h2><span class="header-section-number">2.5</span> The Physical Pendulum</h2>
+<p>Many oscillating systems demonstrate rotational oscillations under gravity akin to the simple pendulum. In this case, the system rotates around a pivot, <span class="math inline">\(P\)</span>, and this can then be considered as a pendulum with the centre of mass acting as the ‘bob’. An example of a general system is shown in Figure <a href="sec-shm-real.html#fig:ch2-physicalpendulum1">2.5</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch2-physicalpendulum1"></span>
+<img src="visualisations/LaTeX/ch2-physicalpendulum1.svg" alt="A physical pendulum, consisting of a physical object of mass $M$ swinging on a pivot through point $P$ of length $L$. At angle $\phi$, the weight of the mass $Mg$ can again be resolved into components to determine the mechanics of the system." width="40%" />
+<p class="caption">
+Figure 2.5: A physical pendulum, consisting of a physical object of mass <span class="math inline">\(M\)</span> swinging on a pivot through point <span class="math inline">\(P\)</span> of length <span class="math inline">\(L\)</span>. At angle <span class="math inline">\(\phi\)</span>, the weight of the mass <span class="math inline">\(Mg\)</span> can again be resolved into components to determine the mechanics of the system.
+</p>
+</div>
+<p>Now, as a restoring force, we consider the <strong>torque</strong> of the centre of mass around the pivot. Remember that the torque is defined as the product of the force and the <strong>perpendicular distance of the force’s line of action from the pivot</strong>. If using vectors, this is considered as the <strong>cross product</strong> of the force vector <span class="math inline">\(\mathbf{F}\)</span> with the position vector of the centre of mass from the pivot, <span class="math inline">\(\mathbf{D}\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum1">(2.16)</a>):</p>
+<p><span class="math display" id="eq:ch2-physicalpendulum1">\[\begin{equation}
+\begin{array}{rcl}
+\textrm{Torque about pivot $P$} &amp;=&amp; \mathbf{F} \times \mathbf{D} \\
+&amp;=&amp; \mathbf{\hat{n}}~ |F| |D| \sin \phi \\
+&amp;=&amp; \mathbf{\hat{n}}~ mg D \sin \phi = \tau \mathbf{\hat{n}} 
+\end{array}
+\tag{2.16}
+\end{equation}\]</span></p>
+<p>In this case, the unit vector <span class="math inline">\(\mathbf{\hat{n}}\)</span> is perpendicular to the plane of rotation and is included for completeness’ sake. What we are interested in is the magnitude of this torque vector, <span class="math inline">\(\tau\)</span>.</p>
+<p>Recall from rotational motion that the angular acceleration <span class="math inline">\(\alpha\)</span> and the torque <span class="math inline">\(\tau\)</span> are connected via the moment of inertia <span class="math inline">\(I\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum2">(2.17)</a>):<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p><span class="math display" id="eq:ch2-physicalpendulum2">\[\begin{equation}
+\begin{array}{rcl}
+I \dfrac{\mathrm{d}^2 \phi}{\mathrm{d} t^2}  &amp;=&amp; I\alpha =\tau \\
+&amp;=&amp; -mgD \sin \phi
+\end{array}
+\tag{2.17}
+\end{equation}\]</span></p>
+<p>We now approximate this for small <span class="math inline">\(\phi\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\frac{\mathrm{d}^2 \phi}{\mathrm{d} t^2} = -\frac{mgD\phi}{I} = -\omega^2 \phi
+\end{equation}\]</span></p>
+<p>This allows us to identify expressions again for the angular frequency, <span class="math inline">\(\omega\)</span>, and the period <span class="math inline">\(T\)</span> (Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.18)</a>):</p>
+<p><span class="math display" id="eq:ch2-physicalpendulum3">\[\begin{equation}
+\omega^2 = \frac{mgD}{I} \hspace{15pt} and \hspace{15pt} T = 2\pi \sqrt{\frac{I}{mgD}}
+\tag{2.18}
+\end{equation}\]</span></p>
+<p>We can compare this result with that for the simple pendulum shown in Equation <a href="sec-shm-real.html#eq:ch2-simplependulum2">(2.14)</a>; if we remember that the moment of inertia <span class="math inline">\(I\)</span> is defined as <span class="math inline">\(I = mD^2\)</span>, we can substitute this into Equation <a href="sec-shm-real.html#eq:ch2-physicalpendulum3">(2.18)</a> and see that this is a general case for any rotating body:</p>
+<p><span class="math display">\[\begin{equation}
+T_\textrm{simple pendulum} = 2\pi \sqrt{\frac{I_\textrm{simple pendulum}}{mgD}} = 2\pi \sqrt{\frac{mD^2}{mgD}} = 2\pi \sqrt{\frac{D}{g}}
+\end{equation}\]</span></p>
+<p>…giving us our expected result (where the general term <span class="math inline">\(D\)</span> can be replaced for the length of the simple pendulum, <span class="math inline">\(L\)</span>).</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p>Simplistically, the deviation is due to nuclear repulsion at high compression, while at large extension the bond eventually breaks - the “zero potential” point.<a href="sec-shm-real.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Note that the appearance of the negative sign indicates that the torque force is opposite to the direction of increasing <span class="math inline">\(\phi\)</span><a href="sec-shm-real.html#fnref5" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-shm.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch3-complexnumbers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-shm-real-systems-Linus.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

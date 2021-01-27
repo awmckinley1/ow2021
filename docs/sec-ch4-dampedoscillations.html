@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Damped oscillations | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Damped oscillations | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Damped oscillations | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-ch3-complexnumbers.html"/>
+<link rel="next" href="sec-ch5-forcedoscillations.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:ch4-dampedoscillations" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Damped oscillations</h1>
+<p><em>Textbook link</em></p>
+<p>The oscillations we have looked at so far make the assumption that the oscillation will continue indefinitely and that no energy is gained or lost by the system. Such perpetually oscillating systems are extremely unusual, and almost every oscillation you encounter in the real world will lose energy to its surroundings, either requiring constant input of energy to maintain the oscillation or it will eventually dissipate all of its energy and the oscillation will stop. The energy is dissipated through a process known as ‘damping’.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch4-dampedoscillation1"></span>
+<img src="visualisations/ch4-dampedoscill1.svg" alt="The amplitude of a damped oscillation decays exponentially with time.  The observed position of the oscillation is shown in blue, while the maximum possible amplitude (related to energy stored in the system) is illustrated by the orange dotted line.  The undamped oscillation is shown in grey for comparison." width="70%" />
+<p class="caption">
+Figure 4.1: The amplitude of a damped oscillation decays exponentially with time. The observed position of the oscillation is shown in blue, while the maximum possible amplitude (related to energy stored in the system) is illustrated by the orange dotted line. The undamped oscillation is shown in grey for comparison.
+</p>
+</div>
+<p>The change in amplitude of a damped oscillation is illustrated in Figure <a href="sec-ch4-dampedoscillations.html#fig:ch4-dampedoscillation1">4.1</a>. Both amplitude and energy decrease by a <strong>constant percentage</strong> in each cycle; this is an <strong>exponential decrease</strong>.</p>
+<div id="sec:ch4-generalcasedamping" class="section level2">
+<h2><span class="header-section-number">4.1</span> The general case of damping</h2>
+<p>For a simply damped system, the damping force is proportional to the velocity of the oscillating mass and <strong>opposes</strong> the direction of motion (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp1">(4.1)</a>):</p>
+<p><span class="math display" id="eq:ch4-velocitydamp1">\[\begin{equation}
+F = -bv \equiv -b \frac{\mathrm{d}x}{\mathrm{d} t}
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>This expression for the damping force can then be included with the equation for the force from the spring (Equation <a href="sec-shm.html#eq:hookeslaw1">(1.1)</a>) to consider the overall acceleration of a mass undergoing damped harmonic motion. (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp2">(4.2)</a>).</p>
+<p><span class="math display" id="eq:ch4-velocitydamp2">\[\begin{equation}
+\begin{array}{rcl}
+F = -kx - bv &amp;=&amp; -kx -b \dfrac{\mathrm{d}x}{\mathrm{d}t} = ma \\
+m \dfrac{\mathrm{d}^2 x}{\mathrm{d}t^2} &amp;=&amp; -kx -b \dfrac{\mathrm{d}x}{\mathrm{d}t}
+\end{array}
+\tag{4.2}
+\end{equation}\]</span></p>
+<p>This can be written as a differential equation for <strong>damped SHM</strong> as shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp3">(4.3)</a>:</p>
+<p><span class="math display" id="eq:ch4-velocitydamp3">\[\begin{equation}
+m \frac{\mathrm{d}^2 x}{\mathrm{d}t^2} + b \frac{\mathrm{d}x}{\mathrm{d}t}+ kx =0
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>Let’s now try to find a solution for this differential equation. Firstly, let’s make a couple of assumptions:</p>
+<ol style="list-style-type: decimal">
+<li>The amplitude of the damped oscillation is subject to an exponential decay over a timescale of <span class="math inline">\(2\tau\)</span> (don’t worry about the factor of 2 for now), and</li>
+<li>The damped oscillation has a frequency <span class="math inline">\(mega^\prime\)</span> which may be different from the natural frequency of the undamped oscillator, <span class="math inline">\(\omega_0\)</span>.</li>
+</ol>
+<p>Our exponential decay factor then becomes <span class="math inline">\(\mathrm{e}^{-\frac{t}{2\tau}}\)</span>, and the exponential form of the wave equation becomes <span class="math inline">\(\mathrm{e}^{\mathrm{i}(\omega^\prime t + \delta)}\)</span> (combination of Equations <a href="sec-shm.html#eq:shm-general-positionx1">(1.4)</a> and <a href="sec-ch3-complexnumbers.html#eq:ch3-demoivreoscillation1">(3.11)</a>). When these are combined we obtain a form of the solution shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp4">(4.4)</a></p>
+<p><span class="math display" id="eq:ch4-velocitydamp4">\[\begin{equation}
+x = A_0 \mathrm{e}^{-\frac{t}{2\tau}} \mathrm{e}^{\mathrm{i}(\omega^\prime t + \delta)}
+\tag{4.4}
+\end{equation}\]</span></p>
+<p>We can now find the first and second derivatives (make sure you are able to do this; you will need the product rule for differentiation) of this expression to substitute into the differential equation (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp3">(4.3)</a>):</p>
+<p><span class="math display" id="eq:ch4-velocitydamp5">\[\begin{equation}
+\begin{array}{rcl}
+\dfrac{\mathrm{d}x}{\mathrm{d}t} &amp;=&amp; \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x\\
+\dfrac{\mathrm{d}^2x}{\mathrm{d}t^2} &amp;=&amp; \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right)^2 x
+\end{array}
+\tag{4.5}
+\end{equation}\]</span></p>
+<p>We can now take our derivatives shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp5">(4.5)</a> and substitute into the differential equation (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp3">(4.3)</a>):</p>
+<p><span class="math display" id="eq:ch4-velocitydamp6">\[\begin{equation}
+\begin{array}{rcl}
+m \dfrac{\mathrm{d}^2 x}{\mathrm{d}t^2} + b \dfrac{\mathrm{d}x}{\mathrm{d}t}+ kx &amp;=&amp;0\\
+m \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right)^2 x + b \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx &amp;=&amp; 0 \\
+\end{array}
+\tag{4.6}
+\end{equation}\]</span></p>
+<p>Multiplying this expression out, we obtain:</p>
+<p><span class="math display">\[\begin{equation}
+m \left( -\frac{1}{4\tau^2} - \frac{\mathrm{i}\omega^\prime}{\tau} - \omega ^{\prime 2} \right) x + b \left( -\frac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx = 0
+\end{equation}\]</span></p>
+<p>…and we can now combine the <strong>Real</strong> and <strong>Imaginary</strong> components:</p>
+<ul>
+<li><strong>Imaginary</strong>:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+-\frac{\omega^\prime m}{\tau} + \omega^\prime b = 0
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:ch4-velocitydampimagin1">\[\begin{equation}
+\tau = \frac{m}{b}
+\tag{4.7}
+\end{equation}\]</span></p>
+<ul>
+<li><strong>Real</strong>:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\left( \frac{1}{4 \tau^2} - \omega^{\prime 2} \right) m - \frac{b}{2\tau} + k = 0
+\end{equation}\]</span></p>
+<p>Therefore (using result from Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydampimagin1">(4.7)</a>:</p>
+<p><span class="math display">\[\begin{equation}
+\omega^{\prime 2} = \frac{k}{m} - \left( \frac{b}{2m} \right)^2
+\end{equation}\]</span></p>
+<p>However, we already know that <span class="math inline">\(\frac{k}{m} = \omega_0^2\)</span> (equation <a href="sec-shm.html#eq:shm-general-omega1">(1.8)</a>), so:</p>
+<p><span class="math display" id="eq:ch4-veolocitydampreal1">\[\begin{equation}
+\omega^{\prime 2} = \omega_0^2 - \left( \frac{b}{2m} \right)^2
+\tag{4.8}
+\end{equation}\]</span></p>
+<p>Having found this result, we can now say that a general solution to damped SHM is as shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp4">(4.4)</a>, or in trigonometric notation as shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp7">(4.9)</a>:</p>
+<p><span class="math display" id="eq:ch4-velocitydamp7">\[\begin{equation}
+x = A_0 \mathrm{e}^{-\frac{t}{2\tau}} \cos(\omega^\prime t + \delta)
+ \tag{4.9}
+\end{equation}\]</span></p>
+<p>…where</p>
+<ul>
+<li><span class="math inline">\(A_0\)</span> = initial (maximum) amplitude</li>
+<li><span class="math inline">\(\tau = \frac{m}{b}\)</span> is the characteristic decay time or time constant</li>
+<li><span class="math inline">\(\omega^\prime = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2}\)</span>, where <span class="math inline">\(\omega_0\)</span> is the frequency of the undamped oscillator ( <span class="math inline">\(\omega_0^2 = \frac{k}{m}\)</span> for a mass on a spring)</li>
+</ul>
+<p>Having derived and defined a general expression for damped oscillations, we will now turn to look at different modes of damping.</p>
+</div>
+<div id="sec:ch4-lightdamping" class="section level2">
+<h2><span class="header-section-number">4.2</span> Light Damping</h2>
+<p>In a system which is lightly damped, we can make a number of assumptions:</p>
+<ol style="list-style-type: decimal">
+<li>That the frequency of the damped oscillator (<span class="math inline">\(\omega ^\prime\)</span>) is approximately equal to that of the undamped oscillator; <span class="math inline">\(\omega ^\prime \approx \omega_0\)</span></li>
+<li>That the damping factor, <span class="math inline">\(\frac{b}{2m\omega_0}\)</span> is significantly less than one; <em>i.e.</em> <span class="math inline">\(\frac{b}{2m\omega_0} \ll 1\)</span></li>
+</ol>
+<p>When we apply these assumptions to Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp4">(4.4)</a> we obtain the “standard” SHM oscillation (tending towards <span class="math inline">\(\mathrm{e}^{\mathrm{i}(\omega^\prime t + \delta)}\)</span> as <span class="math inline">\(\omega ^\prime\)</span> tends to <span class="math inline">\(\omega_0\)</span>) with an exponential decay on its amplitude (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-ampexpdecay1">(4.10)</a>):</p>
+<p><span class="math display" id="eq:ch4-ampexpdecay1">\[\begin{equation}
+A = A_0 \mathrm{e}^{-\frac{t}{2\tau}}
+\tag{4.10}
+\end{equation}\]</span></p>
+<p>The effect of this light damping is that if <span class="math inline">\(b\)</span> (the damping coefficient on the velocity, Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-velocitydamp1">(4.1)</a>) increases, the damped frequency <span class="math inline">\(\omega^\prime\)</span> will decrease, and the characeteristic decay time, <span class="math inline">\(\tau\)</span> will also decrease.</p>
+</div>
+<div id="sec:ch4-criticaldamping" class="section level2">
+<h2><span class="header-section-number">4.3</span> Critical damping</h2>
+<p>In a critically damped system, the <strong>system does not oscillate</strong>; rather, it returns to equilibrium in the shortest possible time. This can be imagined as the damping required to <strong>exactly stop</strong> the vibration and no more. The damped oscillation frequency <span class="math inline">\(\omega^\prime\)</span> then, by definition, is equal to zero (<span class="math inline">\(\omega^\prime = 0\)</span>) and, by placing this condition into Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-dampfrequency1">(4.11)</a>, we obtain the result for the damping coefficient, <span class="math inline">\(b\)</span> (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-criticaldamp1">(4.12)</a>)</p>
+<p><span class="math display" id="eq:ch4-dampfrequency1">\[\begin{equation}
+\omega^\prime = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2}
+\tag{4.11}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:ch4-criticaldamp1">\[\begin{equation}
+b = b_c = 2m\omega_0
+\tag{4.12}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch4-overdamping" class="section level2">
+<h2><span class="header-section-number">4.4</span> Overdamping</h2>
+<p>An overdamped system is one which has so much damping applied that the system returns to equilibrium <em>even more slowly</em> than in the critically damped case (Section <a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping">4.3</a>). This could be imagined as a mass on a spring which is allowed to return to equilibrium within an extremely viscous medium (honey, or treacle!) and takes a considerable time to slowly return to equilibrium. A comparison of the displacement/time curve between a critically damped system and an overdamped system is shown in Figure <a href="sec-ch4-dampedoscillations.html#fig:ch4-critvsoverdamped1">4.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch4-critvsoverdamped1"></span>
+<img src="visualisations/ch4-critoverdamp1.svg" alt="A critically damped system returns to its equilbrium position in the shortest possible time, while an overdamped system works against an overbearing damping force slowly returning it to its equilibrium position." width="70%" />
+<p class="caption">
+Figure 4.2: A critically damped system returns to its equilbrium position in the shortest possible time, while an overdamped system works against an overbearing damping force slowly returning it to its equilibrium position.
+</p>
+</div>
+<p>In the overdamped case, the damping coefficient, <span class="math inline">\(b\)</span> is greater than the critical damping coefficient, <span class="math inline">\(b_c\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+b &gt; b_c
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch4-qualityfactor" class="section level2">
+<h2><span class="header-section-number">4.5</span> Quality factor and energy in damped SHM</h2>
+<p>Recall that we determined energies within SHM in Equations <a href="sec-shm.html#eq:ch1-potentialfromforce4">(1.16)</a> and <a href="sec-shm.html#eq:ch1-potentialfromforce5">(1.17)</a>; remembering that <span class="math inline">\(\omega^2 = \frac{k}{m}\)</span>, we can write the overall energy of the system as in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactorenergy1">(4.13)</a>:</p>
+<p><span class="math display" id="eq:ch4-qualityfactorenergy1">\[\begin{equation}
+E = \frac{1}{2}m\omega^2 A^2
+\tag{4.13}
+\end{equation}\]</span></p>
+<p>Within the damped regimes we have established the equations for damping, in particular how to calculate the damped amplitude at a given time, <span class="math inline">\(A\)</span> (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-ampexpdecay1">(4.10)</a>). By combining this with Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactorenergy1">(4.13)</a> we can obtain an expression for the damped energy, <span class="math inline">\(E\)</span>, as a proportion of the initial energy of the system, <span class="math inline">\(E_0\)</span> (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactorenergy2">(4.14)</a>):</p>
+<p><span class="math display" id="eq:ch4-qualityfactorenergy2">\[\begin{equation}
+\begin{array}{rcl}
+E &amp;=&amp; \frac{1}{2}m\omega^2 \left( A_0 \mathrm{e}^{-\frac{t}{2\tau}} \right)^2\\
+ &amp;=&amp; E_0 \mathrm{e}^{-\frac{t}{\tau}}
+\end{array}
+\tag{4.14}
+\end{equation}\]</span></p>
+<p>The decay time <span class="math inline">\(\tau\)</span> can now be considered the time taken for the energy to decrease to <span class="math inline">\(\frac{1}{\mathrm{e}}\)</span> of its original value (see? There was a reason we considered the timescale <span class="math inline">\(2\tau\)</span> in Section <a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping">4.1</a>).</p>
+<p>A useful measure of the <strong>persistence</strong> of an oscillation is the <strong>quality factor</strong>, <span class="math inline">\(Q\)</span>. This is defined as shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactor1">(4.15)</a>:</p>
+<p><span class="math display" id="eq:ch4-qualityfactor1">\[\begin{equation}
+Q = \omega_0 \tau = \frac{\omega_0 m}{b}
+\tag{4.15}
+\end{equation}\]</span></p>
+<p>Generally:</p>
+<ul>
+<li>Large <span class="math inline">\(Q\)</span> represents lighter damping, persistent oscillation. (think <strong>high quality oscillation</strong>)</li>
+<li>Small <span class="math inline">\(Q\)</span> represents heavier damping, oscillation stops rapidly. (think <strong>low quality oscillation</strong>)</li>
+</ul>
+<p><span class="math inline">\(Q\)</span> can relate to the energy loss per cycle of oscillation; firstly define the rate of change of energy (Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactor2">(4.16)</a>, from Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactorenergy1">(4.13)</a>):</p>
+<p><span class="math display" id="eq:ch4-qualityfactor2">\[\begin{equation}
+\frac{\mathrm{d}E}{\mathrm{d} t} = -\frac{E_0}{\tau} \mathrm{e}^{-\frac{t}{\tau}} = -\frac{E}{\tau}
+\tag{4.16}
+\end{equation}\]</span></p>
+<p>If we are considering finite changes, we can adapt our calculus to allow <span class="math inline">\(\Delta E \approx \mathrm{d}E\)</span> and <span class="math inline">\(\Delta t \approx \mathrm{d}t = T\)</span>. Applying this to Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactor2">(4.16)</a> and rearranging gives:</p>
+<p><span class="math display">\[\begin{equation}
+\frac{|\Delta E|}{E} = \frac{T}{\tau} = \frac{2 \pi}{\omega_0 \tau} = \frac{2 \pi}{Q}
+\end{equation}\]</span></p>
+<p>This gives us the result for <span class="math inline">\(Q\)</span> shown in Equation <a href="sec-ch4-dampedoscillations.html#eq:ch4-qualityfactor3">(4.17)</a>:</p>
+<p><span class="math display" id="eq:ch4-qualityfactor3">\[\begin{equation}
+Q = \frac{2 \pi}{\left( \frac{|\Delta E|}{E} \right)_{\mathrm{cycle}}}
+\tag{4.17}
+\end{equation}\]</span></p>
+<p>This gives us one more way to consider the quality factor: it is inversely proportional to the fractional energy loss per cycle of the oscillation. A low <span class="math inline">\(Q\)</span> therefore corresponds to a higher fractional energy loss per cycle than a high <span class="math inline">\(Q\)</span> factor.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-ch3-complexnumbers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch5-forcedoscillations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-damped-oscillations.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

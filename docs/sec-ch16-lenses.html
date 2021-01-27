@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 16 Lenses | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 16 Lenses | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 16 Lenses | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-ch15-mirrors.html"/>
+<link rel="next" href="sec-ch17-waveparticle.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:ch16-lenses" class="section level1">
+<h1><span class="header-section-number">Chapter 16</span> Lenses</h1>
+<p><em>Textbook link: Tipler and Mosca, Section 15.1</em></p>
+<p>Having examined the principles of reflection in respect of curved mirrors, we now look at the case of a curved interface between two optically transparent materials. We introduced the principle of refraction in Section <a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction">14.1</a>, where a light ray will slow down on entering a more optically dense medium (higher refractive index) and its path will change as described by Snell’s law of refraction (Equation <a href="sec-ch14-propertieslight.html#eq:ch14-snellslaw1">(14.1)</a>). With a plane interface, the behaviour is straightforward, however now that we have a curved surface, the angle of incidence (and hence the angle of refraction) will vary depending on which part of the surface a parallel light ray interacts with. The theory introduced here describes how lenses are used to manipulate light rays.</p>
+<div id="sec:ch16-sphericalsurface1" class="section level2">
+<h2><span class="header-section-number">16.1</span> Refraction at a spherical surface</h2>
+<p>We will first consider how a light ray refracts when encountering a single curved interface between two media. In the example shown in Figure <a href="#fig:ch16-sphericalsurface1">16.1</a>, the image is shown inside the more optically dense medium.</p>
+<p><strong>Figure of refraction at single spherical surface</strong>
+</p>
+<p>Examining the rays in Figure <a href="#fig:ch16-sphericalsurface1">16.1</a>, we can use Snell’s law and geometry to establish the relationships between the refractive indices and the image properties.</p>
+<p>Firstly, via Snell’s law:</p>
+<p><span class="math display" id="eq:ch16-lensequation1">\[\begin{equation}
+\begin{array}{rcll}
+n_1 \sin \theta_1 &amp;=&amp; n_2 \sin \theta_2 &amp;\\
+n_1 \theta_1 &amp;\approx&amp; n_2 \theta_2 &amp; \textsf{(for small angles)}
+\end{array}
+\tag{16.1}
+\end{equation}\]</span></p>
+<p>We use the equivalency that, at small angles (in radians), <span class="math inline">\(\sin \theta \approx \theta\)</span>. This allows us to study the geometry and establish relationships between the angles:<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></p>
+<p><span class="math display" id="eq:ch16-lensequation2">\[\begin{equation}
+\begin{array}{rcl}
+\beta &amp;=&amp; \theta_2 + \gamma = \dfrac{n_1}{n_2}\theta_1 + \gamma \\
+\theta_1 &amp;=&amp; \alpha + \beta
+\end{array}
+\tag{16.2}
+\end{equation}\]</span></p>
+<p>We can then substitute our expression for <span class="math inline">\(\theta_1\)</span> to eliminate this from the first expression and rearrange:</p>
+<p><span class="math display" id="eq:ch16-lensequation3">\[\begin{equation}
+\begin{array}{rcl}
+\beta &amp;=&amp; \dfrac{n_1}{n_2}(\alpha + \beta) + \gamma \\
+(n_2 -n_1)\beta &amp;=&amp; n_1 \alpha + n_2 \gamma
+\end{array}
+\tag{16.3}
+\end{equation}\]</span></p>
+<p>As we are assuming small angles, we are also assuming that the rays are paraxial, we can then establish relations for the angles in relation to Figure <a href="#fig:ch16-sphericalsurface2">16.2</a>:</p>
+<p><strong>Figure of refraction dimensions at single spherical surface</strong>
+</p>
+<p>Assuming paraxial rays, then:</p>
+<p><span class="math display" id="eq:ch16-lensequation4">\[\begin{equation}
+\alpha \approx \sin \alpha = \frac{l}{s} \quad \beta \approx \sin \beta = \frac{r}{l} \quad \gamma \approx \frac{l}{s&#39;}
+\tag{16.4}
+\end{equation}\]</span></p>
+<p>We can now combine the results in Equation <a href="sec-ch16-lenses.html#eq:ch16-lensequation4">(16.4)</a> with that of Equation <a href="sec-ch16-lenses.html#eq:ch16-lensequation3">(16.3)</a> to obtain the general equation for a curved interface (Equation <a href="sec-ch16-lenses.html#eq:ch16-lensequation5">(16.5)</a>), relating the image position to the refractive indices of the two materials and the radius of curvature, <span class="math inline">\(r\)</span>:</p>
+<p><span class="math display" id="eq:ch16-lensequation5">\[\begin{equation}
+\frac{n_1}{s} + \frac{n_2}{s&#39;} = \frac{(n_2 - n_1)}{r}
+\tag{16.5}
+\end{equation}\]</span></p>
+<div id="sec:ch16-signconventioncurvedsurface1" class="section level3">
+<h3><span class="header-section-number">16.1.1</span> Sign conventions</h3>
+<p>As with the mirror, there are a number of sign conventions to be aware of for a reflecting surface:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(s\)</span> is:
+<ul>
+<li><strong>positive</strong> when the object (real) is in front of the surface (incident side);</li>
+<li><strong>negative</strong> when the object (virtual) is behind the surface (transmission side) <em>e.g.</em> formed by another lens or mirror;</li>
+</ul></li>
+<li><span class="math inline">\(s&#39;\)</span> is:
+<ul>
+<li><strong>positive</strong> when the image (real) is behind the surface (transmission side);</li>
+<li><strong>negative</strong> when the image (virtual) is in front of the surface (incident side);</li>
+</ul></li>
+<li><span class="math inline">\(r\)</span>, <span class="math inline">\(f\)</span> are:
+<ul>
+<li><strong>positive</strong> when the centre/focus are behind the surface (transmission side)</li>
+<li><strong>negative</strong> when the centre/focus are in front of the surface (incident side);</li>
+</ul></li>
+</ol>
+<p><strong>Note that these conventions are different to the mirror conventions.</strong></p>
+</div>
+<div id="sec:ch16-magnificationcurvedsurface1" class="section level3">
+<h3><span class="header-section-number">16.1.2</span> Magnification</h3>
+<p>As for the spherical mirror, the curved interface can be considered to have magnification properties. We can consider these in terms of the angles of incidence and refraction along the optical axis of the surface (Figure <a href="#fig:ch16-sphericalsurfacemag1">16.3</a>).</p>
+<p><strong>Figure to show magnification on a spherical surface</strong>
+</p>
+<p>In this construction, we have defined two triangles, each of which give us expressions for the angles of incidence and refraction; the angle of incidence can be determined by the height of the object (<span class="math inline">\(y\)</span>) and its distance from the surface (<span class="math inline">\(s\)</span>), while the angle of refraction is defined by the height of the image (<span class="math inline">\(y&#39;\)</span>) and its distance behind the surface (<span class="math inline">\(s&#39;\)</span>).</p>
+<p>This allows us to then define the relationships between these angles:</p>
+<p><span class="math display" id="eq:ch16-sphericalsurfacemag1">\[\begin{equation}
+\begin{array}{rclcrcll}
+\tan \theta_1 &amp;=&amp; \dfrac{y}{s} &amp; &amp; \theta_1 &amp;\approx&amp; \dfrac{y}{s} &amp; (\textsf{at small angles}) \\
+\tan \theta_2 &amp;=&amp; \dfrac{y&#39;}{s&#39;} &amp; &amp; \theta_2 &amp;\approx&amp; \dfrac{y&#39;}{s&#39;} &amp; (\textsf{at small angles}) \\
+\end{array}
+\tag{16.6}
+\end{equation}\]</span></p>
+<p>Once again, we define the magnification as the ratio between the image size (<span class="math inline">\(y&#39;\)</span>) and the object size (<span class="math inline">\(y\)</span>); therefore using Snell’s law (<span class="math inline">\(n_1 \theta_1 \approx n_2 \theta_2\)</span> for small angles) we can now relate these statements of <span class="math inline">\(y\)</span> and <span class="math inline">\(s\)</span> to find the magnification, <span class="math inline">\(m\)</span>:</p>
+<p><span class="math display" id="eq:ch16-sphericalsurfacemag2">\[\begin{equation}
+m = \frac{y&#39;}{y} = -\frac{n_1 s&#39;}{n_2 s}
+\tag{16.7}
+\end{equation}\]</span></p>
+<p>The significance of the negative sign in Equation <a href="sec-ch16-lenses.html#eq:ch16-sphericalsurfacemag2">(16.7)</a> is in indicating the inverted image (see Figure <a href="#fig:ch16-sphericalsurfacemag1">16.3</a>)</p>
+</div>
+</div>
+<div id="sec:ch16-thinlens1" class="section level2">
+<h2><span class="header-section-number">16.2</span> Refraction through a thin lens</h2>
+<p>We now consider a thin lens. The term “thin” is a way of describing the lens such that it is sufficiently thin that an image of an object is not able to form inside the more dense medium as described in Section <a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1">16.1</a>. Rather, light rays refract once passing into the more dense medium, and then are refracted again back into the less dense medium before an image is formed.</p>
+<p>Refraction occurs at two surfaces of radius <span class="math inline">\(r_1\)</span> and <span class="math inline">\(r_2\)</span> respectively. Generally we assume the lens is in air, so the refractive index of the material is <span class="math inline">\(n\)</span> and we assume the refractive index of air to be <span class="math inline">\(\sim 1\)</span>. We consider the refraction at each surface separately in order to build the overall picture of the light path shown in Figure <a href="#fig:ch16-thinlens1">16.4</a>.</p>
+<p><strong>Ray diagram of light and thin lens</strong>
+</p>
+<p>The best way to understand what is happening in Figure <a href="#fig:ch16-thinlens1">16.4</a> is to look at each interface in turn:</p>
+<ul>
+<li>At the first surface, we have the same process as we encountered in Section <a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1">16.1</a> with the light refracting from the air into the lens material. This creates a light path within the lens appearing to originate from a virtual object image at <span class="math inline">\(P_1\)</span>. We can determine its position by adapting Equation <a href="sec-ch16-lenses.html#eq:ch16-lensequation5">(16.5)</a> by replacing our values of <span class="math inline">\(n_1 = 1\)</span> and <span class="math inline">\(n_2 = n\)</span> (Equation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation1">(16.8)</a>).</li>
+</ul>
+<p><span class="math display" id="eq:ch16-thinlensequation1">\[\begin{equation}
+\frac{1}{s} + \frac{n}{s_1&#39;} = \frac{(n - 1)}{r_1}
+\tag{16.8}
+\end{equation}\]</span></p>
+<p>This virtual object formed at <span class="math inline">\(P_1\)</span> now becomes the object image for refraction at teb second surface, and lies at a distance <span class="math inline">\(s_1&#39;\)</span> from the lens. Note that:</p>
+<ul>
+<li><span class="math inline">\(s_1&#39;\)</span> is <strong>negative</strong> in the first refraction as <span class="math inline">\(P_1\)</span> is a virtual image for refraction at the first surface (image on same side as the object);</li>
+<li><span class="math inline">\(s_1&#39;\)</span> is <strong>positive</strong> for the second refraction as the “object image” at <span class="math inline">\(P_1\)</span> is on the incident side for the second surface.</li>
+</ul>
+<p>We can now again adapt Equation <a href="sec-ch16-lenses.html#eq:ch16-lensequation5">(16.5)</a> for the second refraction, again adapting our values of <span class="math inline">\(n_1 = n\)</span> and <span class="math inline">\(n_2 = 1\)</span>:<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a></p>
+<p><span class="math display" id="eq:ch16-thinlensequation2">\[\begin{equation}
+-\frac{n}{s_1&#39;} + \frac{1}{s&#39;} = \frac{(1 - n)}{r_2}
+\tag{16.9}
+\end{equation}\]</span></p>
+<p>We combine Equations <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation1">(16.8)</a> and <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation2">(16.9)</a> to eliminate the position of the virtual object at <span class="math inline">\(P_1\)</span> to obtain the overall equation for a light ray from an object refracting through a thin lens (Equation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation3">(16.10)</a>)</p>
+<p><span class="math display" id="eq:ch16-thinlensequation3">\[\begin{equation}
+\frac{1}{s} + \frac{1}{s&#39;} = (n-1)\left( \frac{1}{r_1} - \frac{1}{r_2}\right)
+\tag{16.10}
+\end{equation}\]</span></p>
+<p>The consequence of this is that, if we take the object distance <span class="math inline">\(s = \infty\)</span> (<em>i.e.</em> parallel rays), then <span class="math inline">\(s&#39; = f\)</span>, the focal length of the lens; therefore we can find the focal length of the lens via Equation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation4">(16.11)</a>:</p>
+<p><span class="math display" id="eq:ch16-thinlensequation4">\[\begin{equation}
+\frac{1}{f} = (n-1) \left(  \frac{1}{r_1} - \frac{1}{r_2} \right)
+\tag{16.11}
+\end{equation}\]</span></p>
+<p>Equation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation4">(16.11)</a> is known as the <em>lens maker’s equation</em>, allowing the creation of a given focal length <span class="math inline">\(f\)</span> by shaping the radii of curvature on either side. Additionally, by equating Equations <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation3">(16.10)</a> and <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation4">(16.11)</a>, we obtain the <em>thin lens equation</em>, Equation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation5">(16.12)</a>:</p>
+<p><span class="math display" id="eq:ch16-thinlensequation5">\[\begin{equation}
+\frac{1}{s} + \frac{1}{s&#39;} = \frac{1}{f}
+\tag{16.12}
+\end{equation}\]</span></p>
+<p>Note that this is the same form as the mirror equation (Equation <a href="sec-ch15-mirrors.html#eq:ch15-mirrorequation1">(15.1)</a>), but using the differing sign conventions, reflecting the position of the image.</p>
+</div>
+<div id="types-of-lens" class="section level2">
+<h2><span class="header-section-number">16.3</span> Types of lens</h2>
+<p>Having derived the lens equation, we now look at the different forms which lenses can take.</p>
+<div id="sec:ch16-converginglens1" class="section level3">
+<h3><span class="header-section-number">16.3.1</span> The converging lens</h3>
+<p>Any lens (with material of <span class="math inline">\(n\)</span> greater than that of the surrounding medium) which is <strong>thicker</strong> in the middle than at the edges will be a <strong>converging lens</strong> <em>i.e.</em> parallel rays from any direction are brought to a focus on the focal plane (Figure <a href="#fig:ch16-converginglens1">16.5</a>).</p>
+<p><strong>Figure to show converging lens</strong>
+</p>
+<p><span class="math inline">\(F\)</span> and <span class="math inline">\(F&#39;\)</span> are the first and second focal points respectively, each at a distance <span class="math inline">\(f\)</span> from the lens.</p>
+</div>
+<div id="sec:ch16-diverginglens1" class="section level3">
+<h3><span class="header-section-number">16.3.2</span> The diverging lens</h3>
+<p>In contrast to the converging lens (Section <a href="sec-ch16-lenses.html#sec:ch16-converginglens1">16.3.1</a>), a <strong>diverging lens</strong> will be any lens (where <span class="math inline">\(n\)</span> is greater than the surrounding medium) which is <strong>thinner</strong> in the middle than at the edges. In this case, parallel rays from any direction are diverged as though originating <em>from</em> the focual point <span class="math inline">\(F\)</span> on the incident side of the lends (Figure <a href="#fig:ch16-diverginglens1">16.6</a>)</p>
+<p><strong>Figure to show diverging lens</strong>
+</p>
+</div>
+</div>
+<div id="sec:ch16-raydiagrams1" class="section level2">
+<h2><span class="header-section-number">16.4</span> Ray diagrams</h2>
+<p>We now need to set a series of rules for constructing ray diagrams. This allows us to understand how lenses form their images, where those images lie, and allow us to ensure we use the correct sign conventions within the lens equations.</p>
+<p>We consider three principal rays:</p>
+<ol style="list-style-type: decimal">
+<li>Parallel ray - drawn parallel to the lens axis, which is bent by the lens to pass through the focus (converging lens) or is bent to appear as though it comes <em>from</em> the focus (diverging lens);</li>
+<li>Central ray - this passes through the centre of the lens and is undeviated by the lens;<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></li>
+<li>Focal ray - this is a ray originating from the focal point of a converging lens, and the emerging ray will be parallel to the lens axis. Generally this ray is not needed as the other two rays are usually sufficient to identify the location of the image.</li>
+</ol>
+<div id="sec:ch16-rayconverge1" class="section level3">
+<h3><span class="header-section-number">16.4.1</span> Ray diagram for a converging lens</h3>
+<p><strong>Ray diagram for converging lens</strong>
+</p>
+<p>Using Figure <a href="#fig:ch16-rayconverge1">16.7</a> we can see that, for an object between <span class="math inline">\(\infty\)</span> and <span class="math inline">\(F\)</span>, the image is <strong>real</strong> and <strong>inverted</strong>. We can then determine the magnification by using geometry:</p>
+<p>Since:</p>
+<p><span class="math display">\[\begin{equation}
+\tan \theta = \frac{y}{s} = \frac{-y&#39;}{s&#39;}
+\end{equation}\]</span></p>
+<p>(remember that since the image is inverted, <span class="math inline">\(y&#39;\)</span> is negative). We can then determine the magnification <span class="math inline">\(m\)</span> by finding the ratio of the object and image height:</p>
+<p><span class="math display">\[\begin{equation}
+m = \frac{y&#39;}{y} = -\frac{s&#39;}{s}
+\end{equation}\]</span></p>
+<p>The negative term in the magnification tells us that the image is inverted.</p>
+</div>
+<div id="sec:ch16-raydiverge1" class="section level3">
+<h3><span class="header-section-number">16.4.2</span> Ray diagram for a diverging lens</h3>
+<p><strong>Ray diagram for diverging lens</strong>
+</p>
+<p>Using Figure <a href="#fig:ch16-raydiverge1">16.8</a> we can see that, for an object between <span class="math inline">\(\infty\)</span> and <span class="math inline">\(F\)</span>, the image is <strong>virtual</strong> and <strong>erect</strong>. We can then determine the magnification <span class="math inline">\(m\)</span> by using geometry as before:</p>
+<p><span class="math display">\[\begin{equation}
+m = \frac{y&#39;}{y} = -\frac{s&#39;}{s}
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="sec:ch16-lenscombination1" class="section level2">
+<h2><span class="header-section-number">16.5</span> Combining lenses</h2>
+<p>When two lenses are put together, the image formed by the first lens becomes the object for the second lens; this then becomes the basis for constructing a ray diagram. We can use these diagrams to determine the effective focal length of the combined lens system.</p>
+<div id="sec:ch16-2lenszerodistance" class="section level3">
+<h3><span class="header-section-number">16.5.1</span> Lenses side-by-side, zero distance</h3>
+<p>In this example we imagine the two lenses sitting exactly next to each other along the principal axis such that there is no distance between them. Firstly, we write the thin lens equation for lens 1 (derived from Equtation <a href="sec-ch16-lenses.html#eq:ch16-thinlensequation5">(16.12)</a>), remembering that <span class="math inline">\(s_1\)</span> is the distance of the object from the lens, <span class="math inline">\(s_1&#39;\)</span> is the distance of the image from the lens, and <span class="math inline">\(f_1\)</span> is the focal length of the lens.</p>
+<p><span class="math display" id="eq:ch16-lenscombination1">\[\begin{equation}
+\frac{1}{s_1} + \frac{1}{s&#39;_1} = \frac{1}{f_1}
+\tag{16.13}
+\end{equation}\]</span></p>
+<p>We can now write the thin-lens equation for lens 2 - this time, remember that the <em>image</em> formed by lens 1 becomes the <em>object</em> for lens 2; <em>i.e.</em> the distance of “object 2” (the image from lens 1) from lens 2 is <span class="math inline">\(s_2 \equiv - s_1&#39;\)</span> (since this new “object” is a virtual object on the transmission side of the lens):</p>
+<p><span class="math display" id="eq:ch16-lenscombination2">\[\begin{equation}
+\frac{1}{s_2} + \frac{1}{s&#39;_2} = -\frac{1}{s_1&#39;} + \frac{1}{s&#39;_2}= \frac{1}{f_2}
+\tag{16.14}
+\end{equation}\]</span></p>
+<p>We can now add together Equations <a href="sec-ch16-lenses.html#eq:ch16-lenscombination1">(16.13)</a> and <a href="sec-ch16-lenses.html#eq:ch16-lenscombination2">(16.14)</a> to gain an expression for the effective focal length of the two-lens system, <span class="math inline">\(f_{\textsf{eff}}\)</span>:</p>
+<p><span class="math display" id="eq:ch16-lenscombination3">\[\begin{equation}
+\begin{array}{rcl}
+\dfrac{1}{f_{\textsf{eff}}} &amp;=&amp; \dfrac{1}{f_1} + \dfrac{1}{f_2} \\
+  &amp;=&amp; \dfrac{1}{s_1} + \dfrac{1}{s&#39;_1} -\dfrac{1}{s_1&#39;} + \dfrac{1}{s&#39;_2}\\
+  &amp;=&amp; \dfrac{1}{s_1}  + \dfrac{1}{s&#39;_2}
+\end{array}
+\tag{16.15}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch16-2lensseparated" class="section level3">
+<h3><span class="header-section-number">16.5.2</span> Lenses adjacent, but separated</h3>
+<p>We can carry out the same analysis as in Section <a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance">16.5.1</a> and obtain the same result, however it will be more instructive this time to look at ray diagrams as this will help to explain what is happening, particularly in respect of the “virtual object” phenomenon.</p>
+<p><strong>Step One: consider the first lens</strong></p>
+<p>We draw the ray diagram for the first lens, following the conventions for ray paths as laid out in Section <a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1">16.4</a>; we can see that the image formed by the first lens in this example lies past the second lens.</p>
+<p><strong>Step Two: consider the second lens</strong></p>
+<p>As the “object” which the second lens focuses is a “virtual object” (<em>i.e.</em> it lies on the transmission side of the lens), we need to treat the ray diagram for this second lens slightly differently; we need to project the rays <em>backwards</em> through the lens to the focal point and lens centre:</p>
+<ol style="list-style-type: decimal">
+<li>The Parallel ray is projected back from the virtual object, parallel to the principal axis. As this ray existed in the first ray diagram, it is parallel to the principal axis before it encounters Lens 2; therefore this needs to be refracted to pass through the focal point of lens 2, <span class="math inline">\(F&#39;_2\)</span>;</li>
+<li>The central ray is projected back from the virtual object and passes through the centre of lens 2. Where this intersects with the refracted parallel ray we define the position of the final image.</li>
+<li>The focal ray is projected back from the virtual object to pass through <span class="math inline">\(F_2\)</span>; in contrast to the parallel ray, it is refracted to be parallel to the principal axis, once again intersecting with the first two rays to form the final image.</li>
+</ol>
+<p>This two-lens system ultimately yields a final image which is <strong>real</strong> (on the transmission side of the lens system), <strong>inverted</strong> and, for this example, smaller than the object.</p>
+<p>Compound lens systems such as this are the basis of <em>optical trains</em> in instrumentation; a series of optical elements carrying and shaping a light beam through an instrument.</p>
+</div>
+<div id="sec:ch16-astronomicaltelescope" class="section level3">
+<h3><span class="header-section-number">16.5.3</span> The Astronomical Telescope</h3>
+<p>A basic telescope consists of two optical elements; for example two lenses, two mirrors, or one lens and one mirror. The aim of using a telescope is to produce an image of a distant object which appears “close” to the eye. A consequence of this is that the image is much smaller than the object, but is closer to the observer and therefore appears larger. However, the lateral magnification is small. For this reason, we tend to think of telescopes in terms of <strong>angular magnification</strong> - the increase in angle subtended by the image at the eye. The larger this angle, the larger the apparent magnification of the object.</p>
+<p>We can determine the angular magnification of a telescope through construction of an appropriate ray diagram. A telescope is constructed by placing the lenses so that the image of the objective lens is formed at the focal plane of the objective lens, with the eyepiece lens being placed so that the image <em>also</em> lies on its focal plane. This way the appearance of the light-rays coming from infinity (parallel rays) is preserved for the observer.</p>
+<p><strong>Figure to show optics of telescope</strong>
+</p>
+<p>The angular magnification is defined in a similar way to the linear magnification described in Section <a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1">16.1.2</a>; namely the ratio of the eyepiece observation angle (<span class="math inline">\(\theta_{\textsf{e}}\)</span>) and the objective observation angle (_{}), <em>i.e.</em>:</p>
+<p><span class="math display">\[\begin{equation}
+M = \frac{\theta_{\textsf{e}}}{\theta_{\textsf{o}}}
+\end{equation}\]</span></p>
+<p>Via trigonometry on Figure <a href="#fig:ch16-telescopeoptics1">16.9</a>, we can determine expressions for the angles in terms of the distances within the telescope, namely:</p>
+<p><span class="math display">\[\begin{equation}
+\tan \theta_{\textsf{o}} = -\frac{y&#39;}{f_{\textsf{o}}} \approx \theta_{\textsf{o}} \quad \textsf{and} \quad \tan \theta_{\textsf{e}} = \frac{y&#39;}{f_{\textsf{e}}} \approx \theta_{\textsf{e}}
+\end{equation}\]</span></p>
+<p>Remember that the image height <span class="math inline">\(y&#39;\)</span> is negative as the image is inverted relative to the source. We can then write the magnification as:</p>
+<p><span class="math display">\[\begin{equation}
+M = \frac{\theta_{\textsf{e}}}{\theta_{\textsf{o}}} = -\frac{f_{\textsf{o}}}{f_{\textsf{e}}}
+\end{equation}\]</span></p>
+<p>This expression for the magnification is negative telling us that the final image we observe through the eyepiece is inverted relative to the source.</p>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="20">
+<li id="fn20"><p>It is worth ensuring you can follow through the geometric arguments which lead to these results.<a href="sec-ch16-lenses.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p>Note that <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span> are now reversed because we are now moving from the more dense material into the less dense material.<a href="sec-ch16-lenses.html#fnref21" class="footnote-back">↩︎</a></p></li>
+<li id="fn22"><p>Actually, the central ray will be slightly affected, but the emerging ray is parallel to the incident ray, and the offset is negligible in most circumstances.<a href="sec-ch16-lenses.html#fnref22" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-ch15-mirrors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch17-waveparticle.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/16-lenses.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

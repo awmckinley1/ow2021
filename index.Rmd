@@ -1,0 +1,98 @@
+---
+title: "Oscillations and Waves"
+author: "Dr. Andrew McKinley"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: awmckinley1/osc-waves1
+description: "These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol"
+---
+
+# Welcome {-}
+
+Welcome to the course notes for the Oscillations and Waves component of PHYS10005, Core Physics II.
+
+The most recent version of these notes can be found at https://awmckinley1.github.io/osc-waves1
+
+## About these notes {-}
+
+These notes have been prepared in a format which maintains compatibility with screen-readers, while also allowing the facility for both PDF and EPUB downloads for those who wish to use them.
+
+The HTML also has themes to facilitate easier reading (font colours, serif/sans serif fonts etc.). Please explore the top bar of the web environment to explore this.
+
+The HTML notes allow for embedding of rich content (videos, animations, etc.), and for this reason I recommend accessing the course using the web-links provided, as these cannot be included in static PDF or EPUB documents. However, I will ensure links are included in these formats as far as possible.
+
+These notes are a "live document", and as such they can (and will) be updated should any erroneous explanations be found or additional explanations be needed.  For this reason, please do email me if you have any questions or if anything is not clear.
+
+The most recent version can always be found at the link at the top of this section, and any changes are reflected in the change-log (\@ref(sec:changelog))
+
+Please note that as this is a "live document", a downloaded version can become obsolete.  Please refer back regularly and refer to the changelog for any updates.
+
+## Error reporting {-}
+
+As much as we try, sometimes errors creep in. At best, it is little more than a careless typo which makes the reader tut with disappointment, at worst it risks seriously misleading the learner.  For this reason I have created a feedback form to report errors; this is accessible at the bottom of this page.
+
+
+
+## Course history {-}
+
+This iteration of the course has been written for the academic year 2020/21 by Andrew McKinley. This has been based extensively on previous course notes by Ben Maughan, Simon Hanna and Massimo Antognozzi.
+
+## Changelog {.unnumbered #sec:changelog}
+
+2021-01-27 Initial commit to GitHub; all text for the course complete, some images pending.
+
+2020-09-16 Initial versioning and inclusion of course material.
+
+<!-- ## To do list {-} -->
+
+<!-- * Changelog section link needs fixed. -->
+<!-- * Figures to be included (chapter 1) -->
+<!-- * ~~Fix equation links in chapter 1 (not rendering correctly)~~ -->
+<!--   * FIXED: Underscores can't be used in labels. -->
+<!-- * Address KE/PE in wave travelling on spring (Section \@ref(sec:ch7-keofstringsegment)) -->
+<!-- * Check formatting of bullet points including indents -->
+<!-- * Show derivation of diffraction through a wide slit (Section \@ref(sec:ch13-singlewideslit)) -->
+<!-- * Complete the multiple slit diffraction patterns (Section \@ref(sec:ch13-diffmultipleslits)) -->
+<!-- * Resolve the resolution limit derivations (Section \@ref(sec:ch13-resolutionlimit)) -->
+<!-- * Complete discussion of Fresnel equations (Section \@ref(sec:ch14-reflectionrefraction)) -->
+<!-- * Animation of nodes in longitudinal waves (Section \@ref(sec:ch10-pipesandwindinstruments)) -->
+<!-- * Power spectra of musical instruments (Section \@ref(sec:ch11-harmonicwavemakeup1)) -->
+
+## Report an error {-}
+
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=MH_ksn3NTkql2rGM8aQVGw1yScBaQcNOv7s3v-nTRHhUNTNKV0E2Wk9RTDQxMkdHOFBWUjdGRkxUUy4u" target="_blank">Direct link to error reporting form</a> (opens in new window)
+
+Embedded form:
+
+```{r echo=FALSE, out.width='90%', out.height='1000px'}
+knitr::include_url("https://forms.office.com/Pages/ResponsePage.aspx?id=MH_ksn3NTkql2rGM8aQVGw1yScBaQcNOv7s3v-nTRHhUNTNKV0E2Wk9RTDQxMkdHOFBWUjdGRkxUUy4u")
+```
+
+
+<!-- # Prerequisites -->
+
+<!-- This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$. -->
+
+<!-- The **bookdown** package can be installed from CRAN or Github: -->
+
+<!-- ```{r eval=FALSE} -->
+<!-- install.packages("bookdown") -->
+<!-- # or the development version -->
+<!-- # devtools::install_github("rstudio/bookdown") -->
+<!-- ``` -->
+
+<!-- Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`. -->
+
+<!-- To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>. -->
+
+<!-- ```{r include=FALSE} -->
+<!-- # automatically create a bib database for R packages -->
+<!-- knitr::write_bib(c( -->
+<!--   .packages(), 'bookdown', 'knitr', 'rmarkdown' -->
+<!-- ), 'packages.bib') -->
+<!-- ``` -->

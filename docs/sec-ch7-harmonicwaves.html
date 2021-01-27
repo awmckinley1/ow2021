@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Harmonic Waves | Oscillations and Waves</title>
+  <meta name="description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Harmonic Waves | Oscillations and Waves" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  <meta name="github-repo" content="awmckinley1/osc-waves1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Harmonic Waves | Oscillations and Waves" />
+  
+  <meta name="twitter:description" content="These are the course notes for the Oscillations and Waves component of PHYS10005 Core Physics II at the University of Bristol" />
+  
+
+<meta name="author" content="Dr. Andrew McKinley" />
+
+
+<meta name="date" content="2021-01-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-ch6-wavemotion.html"/>
+<link rel="next" href="sec-ch8-reflectiontrans.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oscillations and Waves</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-these-notes"><i class="fa fa-check"></i>About these notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#error-reporting"><i class="fa fa-check"></i>Error reporting</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-history"><i class="fa fa-check"></i>Course history</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:changelog"><i class="fa fa-check"></i>Changelog</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#report-an-error"><i class="fa fa-check"></i>Report an error</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="sec-shm.html"><a href="sec-shm.html"><i class="fa fa-check"></i><b>1</b> Simple Harmonic Motion</a><ul>
+<li class="chapter" data-level="1.1" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-simpleshmexample"><i class="fa fa-check"></i><b>1.1</b> A simple example of SHM</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="sec-shm.html"><a href="sec-shm.html#key-terms"><i class="fa fa-check"></i><b>1.1.1</b> Key terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-position"><i class="fa fa-check"></i><b>1.2</b> Positioning in SHM</a></li>
+<li class="chapter" data-level="1.3" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-velocity"><i class="fa fa-check"></i><b>1.3</b> Velocity in SHM</a></li>
+<li class="chapter" data-level="1.4" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-acceleration"><i class="fa fa-check"></i><b>1.4</b> Acceleration in SHM</a></li>
+<li class="chapter" data-level="1.5" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-comparing-xva"><i class="fa fa-check"></i><b>1.5</b> Comparing displacement, velocity and acceleration</a></li>
+<li class="chapter" data-level="1.6" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-initialconditions"><i class="fa fa-check"></i><b>1.6</b> Initial conditions</a></li>
+<li class="chapter" data-level="1.7" data-path="sec-shm.html"><a href="sec-shm.html#sec:shm-freq-angularfreq"><i class="fa fa-check"></i><b>1.7</b> Frequency and angular frequency</a></li>
+<li class="chapter" data-level="1.8" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shmcircmotion1"><i class="fa fa-check"></i><b>1.8</b> SHM and circular motion</a></li>
+<li class="chapter" data-level="1.9" data-path="sec-shm.html"><a href="sec-shm.html#sec:ch1-shm-energy1"><i class="fa fa-check"></i><b>1.9</b> Energy in SHM</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="sec-shm.html"><a href="sec-shm.html#points-to-bear-in-mind"><i class="fa fa-check"></i><b>1.9.1</b> Points to bear in mind</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec-shm-real.html"><a href="sec-shm-real.html"><i class="fa fa-check"></i><b>2</b> SHM in Real Systems</a><ul>
+<li class="chapter" data-level="2.1" data-path="sec-shm-real.html"><a href="sec-shm-real.html#general-motion-near-equilibrium"><i class="fa fa-check"></i><b>2.1</b> General motion near equilibrium</a></li>
+<li class="chapter" data-level="2.2" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-diatomicmolecule"><i class="fa fa-check"></i><b>2.2</b> Example: a diatomic molecule</a></li>
+<li class="chapter" data-level="2.3" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-massverticalspring"><i class="fa fa-check"></i><b>2.3</b> Example: Mass on a vertical spring</a></li>
+<li class="chapter" data-level="2.4" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-simplependulum"><i class="fa fa-check"></i><b>2.4</b> The Simple Pendulum</a></li>
+<li class="chapter" data-level="2.5" data-path="sec-shm-real.html"><a href="sec-shm-real.html#sec:ch2-physicalpendulum"><i class="fa fa-check"></i><b>2.5</b> The Physical Pendulum</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html"><i class="fa fa-check"></i><b>3</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexoverview"><i class="fa fa-check"></i><b>3.1</b> Overview of complex numbers</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexusefulresults"><i class="fa fa-check"></i><b>3.2</b> Useful results for complex numbers</a></li>
+<li class="chapter" data-level="3.3" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-arganddiagram"><i class="fa fa-check"></i><b>3.3</b> The Argand Diagram</a></li>
+<li class="chapter" data-level="3.4" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-polarcomplexnumbers"><i class="fa fa-check"></i><b>3.4</b> Polar representation of complex numbers</a></li>
+<li class="chapter" data-level="3.5" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-exponentialrepresentationcomplex"><i class="fa fa-check"></i><b>3.5</b> Exponential representation of complex numbers</a></li>
+<li class="chapter" data-level="3.6" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#sec:ch3-complexreposcillation"><i class="fa fa-check"></i><b>3.6</b> Complex representation of oscillations</a></li>
+<li class="chapter" data-level="3.7" data-path="sec-ch3-complexnumbers.html"><a href="sec-ch3-complexnumbers.html#take-home-points"><i class="fa fa-check"></i><b>3.7</b> Take-home points</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html"><i class="fa fa-check"></i><b>4</b> Damped oscillations</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-generalcasedamping"><i class="fa fa-check"></i><b>4.1</b> The general case of damping</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-lightdamping"><i class="fa fa-check"></i><b>4.2</b> Light Damping</a></li>
+<li class="chapter" data-level="4.3" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-criticaldamping"><i class="fa fa-check"></i><b>4.3</b> Critical damping</a></li>
+<li class="chapter" data-level="4.4" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-overdamping"><i class="fa fa-check"></i><b>4.4</b> Overdamping</a></li>
+<li class="chapter" data-level="4.5" data-path="sec-ch4-dampedoscillations.html"><a href="sec-ch4-dampedoscillations.html#sec:ch4-qualityfactor"><i class="fa fa-check"></i><b>4.5</b> Quality factor and energy in damped SHM</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html"><i class="fa fa-check"></i><b>5</b> Forced oscillations</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-transientsolution"><i class="fa fa-check"></i><b>5.1</b> The Transient Solution</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatesolution"><i class="fa fa-check"></i><b>5.2</b> The Steady State solution</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-steadystatebehaviour"><i class="fa fa-check"></i><b>5.3</b> Steady state behaviour - Resonance</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-fullsolutionforcedoscillator"><i class="fa fa-check"></i><b>5.4</b> Full solution of the forced oscillator</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#special-cases-of-forced-oscillations"><i class="fa fa-check"></i><b>5.4.1</b> Special cases of forced oscillations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energydrivenoscillators"><i class="fa fa-check"></i><b>5.5</b> Energy in driven oscillators</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energyinputdrivenosc"><i class="fa fa-check"></i><b>5.5.1</b> Energy input for driven oscillators</a></li>
+<li class="chapter" data-level="5.5.2" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-energylostdrivenosc"><i class="fa fa-check"></i><b>5.5.2</b> Energy lost in driving oscillators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="sec-ch5-forcedoscillations.html"><a href="sec-ch5-forcedoscillations.html#sec:ch5-impedance"><i class="fa fa-check"></i><b>5.6</b> Impedance</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html"><i class="fa fa-check"></i><b>6</b> Simple wave motion and the Wave Equation</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#a-note-on-transverse-waves"><i class="fa fa-check"></i>A note on transverse waves</a></li>
+<li class="chapter" data-level="6.1" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses"><i class="fa fa-check"></i><b>6.1</b> Wave pulses</a></li>
+<li class="chapter" data-level="6.2" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-derivingwaveequation"><i class="fa fa-check"></i><b>6.2</b> Deriving the wave equation</a></li>
+<li class="chapter" data-level="6.3" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-waveequationproof2"><i class="fa fa-check"></i><b>6.3</b> The wave equation - proof by substitution</a></li>
+<li class="chapter" data-level="6.4" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-phasevelocity"><i class="fa fa-check"></i><b>6.4</b> The Phase Velocity - the velocity of waves</a></li>
+<li class="chapter" data-level="6.5" data-path="sec-ch6-wavemotion.html"><a href="sec-ch6-wavemotion.html#sec:ch6-summary"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html"><i class="fa fa-check"></i><b>7</b> Harmonic Waves</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine"><i class="fa fa-check"></i><b>7.1</b> Transverse sine and cosine waves</a></li>
+<li class="chapter" data-level="7.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-travellingwaves"><i class="fa fa-check"></i><b>7.2</b> Travelling waves</a></li>
+<li class="chapter" data-level="7.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-complexrep"><i class="fa fa-check"></i><b>7.3</b> Complex representation of waves</a></li>
+<li class="chapter" data-level="7.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-energywavesstring"><i class="fa fa-check"></i><b>7.4</b> Energy carried by waves on a string</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment"><i class="fa fa-check"></i><b>7.4.1</b> Potential energy of string segment</a></li>
+<li class="chapter" data-level="7.4.2" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-keofstringsegment"><i class="fa fa-check"></i><b>7.4.2</b> Kinetic energy of string segment</a></li>
+<li class="chapter" data-level="7.4.3" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-totenergystringsegment"><i class="fa fa-check"></i><b>7.4.3</b> Total energy of wave on a string</a></li>
+<li class="chapter" data-level="7.4.4" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-transportenergypower"><i class="fa fa-check"></i><b>7.4.4</b> Transport of energy and power</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="sec-ch7-harmonicwaves.html"><a href="sec-ch7-harmonicwaves.html#sec:ch7-summary"><i class="fa fa-check"></i><b>7.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html"><i class="fa fa-check"></i><b>8</b> Reflection and Transmission at boundaries</a><ul>
+<li class="chapter" data-level="8.1" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-powertransmittedreflected"><i class="fa fa-check"></i><b>8.1</b> Power transmitted and reflected at a boundary</a><ul>
+<li class="chapter" data-level="" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#proof-of-power-ratios"><i class="fa fa-check"></i>Proof of power ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-examplereflectiontransmission"><i class="fa fa-check"></i><b>8.2</b> Example of reflection and transmission</a></li>
+<li class="chapter" data-level="8.3" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-stringimpedeance"><i class="fa fa-check"></i><b>8.3</b> The impedance of a piece of string</a></li>
+<li class="chapter" data-level="8.4" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-reflecttrans2"><i class="fa fa-check"></i><b>8.4</b> Reflection and transmission revisited</a></li>
+<li class="chapter" data-level="8.5" data-path="sec-ch8-reflectiontrans.html"><a href="sec-ch8-reflectiontrans.html#sec:ch8-impedancemisccases"><i class="fa fa-check"></i><b>8.5</b> Impedance - Miscellaneous cases</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html"><i class="fa fa-check"></i><b>9</b> Sound waves and the Doppler effect</a><ul>
+<li class="chapter" data-level="9.1" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-energysoundwaves"><i class="fa fa-check"></i><b>9.1</b> Energy of sound waves</a></li>
+<li class="chapter" data-level="9.2" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-waveintensity"><i class="fa fa-check"></i><b>9.2</b> Wave intensity</a></li>
+<li class="chapter" data-level="9.3" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-intensitylevels"><i class="fa fa-check"></i><b>9.3</b> Levels of intensity</a></li>
+<li class="chapter" data-level="9.4" data-path="sec-ch9-sounddoppler.html"><a href="sec-ch9-sounddoppler.html#sec:ch9-dopplereffect1"><i class="fa fa-check"></i><b>9.4</b> The Doppler Effect (non-relativistic)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html"><i class="fa fa-check"></i><b>10</b> Superposition and Standing Waves</a><ul>
+<li class="chapter" data-level="10.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-superposharmonic1"><i class="fa fa-check"></i><b>10.1</b> Superposition of harmonic waves</a></li>
+<li class="chapter" data-level="10.2" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-identicalwaves1"><i class="fa fa-check"></i><b>10.2</b> Two waves with same amplitude and frequency</a></li>
+<li class="chapter" data-level="10.3" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves1"><i class="fa fa-check"></i><b>10.3</b> Standing waves</a></li>
+<li class="chapter" data-level="10.4" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-standingwaves2"><i class="fa fa-check"></i><b>10.4</b> Wave function for a standing wave</a></li>
+<li class="chapter" data-level="10.5" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-fixedstring1"><i class="fa fa-check"></i><b>10.5</b> Waves on strings fixed at both ends</a></li>
+<li class="chapter" data-level="10.6" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#sec:ch10-pipesandwindinstruments"><i class="fa fa-check"></i><b>10.6</b> Organ pipes and other wind instruments</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipes-open-at-both-ends"><i class="fa fa-check"></i><b>10.6.1</b> Pipes open at both ends</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="sec-ch10-superposition.html"><a href="sec-ch10-superposition.html#pipe-closed-at-one-end"><i class="fa fa-check"></i><b>10.7</b> Pipe closed at one end</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html"><i class="fa fa-check"></i><b>11</b> Fourier analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-squarewave"><i class="fa fa-check"></i><b>11.1</b> Example: the square wave</a></li>
+<li class="chapter" data-level="11.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-harmonicwavemakeup1"><i class="fa fa-check"></i><b>11.2</b> The harmonic makeup of any wave</a></li>
+<li class="chapter" data-level="11.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fouriertransforms"><i class="fa fa-check"></i><b>11.3</b> Fourier Transforms</a></li>
+<li class="chapter" data-level="11.4" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-importantfouriertransforms"><i class="fa fa-check"></i><b>11.4</b> Some important Fourier transforms</a><ul>
+<li class="chapter" data-level="11.4.1" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftcosine"><i class="fa fa-check"></i><b>11.4.1</b> A cosine wave</a></li>
+<li class="chapter" data-level="11.4.2" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-fttophat"><i class="fa fa-check"></i><b>11.4.2</b> The ‘top hat’ function</a></li>
+<li class="chapter" data-level="11.4.3" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-ftgaussian"><i class="fa fa-check"></i><b>11.4.3</b> A Gaussian function</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="sec-ch11-fourieranalysis.html"><a href="sec-ch11-fourieranalysis.html#sec:ch11-bandwidththeorem"><i class="fa fa-check"></i><b>11.5</b> The Bandwidth Theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html"><i class="fa fa-check"></i><b>12</b> Wave packets and Dispersion</a><ul>
+<li class="chapter" data-level="12.1" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-twowavesbeats1"><i class="fa fa-check"></i><b>12.1</b> Two waves, same amplitude, different frequency (Beats)</a></li>
+<li class="chapter" data-level="12.2" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-dispersion"><i class="fa fa-check"></i><b>12.2</b> Dispersion</a></li>
+<li class="chapter" data-level="12.3" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-waterwaves"><i class="fa fa-check"></i><b>12.3</b> Water waves</a></li>
+<li class="chapter" data-level="12.4" data-path="sec-ch12-wavepackets.html"><a href="sec-ch12-wavepackets.html#sec:ch12-phonondispersion"><i class="fa fa-check"></i><b>12.4</b> Sound waves in a crystal (phonons)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html"><i class="fa fa-check"></i><b>13</b> Interference and Diffraction</a><ul>
+<li class="chapter" data-level="13.1" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-conditionsinterference"><i class="fa fa-check"></i><b>13.1</b> Conditions for interference</a></li>
+<li class="chapter" data-level="13.2" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-lightpropagation"><i class="fa fa-check"></i><b>13.2</b> Propagation of Light - Huygens’s Principle</a></li>
+<li class="chapter" data-level="13.3" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-twoslitinterference"><i class="fa fa-check"></i><b>13.3</b> The two-slit interference pattern</a></li>
+<li class="chapter" data-level="13.4" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-singlewideslit"><i class="fa fa-check"></i><b>13.4</b> Diffraction from a single wide slit</a></li>
+<li class="chapter" data-level="13.5" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-difftwowideslits"><i class="fa fa-check"></i><b>13.5</b> Diffraction from two wide slits</a></li>
+<li class="chapter" data-level="13.6" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-diffmultipleslits"><i class="fa fa-check"></i><b>13.6</b> Multiple slits with equal spacing</a></li>
+<li class="chapter" data-level="13.7" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-ftindiffraction"><i class="fa fa-check"></i><b>13.7</b> Fourier transforms in diffraction</a></li>
+<li class="chapter" data-level="13.8" data-path="sec-ch13-interference.html"><a href="sec-ch13-interference.html#sec:ch13-resolutionlimit"><i class="fa fa-check"></i><b>13.8</b> Resolution limit of optical instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html"><i class="fa fa-check"></i><b>14</b> Properties of Light</a><ul>
+<li class="chapter" data-level="14.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-reflectionrefraction"><i class="fa fa-check"></i><b>14.1</b> Reflection and Refraction</a></li>
+<li class="chapter" data-level="14.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-internalreflection"><i class="fa fa-check"></i><b>14.2</b> Total internal reflection</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-evanescence"><i class="fa fa-check"></i><b>14.2.1</b> Evanescence</a></li>
+<li class="chapter" data-level="14.2.2" data-path="sec-ch14-propertieslight.html"><a href="sec-ch14-propertieslight.html#sec:ch14-tirapplications"><i class="fa fa-check"></i><b>14.2.2</b> Applications of total internal reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html"><i class="fa fa-check"></i><b>15</b> Mirrors</a><ul>
+<li class="chapter" data-level="15.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror1"><i class="fa fa-check"></i><b>15.1</b> Plane mirror: object and image</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-planemirror2"><i class="fa fa-check"></i><b>15.1.1</b> Construction of a ray diagram for a plane mirror</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-sphericalmirror1"><i class="fa fa-check"></i><b>15.2</b> A spherical mirror</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-mirrorequ"><i class="fa fa-check"></i><b>15.2.1</b> The Mirror equation</a></li>
+<li class="chapter" data-level="15.2.2" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-raydiagramconcavesphericalmirror"><i class="fa fa-check"></i><b>15.2.2</b> Constructing a ray diagram for a spherical mirror</a></li>
+<li class="chapter" data-level="15.2.3" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#considering-a-convex-spherical-mirror"><i class="fa fa-check"></i><b>15.2.3</b> Considering a convex spherical mirror</a></li>
+<li class="chapter" data-level="15.2.4" data-path="sec-ch15-mirrors.html"><a href="sec-ch15-mirrors.html#sec:ch15-lateralmagnificatin"><i class="fa fa-check"></i><b>15.2.4</b> Lateral magnification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html"><i class="fa fa-check"></i><b>16</b> Lenses</a><ul>
+<li class="chapter" data-level="16.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-sphericalsurface1"><i class="fa fa-check"></i><b>16.1</b> Refraction at a spherical surface</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-signconventioncurvedsurface1"><i class="fa fa-check"></i><b>16.1.1</b> Sign conventions</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-magnificationcurvedsurface1"><i class="fa fa-check"></i><b>16.1.2</b> Magnification</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-thinlens1"><i class="fa fa-check"></i><b>16.2</b> Refraction through a thin lens</a></li>
+<li class="chapter" data-level="16.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#types-of-lens"><i class="fa fa-check"></i><b>16.3</b> Types of lens</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-converginglens1"><i class="fa fa-check"></i><b>16.3.1</b> The converging lens</a></li>
+<li class="chapter" data-level="16.3.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-diverginglens1"><i class="fa fa-check"></i><b>16.3.2</b> The diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiagrams1"><i class="fa fa-check"></i><b>16.4</b> Ray diagrams</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-rayconverge1"><i class="fa fa-check"></i><b>16.4.1</b> Ray diagram for a converging lens</a></li>
+<li class="chapter" data-level="16.4.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-raydiverge1"><i class="fa fa-check"></i><b>16.4.2</b> Ray diagram for a diverging lens</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-lenscombination1"><i class="fa fa-check"></i><b>16.5</b> Combining lenses</a><ul>
+<li class="chapter" data-level="16.5.1" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lenszerodistance"><i class="fa fa-check"></i><b>16.5.1</b> Lenses side-by-side, zero distance</a></li>
+<li class="chapter" data-level="16.5.2" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-2lensseparated"><i class="fa fa-check"></i><b>16.5.2</b> Lenses adjacent, but separated</a></li>
+<li class="chapter" data-level="16.5.3" data-path="sec-ch16-lenses.html"><a href="sec-ch16-lenses.html#sec:ch16-astronomicaltelescope"><i class="fa fa-check"></i><b>16.5.3</b> The Astronomical Telescope</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html"><i class="fa fa-check"></i><b>17</b> The Wave-Particle duality</a><ul>
+<li class="chapter" data-level="17.1" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-debrogliehyp1"><i class="fa fa-check"></i><b>17.1</b> The de Broglie hypothesis</a></li>
+<li class="chapter" data-level="17.2" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-wavefunction1"><i class="fa fa-check"></i><b>17.2</b> The wavefunction and its interpretation</a></li>
+<li class="chapter" data-level="17.3" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-heisenberg1"><i class="fa fa-check"></i><b>17.3</b> Heisenberg’s Uncertainty Principle</a></li>
+<li class="chapter" data-level="17.4" data-path="sec-ch17-waveparticle.html"><a href="sec-ch17-waveparticle.html#sec:ch17-particlebox"><i class="fa fa-check"></i><b>17.4</b> The “Particle in a box” problem</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html"><i class="fa fa-check"></i><b>18</b> The Schrödinger Equation</a><ul>
+<li class="chapter" data-level="18.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-partsquarewell1"><i class="fa fa-check"></i><b>18.1</b> Particle in a square potential well</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-infinite-potential-well"><i class="fa fa-check"></i><b>18.1.1</b> The infinite potential well</a></li>
+<li class="chapter" data-level="18.1.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#the-finite-potential-well"><i class="fa fa-check"></i><b>18.1.2</b> The finite potential well</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves"><i class="fa fa-check"></i><b>18.2</b> Reflection and transmission of particle waves</a></li>
+<li class="chapter" data-level="18.3" data-path="sec-ch18-schrodinger.html"><a href="sec-ch18-schrodinger.html#sec:ch18-tunnelling1"><i class="fa fa-check"></i><b>18.3</b> Barrier penetration - ‘tunnelling’</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oscillations and Waves</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:ch7-harmonicwaves" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Harmonic Waves</h1>
+<p><em>Textbook link: Tipler and Mosca, Section 15.2</em></p>
+<p>A <em>harmonic wave</em> is a general term for a wave which, at some instant of time, can be described by a sinusoidal function (<em>i.e.</em> it is a sine or a cosine function). They are the simplest of waves to consider, and we will devote this chapter to exploring their properties.</p>
+<div id="sec:ch7-sinecosine" class="section level2">
+<h2><span class="header-section-number">7.1</span> Transverse sine and cosine waves</h2>
+<p>If we consider a string which is excited by a tuning fork or other object undergoing simple harmonic motion (SHM), we can imagine the shape of the save on the string at some instant of time appearing as a sine or a cosine wave (depending on our choice of origin) (Figure <a href="sec-ch7-harmonicwaves.html#fig:ch7-transversesine1">7.1</a>):</p>
+<div class="figure" style="text-align: center"><span id="fig:ch7-transversesine1"></span>
+<img src="visualisations/ch7-transversesine1.gif" alt="A sine wave in a string created by an oscillating particle.  The wavelength $\lambda$ is shown for one complete cycle, while the amplitude $A$ is defined as the maximum deviation from the origin point." width="70%" />
+<p class="caption">
+Figure 7.1: A sine wave in a string created by an oscillating particle. The wavelength <span class="math inline">\(\lambda\)</span> is shown for one complete cycle, while the amplitude <span class="math inline">\(A\)</span> is defined as the maximum deviation from the origin point.
+</p>
+</div>
+<p>This sinusoidal appearance is known as a <strong>harmonic wave</strong>. Each point on the string oscillates up and down with the same frequency as the driving frequency. During the period <span class="math inline">\(T\)</span>, the wave moves through distance <span class="math inline">\(\lambda\)</span>:</p>
+<p><span class="math display" id="eq:ch7-tranversesine1">\[\begin{equation}
+v = \frac{\lambda}{T} = f\lambda
+\tag{7.1}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(v\)</span> is the phase velocity of the wave and <span class="math inline">\(f\)</span> is the frequency in hertz (Hz), and <span class="math inline">\(\lambda\)</span> defined as the <strong>wavelength</strong> <em>i.e.</em> the spacial repeat distance of the wave.</p>
+<p>A harmonic wave has a unique frequency and wavelength, and other waves (<em>e.g.</em> wave pulses) may be regarded as a superposition of many harmonic waves of different frequencies (we will discuss the Fourier analysis of this later).</p>
+<p>At any instant in time, the wave can be described by the relation in Equation <a href="#eq:ch7-tranversesine2">(<strong>??</strong>)</a>:</p>
+<p><span class="math display" id="eq:tranversesine2">\[\begin{equation}
+y = A \sin(kx + \delta)
+\tag{7.2}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(A\)</span> is the amplitude of the wave and <span class="math inline">\(\delta\)</span> is the phase constant. Let’s now choose the origin so that <span class="math inline">\(\delta\)</span> is equal to zero (<em>i.e.</em> there is no phase constant). Now we can show the periodic condition in Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-tranversesine3">(7.3)</a>:</p>
+<p><span class="math display" id="eq:ch7-tranversesine3">\[\begin{equation}
+\sin kx = \sin k(x+\lambda)
+\tag{7.3}
+\end{equation}\]</span></p>
+<p>Here we specify the periodic condition; the amplitude (and phase!) at position <span class="math inline">\(x\)</span> is equal to the amplitude (and phase!) at position <span class="math inline">\(x\)</span> <strong>plus one wavelength</strong>. Because this is a sine function, we know that, in order to achieve this condition, the value <span class="math inline">\(k\lambda\)</span> must be equal to <span class="math inline">\(2\pi\)</span>:</p>
+<p><span class="math display" id="eq:ch7-tranvsersesine3b">\[\begin{equation}
+\begin{array}{rcl}
+\sin \theta &amp;=&amp; \sin \left( \theta + 2\pi \right)\\
+\sin kx &amp;=&amp; \sin \left( kx + k\lambda\right) = \sin \left( kx + 2\pi \right) \\
+k\lambda &amp;=&amp; 2\pi
+\end{array}
+\tag{7.4}
+\end{equation}\]</span></p>
+<p>This allows us to give a value for <span class="math inline">\(k\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-tranversesine4">(7.5)</a>):</p>
+<p><span class="math display" id="eq:ch7-tranversesine4">\[\begin{equation}
+k = \frac{2\pi}{\lambda}
+\tag{7.5}
+\end{equation}\]</span></p>
+<p>The parameter <span class="math inline">\(k\)</span> is defined as the <strong>wave number</strong> of the wave, in units radians per metre (rad m<sup>-1</sup>).</p>
+</div>
+<div id="sec:ch7-travellingwaves" class="section level2">
+<h2><span class="header-section-number">7.2</span> Travelling waves</h2>
+<p>The wave we showed in Section <a href="sec-ch7-harmonicwaves.html#sec:ch7-sinecosine">7.1</a> was a snapshot in time, so the wave was, in effect, static. We instead wish to consider a travelling wave. To do this, instead of writing <span class="math inline">\(x\)</span> as in Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a> with <span class="math inline">\(x - vt\)</span> (see Section <a href="sec-ch6-wavemotion.html#sec:ch6-wavepulses">6.1</a>). Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a> then becomes Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine5">(7.6)</a>:</p>
+<p><span class="math display" id="eq:tranversesine5">\[\begin{equation}
+y = A \sin k(x - vt) = A \sin (kx - kvt)
+\tag{7.6}
+\end{equation}\]</span></p>
+<p>As we have described, <span class="math inline">\(T\)</span> is the period of the wave, so any point on the wave will oscillate up and down also with period <span class="math inline">\(T\)</span>. This means that, for the wave position at time <span class="math inline">\(t\)</span>, it will return to the same state at time <span class="math inline">\((t+T)\)</span>. We can therefore write Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine5">(7.6)</a> in terms of this period:</p>
+<p><span class="math display" id="eq:ch7-travelling2">\[\begin{equation}
+\begin{array}{rcl}
+y = A \sin \left( kx - kvt \right) &amp;=&amp; A \sin \left( kx - kv(t+T) \right) \\
+&amp;=&amp; A \sin \left( kx - kvt - kvT \right)
+\end{array}
+\tag{7.7}
+\end{equation}\]</span></p>
+<p>Applying the same reasoning as shown in Equation scheme <a href="sec-ch7-harmonicwaves.html#eq:ch7-tranvsersesine3b">(7.4)</a>, we are led to the result:</p>
+<p><span class="math display">\[\begin{equation}
+kvT = 2\pi
+\end{equation}\]</span></p>
+<p>If we revisit our discussions on SHM (Chapter <a href="sec-shm.html#sec:shm-freq-angularfreq">1.7</a>) we defined the relationship between <span class="math inline">\(T\)</span> and <span class="math inline">\(2\pi\)</span> (Equation <a href="sec-shm.html#eq:ch1-definingomega1">(1.11)</a>) as <span class="math inline">\(T = \frac{2\pi}{\omega}\)</span> (and also <span class="math inline">\(\omega = 2\pi f\)</span>). This allows us to define a number of factors as follows:</p>
+<ul>
+<li><strong>Phase velocity</strong>:</li>
+</ul>
+<p><span class="math display" id="eq:ch7-phasevel1">\[\begin{equation}
+v = \frac{2\pi}{kT} = \frac{\omega}{k}
+\tag{7.8}
+\end{equation}\]</span></p>
+<ul>
+<li><strong>Travelling wave to the right</strong>:</li>
+</ul>
+<p><span class="math display" id="eq:ch7-travellingtoright1">\[\begin{equation}
+y = A \sin \left( kx - kvt \right) = A \sin \left( kx - \omega t \right)
+\tag{7.9}
+\end{equation}\]</span></p>
+<ul>
+<li><strong>Travelling wave to the left</strong>:</li>
+</ul>
+<p><span class="math display" id="eq:ch7-travellingtoleft1">\[\begin{equation}
+y = A \sin \left( kx + kvt \right) = A \sin \left( kx + \omega t \right)
+\tag{7.10}
+\end{equation}\]</span></p>
+<p>It is worth noting for each of these factors:</p>
+<ol style="list-style-type: decimal">
+<li>The sign of <span class="math inline">\(\omega\)</span>:
+<ul>
+<li>negative for waves travelling to right;</li>
+<li>positive for waves travelling to left</li>
+</ul></li>
+<li>The wave expressions can be shown to satisfy the wave equation by substitution.</li>
+</ol>
+</div>
+<div id="sec:ch7-complexrep" class="section level2">
+<h2><span class="header-section-number">7.3</span> Complex representation of waves</h2>
+<p>We introduced complex numbers for descriptions of oscillations; we can use the same treatment for our wave equations. Just as <span class="math inline">\(\sin(kx - \omega t)\)</span> and <span class="math inline">\(\cos(kx-\omega t)\)</span> satisfy the wave equation, so too will <span class="math inline">\(\mathrm{e}^{\mathrm{i}(kx-\omega t)}\)</span>. It is often convenient to write the wave expression in a complex form as shown in Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-wavecomplex1">(7.11)</a>:</p>
+<p><span class="math display" id="eq:ch7-wavecomplex1">\[\begin{equation}
+y = A \mathrm{e}^{\mathrm{i}(kx-\omega t)}
+\tag{7.11}
+\end{equation}\]</span></p>
+<p>In this expression, the sine wave is given by the ‘imaginary’ component of <span class="math inline">\(y\)</span>, while the cosine part is given by the ‘real’ component.</p>
+</div>
+<div id="sec:ch7-energywavesstring" class="section level2">
+<h2><span class="header-section-number">7.4</span> Energy carried by waves on a string</h2>
+<p>Suppose we now have a string attached to an oscillating driver at one end. As the driver oscillates, it imparts energy to the string at <span class="math inline">\(x=0\)</span> by:</p>
+<ol style="list-style-type: decimal">
+<li>Stretching the string to give it potential energy, and</li>
+<li>imparting transverse speed to the string to increase its kinetic energy.</li>
+</ol>
+<p>As the waves move along the string, so the energy is transported along the string.</p>
+<div id="sec:ch7-peofstringsegment" class="section level3">
+<h3><span class="header-section-number">7.4.1</span> Potential energy of string segment</h3>
+<p>We now consider the same string segment as we showed in Figure <a href="sec-ch6-wavemotion.html#fig:ch6-waveeqnderiv1">6.6</a>, but now we consider it stretched (Figure <a href="sec-ch7-harmonicwaves.html#fig:ch7-stretchedsegment1">7.2</a>). We can picture this as the string is “relaxed” in its ‘horizontal’ orientation (length of segment is <span class="math inline">\(\Delta x\)</span>), but when a wave passes along it, the string elongates to accommodate the curve of the wave form. This means our segment now takes on a new length <span class="math inline">\(\Delta l\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch7-stretchedsegment1"></span>
+<img src="visualisations/LaTeX/ch7-peofstringsegment.svg" alt="As the wave passes along a stretched string, we can consider it to be 'stretched'; considering a string element of lencth $\Delta x$, it is stretched to new length $\Delta l$ as the wave passes by." width="70%" />
+<p class="caption">
+Figure 7.2: As the wave passes along a stretched string, we can consider it to be ‘stretched’; considering a string element of lencth <span class="math inline">\(\Delta x\)</span>, it is stretched to new length <span class="math inline">\(\Delta l\)</span> as the wave passes by.
+</p>
+</div>
+<p>The work done (U) in stretching the segment <span class="math inline">\(\Delta x\)</span> can be expressed as:</p>
+<p><span class="math display" id="eq:ch7-workdonestring1">\[\begin{equation}
+\Delta u = F(\Delta l - \Delta x)
+\tag{7.12}
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(F\)</span> is the tension in the string and the extension is given by <span class="math inline">\((\Delta l - \Delta x)\)</span>. We can apply Pythagoras to relate <span class="math inline">\(\Delta x\)</span> and <span class="math inline">\(\Delta l\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{array}{rcl}
+\Delta l^2 &amp;=&amp; \Delta x^2 + \Delta y^2 \\
+&amp;=&amp; \Delta x^2 \left[ 1 + \left( \dfrac{\Delta y}{\Delta x}\right)^2 \right]
+\end{array}
+\end{equation}\]</span></p>
+<p>Therefore we can isolate <span class="math inline">\(\Delta l\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta l = \Delta x \left[ 1 + \left( \dfrac{\Delta y}{\Delta x}\right)^2 \right]^{\frac{1}{2}}
+\end{equation}\]</span></p>
+<p>We can approximate this expression by using the Taylor series expansion for <span class="math inline">\(\sqrt{1+n}\)</span>, where <span class="math inline">\(n = \left( \dfrac{\Delta y}{\Delta x}\right)^2\)</span>; assuming that the fraction is significantly less than one we can write this as an approximation and disregard terms past the first two terms:<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></p>
+<p><span class="math display">\[\begin{equation}
+\Delta l \approx \delta x \left[ 1 + \frac{1}{2}\left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots \right]
+\end{equation}\]</span></p>
+<p>Rearranging this expression to obtain the expression for the extension of the string <span class="math inline">\(\Delta l - \Delta x\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta l - \delta x \approx   + \frac{\delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2 + \cdots
+\end{equation}\]</span></p>
+<p>This now allows us to obtain an expression for the work done in stretching the spring solely in terms of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> displacement (from Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-workdonestring1">(7.12)</a>)</p>
+<p><span class="math display">\[\begin{equation}
+\Delta u = \frac{F\Delta x}{2} \left( \dfrac{\Delta y}{\Delta x}\right)^2
+\end{equation}\]</span></p>
+<p>As we have an expression for <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a>), we can differentiate this with respect to <span class="math inline">\(x\)</span> to approximate <span class="math inline">\(\frac{\Delta y}{\Delta x}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\frac{\Delta y}{\Delta x} \simeq \frac{\mathrm{d} y}{\mathrm{d} x} = kA \cos (kx - \omega t)
+\end{equation}\]</span></p>
+<p>We also know that <span class="math inline">\(v^2 = \frac{F}{\mu}\)</span> (from the wave equation), and that <span class="math inline">\(v = \frac{\omega}{k}\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-phasevel1">(7.8)</a>), therefore:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta U = \frac{1}{2} \left( \frac{\mu \omega^2}{k^2} \right) \Delta x \left( kA \cos (kx - \omega t) \right)^2
+\end{equation}\]</span></p>
+<p>Tidying up and cancelling, we obtain the expresion for the potential energy stored in an element of string of length <span class="math inline">\(\Delta x\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-pestoredstring1">(7.13)</a>):</p>
+<p><span class="math display" id="eq:ch7-pestoredstring1">\[\begin{equation}
+\Delta U = \frac{1}{2} \mu \omega^2 A^2 \Delta x \cos^2(kx-\omega t)
+\tag{7.13}
+\end{equation}\]</span></p>
+</div>
+<div id="sec:ch7-keofstringsegment" class="section level3">
+<h3><span class="header-section-number">7.4.2</span> Kinetic energy of string segment</h3>
+<p>We will again consider the segment of string discussed in Section <a href="sec-ch7-harmonicwaves.html#sec:ch7-peofstringsegment">7.4.1</a>; an element <span class="math inline">\(\Delta x\)</span> of the string, of mass <span class="math inline">\(\Delta m\)</span> (Figure <a href="sec-ch7-harmonicwaves.html#fig:ch7-kestringsegment">7.3</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch7-kestringsegment"></span>
+<img src="visualisations/LaTeX/ch7-keofstringsegment.svg" alt="Similar to the situation shown above, the same string segment will have a kinetic energy associated with its velocity $v_y$." width="70%" />
+<p class="caption">
+Figure 7.3: Similar to the situation shown above, the same string segment will have a kinetic energy associated with its velocity <span class="math inline">\(v_y\)</span>.
+</p>
+</div>
+<!-- Figure \\@ref(ch7-stretchedsegment1) -->
+<p>As before, the segment is stretched to new length <span class="math inline">\(\Delta l\)</span>, but the mass is still given by:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta m = \mu \Delta x
+\end{equation}\]</span></p>
+<p>…where <span class="math inline">\(\mu\)</span> is the mass per unit length. We now use the <strong>transverse velocity</strong> of the segment (<em>i.e.</em> <strong>not</strong> the wave velocity) to determine the kinetic energy of the segment:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta KE = \frac{1}{2} \Delta m v_y^2 = \frac{1}{2} \mu \Delta x \left( \frac{\mathrm{d}y}{\mathrm{d}t} \right)^2
+\end{equation}\]</span></p>
+<p>Again, we know the expression for the vertical displacement <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(t\)</span> (Equation <a href="sec-ch7-harmonicwaves.html#eq:tranversesine2">(7.2)</a>), so we now differentiate with respect to <span class="math inline">\(t\)</span>:</p>
+<ul>
+<li><span class="math inline">\(y = A \sin(kx - \omega t)\)</span></li>
+<li><span class="math inline">\(v_y = \frac{\mathrm{d}y}{\mathrm{d}t} = -\omega A \cos(kx - \omega t)\)</span></li>
+</ul>
+<p>Therefore our expression for the kinetic energy becomes:</p>
+<p><span class="math display" id="eq:ch7-kestoredstring1">\[\begin{equation}
+\Delta KE =  \frac{1}{2} \mu \omega^2  A^2 \Delta x  \cos^2(kx - \omega t)
+\tag{7.14}
+\end{equation}\]</span></p>
+<p>A quick comparison of Equations <a href="sec-ch7-harmonicwaves.html#eq:ch7-pestoredstring1">(7.13)</a> and <a href="sec-ch7-harmonicwaves.html#eq:ch7-kestoredstring1">(7.14)</a> shows that these expressions are identical; <em>i.e.</em> the KE stored in the string is the <strong>same</strong> as the PE stored in the spring.</p>
+</div>
+<div id="sec:ch7-totenergystringsegment" class="section level3">
+<h3><span class="header-section-number">7.4.3</span> Total energy of wave on a string</h3>
+<p>We can therefore find the total energy of the string segment carrying a harmonic wave as the total of the kinetic and potential energies:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta E = \Delta KE + \Delta U
+\end{equation}\]</span></p>
+<p><em>i.e.</em>:</p>
+<p><span class="math display" id="eq:ch7-totalenergywavestring1">\[\begin{equation}
+\Delta E = \mu \omega^2  A^2 \Delta x  \cos^2(kx - \omega t)
+\tag{7.15}
+\end{equation}\]</span></p>
+<p>Note that the energy of the segment varies with time with twice the frequency of the wave (since <span class="math inline">\(\cos^2 \theta = \frac{1}{2}(1+ \cos 2\theta)\)</span>).</p>
+<p>We can also define the average energy at any point (Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-averageenergystring1">(7.16)</a>) using the time-average definition <span class="math inline">\(\left&lt; \cos^2 \theta \right&gt; = \frac{1}{2}\)</span>:</p>
+<p><span class="math display" id="eq:ch7-averageenergystring1">\[\begin{equation}
+\Delta E_{\mathrm{av}} = \frac{1}{2}\mu \omega^2 A^2 \Delta x
+\tag{7.16}
+\end{equation}\]</span></p>
+<p>…and we can define the average <em>energy density</em> (per unit length) as:</p>
+<p><span class="math display">\[\begin{equation}
+\varepsilon = \frac{\Delta E_{\mathrm{av}}}{\Delta x} = \frac{1}{2} \mu \omega^2 A^2
+\end{equation}\]</span></p>
+<p>There are several things to note from this derivation:</p>
+<ul>
+<li>KE is at a maximum when displacement is zero</li>
+<li>At this point the string is most stretched, so PE is at a maximum also
+<!-- WHY??? Surely at zero displacement the string flatlines, so ∆l = ∆x, no stretching?? -->
+<!-- No - stretching is proportional to gradient; gradient steepest at zero displacement. --></li>
+<li>PE and KE are <strong>in phase</strong> (unlike in a pendulum)</li>
+</ul>
+<p>These points are illustrated in Figure <a href="sec-ch7-harmonicwaves.html#fig:ch7-kepestringplot1">7.4</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ch7-kepestringplot1"></span>
+<img src="visualisations/ch7-kepestringplot1.gif" alt="The kinetic energy and potential energy of a displaced string element have maxima and minima at the same points in the oscillation; as the element passes through the origin (top plot), it is at its most stretched (PE maximum), and it is traveling at its fastest (KE maximum)." width="70%" />
+<p class="caption">
+Figure 7.4: The kinetic energy and potential energy of a displaced string element have maxima and minima at the same points in the oscillation; as the element passes through the origin (top plot), it is at its most stretched (PE maximum), and it is traveling at its fastest (KE maximum).
+</p>
+</div>
+</div>
+<div id="sec:ch7-transportenergypower" class="section level3">
+<h3><span class="header-section-number">7.4.4</span> Transport of energy and power</h3>
+<p>As the wave propagates along the string, energy is transported by the moving wavefront at speed <span class="math inline">\(v\)</span>. The average energy passing a point on the string in time <span class="math inline">\(\Delta t\)</span> is the average energy in the segment of length <span class="math inline">\(\Delta x = v\Delta t\)</span>. This means we can rewrite Equation <a href="sec-ch7-harmonicwaves.html#eq:ch7-averageenergystring1">(7.16)</a>:</p>
+<p><span class="math display" id="eq:ch7-averageenergystring2">\[\begin{equation}
+\Delta E_{\mathrm{av}} = \frac{1}{2}\mu \omega^2 A^2 v \Delta t
+\tag{7.17}
+\end{equation}\]</span></p>
+<p>Since the power transmitted is a <em>rate of change of energy</em>, <em>i.e.</em> <span class="math inline">\(\frac{\Delta E}{\Delta t}\)</span>, we can obtain an expression for the average power transmitted:</p>
+<p><span class="math display" id="eq:ch7-averagepowerstring1">\[\begin{equation}
+\Delta P_{\mathrm{av}} = \frac{\mathrm{d} E_{\mathrm{av}}}{\mathrm{d}t} \approx \frac{\Delta E_{\mathrm{av}}}{\Delta t} = \frac{1}{2}\mu \omega^2 A^2 v
+\tag{7.18}
+\end{equation}\]</span></p>
+<p>From this result, we can see that both the average energy and average power transmitted are both proportional to <span class="math inline">\(A^2\)</span>; a similar observation as in SHM (Chapter <a href="sec-shm.html#sec:shm">1</a>).</p>
+</div>
+</div>
+<div id="sec:ch7-summary" class="section level2">
+<h2><span class="header-section-number">7.5</span> Summary</h2>
+<p>We have covered a large amount of derivations in this chapter, however the takehome points are the following:</p>
+<p>When describing sine waves travelling through a medium, the following statements apply:</p>
+<ul>
+<li>For a wave travelling to the <strong>right</strong>: <span class="math inline">\(y = A\sin(kx-\omega t)\)</span></li>
+<li>For a wave travelling to the <strong>left</strong>: <span class="math inline">\(y = A\sin(kx+\omega t)\)</span></li>
+<li>The <strong>phase velocity</strong>: <span class="math inline">\(v = \frac{\omega}{k}\)</span> m s<sup>-1</sup></li>
+</ul>
+<p>…where:</p>
+<ul>
+<li><span class="math inline">\(k\)</span> = wavenumber = <span class="math inline">\(\frac{2\pi}{\lambda}\)</span></li>
+<li><span class="math inline">\(\lambda\)</span> = wavelength /m</li>
+<li><span class="math inline">\(\omega\)</span> = angular frequency = <span class="math inline">\(2\pi f\)</span> /rad m<sup>-1</sup></li>
+<li><span class="math inline">\(f\)</span> = frequency /Hz = <span class="math inline">\(\frac{1}{T}\)</span></li>
+<li><span class="math inline">\(T\)</span> = period /s</li>
+<li><span class="math inline">\(A\)</span> = amplitude /m</li>
+</ul>
+<p>The average energy carried by a wave (per unit length) is given by:</p>
+<p><span class="math display">\[\begin{equation}
+\varepsilon = \frac{\Delta E_{\mathrm{av}}}{\Delta x} = \frac{1}{2} \mu \omega^2 A^2
+\end{equation}\]</span></p>
+<p>…and the average power transmitted by the wave is given by:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta P_{\mathrm{av}} = \frac{\Delta E_{\mathrm{av}}}{\Delta t} = \frac{1}{2}\mu \omega^2 A^2 v
+\end{equation}\]</span></p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="12">
+<li id="fn12"><p>The Taylor expansion for this expression is <span class="math inline">\(\sqrt{1+n} = 1+ \frac{n}{2} - \frac{n^2}{8} + \frac{n^3}{16} - \cdots\)</span><a href="sec-ch7-harmonicwaves.html#fnref12" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-ch6-wavemotion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch8-reflectiontrans.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-harmonic-waves.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Oscillations-and-Waves.pdf", "Oscillations-and-Waves.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
