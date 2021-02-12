@@ -39,7 +39,7 @@ m \frac{\mathrm{d}^2 x}{\mathrm{d}t^2} + b \frac{\mathrm{d}x}{\mathrm{d}t}+ kx =
 Let's now try to find a solution for this differential equation.  Firstly, let's make a couple of assumptions:
 
 1. The amplitude of the damped oscillation is subject to an exponential decay over a timescale of $2\tau$ (don't worry about the factor of 2 for now), and
-2. The damped oscillation has a frequency $mega^\prime$ which may be different from the natural frequency of the undamped oscillator, $\omega_0$.
+2. The damped oscillation has a frequency $\omega^\prime$ which may be different from the natural frequency of the undamped oscillator, $\omega_0$.
 
 Our exponential decay factor then becomes $\mathrm{e}^{-\frac{t}{2\tau}}$, and the exponential form of the wave equation becomes $\mathrm{e}^{\mathrm{i}(\omega^\prime t + \delta)}$ (combination of Equations \@ref(eq:shm-general-positionx1) and \@ref(eq:ch3-demoivreoscillation1)). When these are combined we obtain a form of the solution shown in Equation \@ref(eq:ch4-velocitydamp4)
 
@@ -71,7 +71,7 @@ m \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right)^2 x + b \left( -\df
 Multiplying this expression out, we obtain:
 
 \begin{equation}
-m \left( -\frac{1}{4\tau^2} - \frac{\mathrm{i}\omega^\prime}{\tau} - \omega ^{\prime 2} \right) x + b \left( -\frac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx = 0
+m \left( \frac{1}{4\tau^2} - \frac{\mathrm{i}\omega^\prime}{\tau} - \omega ^{\prime 2} \right) x + b \left( -\frac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx = 0
 \end{equation}
 
 ...and we can now combine the **Real** and **Imaginary** components:

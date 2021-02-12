@@ -143,7 +143,7 @@ We can therefore relate $\delta$ and $\delta^\prime$ as follows:
 We now examine the 'real' component of Equation \@ref(eq:ch5-forcedoscillfullsoln3), equal to $A_0$:
 
 \begin{equation}
-A_0 = A \cos \left( \delta + \delta^\prime \right)
+A_0 = - A \cos \left( \delta + \delta^\prime \right)
 \end{equation}
 
 ...and doing the same analysis, now that we know that, under our initial conditions, $\delta + \delta^\prime = \pi$:
@@ -229,8 +229,8 @@ We also know that the steady state solution for the displacement $x$ in SHM is a
 
 \begin{equation}
 \begin{array}{rcl}
-x& =& A \cos (\omega t + \delta)\\
-v = \dfrac{\mathrm{d}x}{\mathrm{d}t} &=& -\omega A \sin (\omega t + \delta)
+x& =& A \cos (\omega t - \delta)\\
+v = \dfrac{\mathrm{d}x}{\mathrm{d}t} &=& -\omega A \sin (\omega t - \delta)
 \end{array}
 (\#eq:ch5-oscillatorenergy2)
 \end{equation}
@@ -262,7 +262,7 @@ E_{\mathrm{in}} = \frac{1}{2}\omega A F_0 T \sin \delta
 
 If we recall that $\delta = \frac{\pi}{2}$ at resonance, substitution of this value into Equation \@ref(eq:ch5-oscillatorenergy4) tells us that the maximum energy is transferred to the oscillator when driven at a resonant frequency - in line wiht our expectations.
 
-If we now use the definition of $\delta$ in Equation \@ref(eq:ch5-forcedshm5), we can use trigonometry and the expression for $A$ in Equation \@ref(eq:ch5-forcedshm4) to give the expression  $\sin \delta = \frac{Ab\omega}{F_0}$; we can also use the fact that the period of oscillation $T$ and the angular frequency $\omega$ are related by Equation \@re(eq:ch1-definingomega1) ($T = \frac{2\pi}{\omega}$), and simplify the expression for the energy input for the forced oscillator as shown in Equation \@ref(eq:ch5-oscillatorenergy5):
+If we now use the definition of $\delta$ in Equation \@ref(eq:ch5-forcedshm5), we can use trigonometry and the expression for $A$ in Equation \@ref(eq:ch5-forcedshm4) to give the expression  $\sin \delta = \frac{Ab\omega}{F_0}$; we can also use the fact that the period of oscillation $T$ and the angular frequency $\omega$ are related by Equation \@ref(eq:ch1-definingomega1) ($T = \frac{2\pi}{\omega}$), and simplify the expression for the energy input for the forced oscillator as shown in Equation \@ref(eq:ch5-oscillatorenergy5):
 
 \begin{equation}
 E_{\mathrm{in}} = \pi b \omega A^2
@@ -271,7 +271,7 @@ E_{\mathrm{in}} = \pi b \omega A^2
 
 ### Energy lost in driving oscillators {#sec:ch5-energylostdrivenosc}
 
-To now determine the amount of energy, we follow a similar process as followed in Section \@re(sec:ch5-energyinputdrivenosc). This time however we need to determine the work done by the oscillator on the damping force during one cycle.  This integral is set up as follows:
+To now determine the amount of energy, we follow a similar process as followed in Section \@ref(sec:ch5-energyinputdrivenosc). This time however we need to determine the work done by the oscillator on the damping force during one cycle.  This integral is set up as follows:
 
 \begin{equation}
 E_{\mathrm{lost}} = \int_0^T F v \mathrm{d}t

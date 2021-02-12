@@ -291,7 +291,6 @@ eq:ch18-finitewell1
 fig:ch18-reflectionparticlewave1
 fig:ch18-tunelling1
 fig:ch18-tunelling2
-sec:changelog
 sec:shm
 sec:ch1-simpleshmexample
 key-terms

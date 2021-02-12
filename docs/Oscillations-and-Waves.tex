@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,12 +75,15 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2021-01-27}
+\date{2021-02-12}
 
 \begin{document}
 \maketitle
@@ -128,6 +131,8 @@ This iteration of the course has been written for the academic year 2020/21 by A
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2021-02-12 Updated to address error reports 1-13. Thank you all who sent them in.
 
 2021-01-27 Initial commit to GitHub; all text for the course complete, some images pending.
 
@@ -686,8 +691,14 @@ A diatomic molecule is a useful system to consider as an example because it can 
 
 The potential of a vibrating diatomic is known as the Morse potential; the form of this is outwith this discussion, however it is useful to think that, for small displacements around the equilibrium separation the potential energy curve approximates a parabola. We can therefore re-draw our potential energy curve as such, and show this in Figure \ref{fig:ch2-diatomicmolecule2}.\footnote{Simplistically, the deviation is due to nuclear repulsion at high compression, while at large extension the bond eventually breaks - the ``zero potential'' point.}
 
-** Parabolic approximation of a diatomic molecule**
-\label{fig:ch2-diatomicmolecule2}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations//latex/ch2-diatomicmolecule2} 
+
+}
+
+\caption{The parabolic approximation of a diatomic molecule, showing the potential varying with compression or extension from equilibrium separation, $r_0$. }\label{fig:ch2-diatomicmolecule2}
+\end{figure}
 
 The equation of the parabola shown in \ref{fig:ch2-diatomicmolecule2} takes the following form:
 
@@ -932,7 +943,7 @@ The symbol \(z\) is a general term for a complex number, and has two components,
 \begin{array}{rcl}
 x^2 &=& -1 \\
 x &=& \pm \mathrm{i}\\
-i^1 &=& -1
+i^2 &=& -1
 \end{array}
 \label{eq:ch3-complexnumber2}
 \end{equation}
@@ -1241,7 +1252,7 @@ Let's now try to find a solution for this differential equation. Firstly, let's 
 \item
   The amplitude of the damped oscillation is subject to an exponential decay over a timescale of \(2\tau\) (don't worry about the factor of 2 for now), and
 \item
-  The damped oscillation has a frequency \(mega^\prime\) which may be different from the natural frequency of the undamped oscillator, \(\omega_0\).
+  The damped oscillation has a frequency \(\omega^\prime\) which may be different from the natural frequency of the undamped oscillator, \(\omega_0\).
 \end{enumerate}
 
 Our exponential decay factor then becomes \(\mathrm{e}^{-\frac{t}{2\tau}}\), and the exponential form of the wave equation becomes \(\mathrm{e}^{\mathrm{i}(\omega^\prime t + \delta)}\) (combination of Equations \eqref{eq:shm-general-positionx1} and \eqref{eq:ch3-demoivreoscillation1}). When these are combined we obtain a form of the solution shown in Equation \eqref{eq:ch4-velocitydamp4}
@@ -1274,7 +1285,7 @@ m \left( -\dfrac{1}{2\tau} + \mathrm{i}\omega^\prime \right)^2 x + b \left( -\df
 Multiplying this expression out, we obtain:
 
 \begin{equation}
-m \left( -\frac{1}{4\tau^2} - \frac{\mathrm{i}\omega^\prime}{\tau} - \omega ^{\prime 2} \right) x + b \left( -\frac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx = 0
+m \left( \frac{1}{4\tau^2} - \frac{\mathrm{i}\omega^\prime}{\tau} - \omega ^{\prime 2} \right) x + b \left( -\frac{1}{2\tau} + \mathrm{i}\omega^\prime \right) x + kx = 0
 \end{equation}
 
 \ldots and we can now combine the \textbf{Real} and \textbf{Imaginary} components:
@@ -1630,7 +1641,7 @@ We can therefore relate \(\delta\) and \(\delta^\prime\) as follows:
 We now examine the `real' component of Equation \eqref{eq:ch5-forcedoscillfullsoln3}, equal to \(A_0\):
 
 \begin{equation}
-A_0 = A \cos \left( \delta + \delta^\prime \right)
+A_0 = - A \cos \left( \delta + \delta^\prime \right)
 \end{equation}
 
 \ldots and doing the same analysis, now that we know that, under our initial conditions, \(\delta + \delta^\prime = \pi\):
@@ -1739,8 +1750,8 @@ We also know that the steady state solution for the displacement \(x\) in SHM is
 
 \begin{equation}
 \begin{array}{rcl}
-x& =& A \cos (\omega t + \delta)\\
-v = \dfrac{\mathrm{d}x}{\mathrm{d}t} &=& -\omega A \sin (\omega t + \delta)
+x& =& A \cos (\omega t - \delta)\\
+v = \dfrac{\mathrm{d}x}{\mathrm{d}t} &=& -\omega A \sin (\omega t - \delta)
 \end{array}
 \label{eq:ch5-oscillatorenergy2}
 \end{equation}
@@ -1773,7 +1784,7 @@ E_{\mathrm{in}} = \frac{1}{2}\omega A F_0 T \sin \delta
 
 If we recall that \(\delta = \frac{\pi}{2}\) at resonance, substitution of this value into Equation \eqref{eq:ch5-oscillatorenergy4} tells us that the maximum energy is transferred to the oscillator when driven at a resonant frequency - in line wiht our expectations.
 
-If we now use the definition of \(\delta\) in Equation \eqref{eq:ch5-forcedshm5}, we can use trigonometry and the expression for \(A\) in Equation \eqref{eq:ch5-forcedshm4} to give the expression \(\sin \delta = \frac{Ab\omega}{F_0}\); we can also use the fact that the period of oscillation \(T\) and the angular frequency \(\omega\) are related by Equation @re(eq:ch1-definingomega1) (\(T = \frac{2\pi}{\omega}\)), and simplify the expression for the energy input for the forced oscillator as shown in Equation \eqref{eq:ch5-oscillatorenergy5}:
+If we now use the definition of \(\delta\) in Equation \eqref{eq:ch5-forcedshm5}, we can use trigonometry and the expression for \(A\) in Equation \eqref{eq:ch5-forcedshm4} to give the expression \(\sin \delta = \frac{Ab\omega}{F_0}\); we can also use the fact that the period of oscillation \(T\) and the angular frequency \(\omega\) are related by Equation \eqref{eq:ch1-definingomega1} (\(T = \frac{2\pi}{\omega}\)), and simplify the expression for the energy input for the forced oscillator as shown in Equation \eqref{eq:ch5-oscillatorenergy5}:
 
 \begin{equation}
 E_{\mathrm{in}} = \pi b \omega A^2
@@ -1783,7 +1794,7 @@ E_{\mathrm{in}} = \pi b \omega A^2
 \hypertarget{sec:ch5-energylostdrivenosc}{%
 \subsection{Energy lost in driving oscillators}\label{sec:ch5-energylostdrivenosc}}
 
-To now determine the amount of energy, we follow a similar process as followed in Section @re(sec:ch5-energyinputdrivenosc). This time however we need to determine the work done by the oscillator on the damping force during one cycle. This integral is set up as follows:
+To now determine the amount of energy, we follow a similar process as followed in Section \ref{sec:ch5-energyinputdrivenosc}. This time however we need to determine the work done by the oscillator on the damping force during one cycle. This integral is set up as follows:
 
 \begin{equation}
 E_{\mathrm{lost}} = \int_0^T F v \mathrm{d}t
@@ -2763,7 +2774,7 @@ We discussed the concept of impedance (both electrical and mechanical) in Sectio
 \begin{itemize}
 \tightlist
 \item
-  ``Impedance'' describes teh property of a system which resists motion, either mechanical or motion of charge;
+  ``Impedance'' describes the property of a system which resists motion, either mechanical or motion of charge;
 \item
   Any material through which waves propagate presents impedance to those waves;
 \item
@@ -3056,7 +3067,7 @@ In other words, the intensity of the sound wave travelling at constant speed \(v
 \hypertarget{sec:ch9-intensitylevels}{%
 \section{Levels of intensity}\label{sec:ch9-intensitylevels}}
 
-The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound. } To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
+The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound.} To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
 
 \begin{equation}
 \beta = 10 \log_{10}\left(\frac{I}{I_0}\right)

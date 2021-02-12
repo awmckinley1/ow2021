@@ -51,8 +51,10 @@ knitr::include_graphics("visualisations/ch2-diatomicexamp.svg")
 
 The potential of a vibrating diatomic is known as the Morse potential; the form of this is outwith this discussion, however it is useful to think that, for small displacements around the equilibrium separation the potential energy curve approximates a parabola.  We can therefore re-draw our potential energy curve as such, and show this in Figure \@ref(fig:ch2-diatomicmolecule2).^[Simplistically, the deviation is due to nuclear repulsion at high compression, while at large extension the bond eventually breaks - the "zero potential" point.]
 
-** Parabolic approximation of a diatomic molecule**
-(\#fig:ch2-diatomicmolecule2)
+
+```{r echo=FALSE, ch2-diatomicmolecule2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The parabolic approximation of a diatomic molecule, showing the potential varying with compression or extension from equilibrium separation, $r_0$. "}
+knitr::include_graphics("visualisations//latex/ch2-diatomicmolecule2.svg")
+```
 
 The equation of the parabola shown in \@ref(fig:ch2-diatomicmolecule2) takes the following form:
 

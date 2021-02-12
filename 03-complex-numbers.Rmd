@@ -21,7 +21,7 @@ The symbol $z$ is a general term for a complex number, and has two components, a
 \begin{array}{rcl}
 x^2 &=& -1 \\
 x &=& \pm \mathrm{i}\\
-i^1 &=& -1
+i^2 &=& -1
 \end{array}
 (\#eq:ch3-complexnumber2)
 \end{equation}

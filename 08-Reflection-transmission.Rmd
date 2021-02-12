@@ -165,7 +165,7 @@ The examples we considered in Secion \@ref(sec:ch8-powertransmittedreflected) we
 
 We discussed the concept of impedance (both electrical and mechanical) in Section \@ref(sec:ch5-impedance); however the salient points are:
 
-* "Impedance" describes teh property of a system which resists motion, either mechanical or motion of charge;
+* "Impedance" describes the property of a system which resists motion, either mechanical or motion of charge;
 * Any material through which waves propagate presents impedance to those waves;
 * In general, impedance depends on inertia and elasticity;
 * For a string, we define impedance as:
