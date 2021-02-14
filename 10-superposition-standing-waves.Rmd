@@ -230,7 +230,9 @@ In contrast to a vibrating string, wind instruments rely on a resonance within a
 
 In this model, the column of air is able to vibrate at its ends, so we have a similar set of harmonics as for a string, but with displacement antinodes at its ends (the air can vibrate freely at the ends of the tube).  There is a second set of nodes/antinodes corresponding to the pressure; these do not align with the displacement nodes/antinodes; rather a **pressure node** aligns with a **displacement antinode** and vice versa. (if an air molecule does not move, we have a displacement node, but it is continuously 'squashed' from both sides by the oscillating air molecules, so experiences the biggest pressure change).
 
-**Figure to show nodes/antinodes within a tube**
+```{r echo=FALSE, ch10-waves-closedtube, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="This image shows the node/antinode structure of a standing wave in a closed tube. Note the presence of a displacement node at either end where molecules are compressed against the end of the tube "}
+knitr::include_graphics("visualisations/ch10-longitudinal-standingwave-n6closed.gif")
+```
 
 We observe **all** harmonics in this system; there are no concerns about 'position of plucking' that there is for the string.  The displacement of the air molecules extends a little beyond the ends of the tube, so the effective length is given by $L_\textsf{eff} = L + \Delta L$, where $\Delta L$ is a small end correction. Therefore:
 
@@ -249,7 +251,9 @@ This now gives us a fundamental wavelength four times longer than the effective 
 
 This means that we only observe the **odd** harmonics (the even harmonics would not allow the boundary conditions for this tube).
 
-**Figure for part-open tube**
+```{r echo=FALSE, ch10-waves-opentube, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="For a tube open at one end, the standing waves now have a node at the closed end, and an antinode at the open end. This changes the available harmonics within the tube."}
+knitr::include_graphics("visualisations/ch10-longitudinal-standingwave-n6open.gif")
+```
 
 \begin{equation}
 \lambda_n = \frac{4 L_\textsf{eff}}{n} \quad n = 1,3,5,\dots

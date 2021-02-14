@@ -94,8 +94,11 @@ We have shown using the example of the square wave that any wave can be made of 
 
 The wave-forms for the oboe and clarinet are shown in Figure \@ref(fig:ch11-oboeclarinetwaveform1), where, despite having the same fundamental frequency, the waveform is considerably more complex than that of a tuning fork (a 'nearly pure' wave form with no additional harmonics).
 
-**Figure of oboe and clarinet waveforms**
-(\#fig:ch11-oboeclarinetwaveform1)
+
+```{r echo=FALSE, ch11-oboeclarinetwaveform1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="We have an illusration of the waveforms for an oboe (top) and clarinet(bottom); these are both playing the same frequency, but we see a very different harmonic makeup."}
+knitr::include_graphics("visualisations/slides-harmonicsum_oboe.svg")
+knitr::include_graphics("visualisations/slides-harmonicsum_clar.svg")
+```
 
 These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \@ref(fig:ch11-oboeclarinetharmonics) that the contributions from each of the harmonics in the harmonic series is quite different between the two.  The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear.  The real trick of course is identifying what this harmonic makeup is from the presented waveform.  This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
 
@@ -112,21 +115,27 @@ A Fourier transform is a mathematical tool which allows for the identification o
 
 ### A cosine wave {#sec:ch11-ftcosine}
 
-**Figure to show fourier transform of cosine function**
+```{r echo=FALSE, ch11-ftcosinefunction1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A periodic cosine function (top) made up of a single frequency gives a single 'spike' in the Fourier transform (bottom) at the appropriate frequency."}
+knitr::include_graphics("visualisations/ch11-ftcosinefunction1.svg")
+```
 
 A pure cosine wave has a single frequency; the Fourier transform yields a single spike (a single Fourier coefficient) at this frequency.  Strictly, there is also a spike at $-\omega_0$ because the transform is symmetric.
 
 ### The 'top hat' function {#sec:ch11-fttophat}
 
-**Figure to show Fourier transform of a 'top hat' function**
+```{r echo=FALSE, ch11-fttophat1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A non-periodic 'top hat' function is made up of an infinite Fourier series, involving all frequencies. We see this reflected in the Fourier transform (bottom) where the tranform function extends to infinity."}
+knitr::include_graphics("visualisations/ch11-fttophat1.svg")
+```
 
 A top-hat function is a wavepulse for a square wave, defined as a pulse width of $\tau$. The Fourier transform yields a continuous series of Fourier coefficients, with defined positions along the frequency axis.
 
 ### A Gaussian function {#sec:ch11-ftgaussian}
 
-**Figure to show Fourier transform of a Gaussian function**
+```{r echo=FALSE, ch11-ftgaussian1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The Fourier tranform of a finite Gaussian function is another Gaussian function, but the width is a reciprical of the original function."}
+knitr::include_graphics("visualisations/ch11-ftgaussian1.svg")
+```
 
-For a Gaussian function with full-width at half-maximum (FWHM) $\tau$, its Fourier transform yields another Gaussian function, with FWHM = $\frac{2\pi}{\tau}$.
+For a Gaussian function with full-width at half-maximum (FWHM) $\tau$, its Fourier transform yields another Gaussian function, with FWHM = $\frac{2\pi}{\tau}$. A Gaussian function is a good approximation to a laser pulse; the shorter the laser pulse, the more frequencies are required to generate it. This has ramifications on the colour of the pulse! (this is a subject for another course!)
 
 ## The Bandwidth Theorem {#sec:ch11-bandwidththeorem}
 *Tipler and Mosca, 16.3*

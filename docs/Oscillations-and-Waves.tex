@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2021-02-12}
+\date{2021-02-14}
 
 \begin{document}
 \maketitle
@@ -131,6 +128,8 @@ This iteration of the course has been written for the academic year 2020/21 by A
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2021-02-14 Updated to address error reports, and to include images and additional explanations for Chapters 10 and 11.
 
 2021-02-12 Updated to address error reports 1-13. Thank you all who sent them in.
 
@@ -3067,7 +3066,7 @@ In other words, the intensity of the sound wave travelling at constant speed \(v
 \hypertarget{sec:ch9-intensitylevels}{%
 \section{Levels of intensity}\label{sec:ch9-intensitylevels}}
 
-The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound.} To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
+The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound. } To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
 
 \begin{equation}
 \beta = 10 \log_{10}\left(\frac{I}{I_0}\right)
@@ -3491,7 +3490,14 @@ In contrast to a vibrating string, wind instruments rely on a resonance within a
 
 In this model, the column of air is able to vibrate at its ends, so we have a similar set of harmonics as for a string, but with displacement antinodes at its ends (the air can vibrate freely at the ends of the tube). There is a second set of nodes/antinodes corresponding to the pressure; these do not align with the displacement nodes/antinodes; rather a \textbf{pressure node} aligns with a \textbf{displacement antinode} and vice versa. (if an air molecule does not move, we have a displacement node, but it is continuously `squashed' from both sides by the oscillating air molecules, so experiences the biggest pressure change).
 
-\textbf{Figure to show nodes/antinodes within a tube}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch10-longitudinal-standingwave-n6closed} 
+
+}
+
+\caption{This image shows the node/antinode structure of a standing wave in a closed tube. Note the presence of a displacement node at either end where molecules are compressed against the end of the tube }\label{fig:ch10-waves-closedtube}
+\end{figure}
 
 We observe \textbf{all} harmonics in this system; there are no concerns about `position of plucking' that there is for the string. The displacement of the air molecules extends a little beyond the ends of the tube, so the effective length is given by \(L_\textsf{eff} = L + \Delta L\), where \(\Delta L\) is a small end correction. Therefore:
 
@@ -3516,7 +3522,14 @@ This now gives us a fundamental wavelength four times longer than the effective 
 
 This means that we only observe the \textbf{odd} harmonics (the even harmonics would not allow the boundary conditions for this tube).
 
-\textbf{Figure for part-open tube}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch10-longitudinal-standingwave-n6open} 
+
+}
+
+\caption{For a tube open at one end, the standing waves now have a node at the closed end, and an antinode at the open end. This changes the available harmonics within the tube.}\label{fig:ch10-waves-opentube}
+\end{figure}
 
 \begin{equation}
 \lambda_n = \frac{4 L_\textsf{eff}}{n} \quad n = 1,3,5,\dots
@@ -3650,8 +3663,14 @@ We have shown using the example of the square wave that any wave can be made of 
 
 The wave-forms for the oboe and clarinet are shown in Figure \ref{fig:ch11-oboeclarinetwaveform1}, where, despite having the same fundamental frequency, the waveform is considerably more complex than that of a tuning fork (a `nearly pure' wave form with no additional harmonics).
 
-\textbf{Figure of oboe and clarinet waveforms}
-\label{fig:ch11-oboeclarinetwaveform1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/slides-harmonicsum_oboe} \includegraphics[width=0.7\linewidth]{visualisations/slides-harmonicsum_clar} 
+
+}
+
+\caption{We have an illusration of the waveforms for an oboe (top) and clarinet(bottom); these are both playing the same frequency, but we see a very different harmonic makeup.}\label{fig:ch11-oboeclarinetwaveform1}
+\end{figure}
 
 These waveforms can be analysed in terms of the relative contributions from each of the harmonics in the harmonic series, and we can see in Figure \ref{fig:ch11-oboeclarinetharmonics} that the contributions from each of the harmonics in the harmonic series is quite different between the two. The shapes of the tubes for each of the instruments leads to different contributions from the harmonics in each instrument, and this shapes the distinctive sound we hear. The real trick of course is identifying what this harmonic makeup is from the presented waveform. This is the essence of Fourier analysis; identifying the harmonic makeup of a given waveform, and has applications way beyond musical instruments!
 
@@ -3678,23 +3697,44 @@ A Fourier transform is a mathematical tool which allows for the identification o
 \hypertarget{sec:ch11-ftcosine}{%
 \subsection{A cosine wave}\label{sec:ch11-ftcosine}}
 
-\textbf{Figure to show fourier transform of cosine function}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch11-ftcosinefunction1} 
+
+}
+
+\caption{A periodic cosine function (top) made up of a single frequency gives a single 'spike' in the Fourier transform (bottom) at the appropriate frequency.}\label{fig:ch11-ftcosinefunction1}
+\end{figure}
 
 A pure cosine wave has a single frequency; the Fourier transform yields a single spike (a single Fourier coefficient) at this frequency. Strictly, there is also a spike at \(-\omega_0\) because the transform is symmetric.
 
 \hypertarget{sec:ch11-fttophat}{%
 \subsection{The `top hat' function}\label{sec:ch11-fttophat}}
 
-\textbf{Figure to show Fourier transform of a `top hat' function}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch11-fttophat1} 
+
+}
+
+\caption{A non-periodic 'top hat' function is made up of an infinite Fourier series, involving all frequencies. We see this reflected in the Fourier transform (bottom) where the tranform function extends to infinity.}\label{fig:ch11-fttophat1}
+\end{figure}
 
 A top-hat function is a wavepulse for a square wave, defined as a pulse width of \(\tau\). The Fourier transform yields a continuous series of Fourier coefficients, with defined positions along the frequency axis.
 
 \hypertarget{sec:ch11-ftgaussian}{%
 \subsection{A Gaussian function}\label{sec:ch11-ftgaussian}}
 
-\textbf{Figure to show Fourier transform of a Gaussian function}
+\begin{figure}
 
-For a Gaussian function with full-width at half-maximum (FWHM) \(\tau\), its Fourier transform yields another Gaussian function, with FWHM = \(\frac{2\pi}{\tau}\).
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch11-ftgaussian1} 
+
+}
+
+\caption{The Fourier tranform of a finite Gaussian function is another Gaussian function, but the width is a reciprical of the original function.}\label{fig:ch11-ftgaussian1}
+\end{figure}
+
+For a Gaussian function with full-width at half-maximum (FWHM) \(\tau\), its Fourier transform yields another Gaussian function, with FWHM = \(\frac{2\pi}{\tau}\). A Gaussian function is a good approximation to a laser pulse; the shorter the laser pulse, the more frequencies are required to generate it. This has ramifications on the colour of the pulse! (this is a subject for another course!)
 
 \hypertarget{sec:ch11-bandwidththeorem}{%
 \section{The Bandwidth Theorem}\label{sec:ch11-bandwidththeorem}}

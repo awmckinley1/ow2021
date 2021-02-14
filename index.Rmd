@@ -44,6 +44,8 @@ This iteration of the course has been written for the academic year 2020/21 by A
 
 ## Changelog {.unnumbered #sec:changelog}
 
+2021-02-14 Updated to address error reports, and to include images and additional explanations for Chapters 10 and 11.
+
 2021-02-12 Updated to address error reports 1-13. Thank you all who sent them in.
 
 2021-01-27 Initial commit to GitHub; all text for the course complete, some images pending.
