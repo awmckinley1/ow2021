@@ -33,7 +33,7 @@ a_n = \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} P(t) \cos n \omega t ~\mathr
 \end{equation}
 
 \begin{equation}
-b_n = \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} P(t) \sin n \omega t ~\mathrm{d}t \quad n = 0,1,2,3 \dots
+b_n = \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} P(t) \sin n \omega t ~\mathrm{d}t \quad n = 1,2,3 \dots
 \end{equation}
 
 It can be seen that $\frac{a_0}{2}$ is equal to the averave value of $P(t)$ over one cycle.
@@ -115,7 +115,7 @@ A Fourier transform is a mathematical tool which allows for the identification o
 
 ### A cosine wave {#sec:ch11-ftcosine}
 
-```{r echo=FALSE, ch11-ftcosinefunction1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A periodic cosine function (top) made up of a single frequency gives a single 'spike' in the Fourier transform (bottom) at the appropriate frequency."}
+```{r echo=FALSE, ch11-ftcosinefunction1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A periodic cosine function (top) made up of a single frequency gives a single 'spike' in the Fourier transform (bottom) at the appropriate frequency. Note that this Fourier transform has finite width because it is a genuine 'fast Fourier transform' performed in Python using data from a cosine plot; so is not the idealised 'infinitesimally narrow delta function' which it would otherwise be."}
 knitr::include_graphics("visualisations/ch11-ftcosinefunction1.svg")
 ```
 

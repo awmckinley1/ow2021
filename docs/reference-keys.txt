@@ -193,9 +193,14 @@ fig:ch10-standingwave1
 fig:ch10-stringfundamental1
 fig:ch10-stringharmonics1
 tab:ch10-standingfrequencies
+fig:ch10-waves-closedtube
+fig:ch10-waves-opentube
 fig:ch11-squarewave1
 fig:ch11-fouriersum5
 fig:ch11-oboeclarinetwaveform1
+fig:ch11-ftcosinefunction1
+fig:ch11-fttophat1
+fig:ch11-ftgaussian1
 fig:ch12-dispersionillustration1
 eq:ch12-addtwowavebeats1
 eq:ch12-addtwowavebeats2
@@ -215,6 +220,7 @@ eq:ch12-phononvibration1
 eq:ch12-phononvibration2
 fig:ch12-dispersioncurve1
 eq:ch12-phononvibration3
+fig:ch12-dispersionlattice1
 eq:ch13-amplitudeinterfere1
 fig:ch13-huygenswavelets1
 fig:ch13-doubleslit1

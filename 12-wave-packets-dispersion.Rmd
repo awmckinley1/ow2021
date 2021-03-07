@@ -7,8 +7,10 @@ A **wave packet** is exactly what it sounds like; a "parcel" containing a group 
 
 The velocity of propagation of the packet is known as the **group velocity** $v_g$, the velocity at which energy is carried through the medium.  In a non-dispersive medium, this is equal to the phase velocity $v_p$.  If the medium is **dispersive** however, different frequencies travel with different values of $v_p$, and the wavepacket spreads as it travels; this is the origin of the 'pinging' sound we hear in railway tracks.
 
-**Figure to show dispersion at different times**
-(\#fig:ch12-dispersionillustration1)
+```{r echo=FALSE, ch12-dispersionillustration1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="As a wave packet travels through a dispersive medium in which higher frequencies travel faster than lower frequencies, the wave packet 'spreads out' in space."}
+knitr::include_graphics("visualisations/ch12-wavepacketdispersion1.svg")
+```
+
 
 ## Two waves, same amplitude, different frequency (Beats) {#sec:ch12-twowavesbeats1}
 
@@ -68,8 +70,10 @@ y = \underbrace{ 2y_{0} \cos \left( \frac{\Delta \omega}{2}t \right)}_{\textsf{s
 
 The frequency fo the resulting wave is the average of the two input waves, while the amplitude oscillates with frequency $\frac{\Delta \omega}{2}$. This is known as **beating**.  The actual frequency of the beats themselves is twice this, as shown in Figure \@ref(fig:ch12-oscillationbeats1).
 
-**Figure to show superposition of waves with beat envelope**
-(\#fig:ch12-oscillationbeats1)
+```{r echo=FALSE, ch12-oscillationbeats1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="As two waves interfere with each other ($f_1 = 3.0$ Hz; $f_2 = 3.2$ Hz), we see the interference structure as a waveform of frequency 3.1 Hz with a slowly varying amplitude at frequency 0.1 Hz (the 'envelope'). This visualises the 'beats' in the interference structure."}
+knitr::include_graphics("visualisations/ch12-beats1.svg")
+```
+
 
 Therefore, if the frequency of the slowly varying amplitude is $\frac{\Delta \omega}{2}$, the observed frequency of the 'beats' will be twice this; *i.e.* the difference in frequency between the two sources.
 
@@ -201,12 +205,14 @@ Equation \@ref(eq:ch12-waterdispersion2)) tells us that the dispersion of the wa
 
 ## Sound waves in a crystal (phonons) {#sec:ch12-phonondispersion}
 
-When we consider sound-waves in a crystal, we can consider both longitudinal sound waves as well as transverse soudnd waves (as we are not in a fluid, a transverse wave is now possible due to the intermolecular forces within the crystal).
+When we consider sound-waves in a crystal, we can consider both longitudinal sound waves as well as transverse sound waves (as we are not in a fluid, a transverse wave is now possible due to the intermolecular forces within the crystal).
 
 We will first consider the one-dimensional case, as the three dimensional case can be derived from the principles laid out here.  Firstly, let's consider what a wave might look like when propagating along a one-dimensional crystal.  We imagine our one-dimensional lattice to be a line of molecules, all connected by a "spring" (to model the molecular bond).  In this model, we can either have a longitudinal wave, where the springs are stretched and compressed as the molecules oscillate in the direction of the crystal axis, or we can have a transverse wave, in which the 1-D line of molecules behaves as a string.  These are illustrated in Figure \@ref(fig:ch12-phononvibration1).
 
-**Figure to show longitudinal and transverse vibrations in 1D lattice**
-(\#fig:ch12-phononvibration1)
+```{r echo=FALSE, ch12-phononvibration1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A 1 dimensional lattice can carry sound waves (phonons, also known as lattice vibrations) via both transverse and longitudinal vibrational modes. "}
+knitr::include_graphics("visualisations/ch12-phonons1.svg")
+```
+
 
 From this model, it can be shown that the phase velocity can be given by the relationship shown in Equation \@ref(eq:ch12-phononvibration1), relating the tension in the 1-D lattice ($F$), the linear density of the 1-D lattice ($\mu$) and the periodicity of the lattice, $a$.
 
@@ -226,8 +232,11 @@ Additionally, we can rewrite Equation \@ref(eq:ch12-phononvibration1) to gain an
 
 If we plot the angular frequency $\omega$ against the wavenumber $k$, we obtain the **dispersion curve**, shown in Figure \@ref(fig:ch12-dispersioncurve1).
 
-**Dispersion curve figure**
-(\#fig:ch12-dispersioncurve1)
+
+```{r echo=FALSE, ch12-dispersioncurve1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The variation in angular frequency $\\omega$ with wavenumber $k$ in a dispersive medium. There is an upper limit to the wavenumber which the medium can sustain, namely $\\pi / a$"}
+knitr::include_graphics("visualisations/ch12-dispersioncurve1.svg")
+```
+
 
 From Equation \@ref(eq:ch12-phononvibration2), we can find the group velocity $v_p$ by differentiation:
 
@@ -241,7 +250,10 @@ Once again, examination of Equation \@ref(eq:ch12-phononvibration3) shows:
 * The group velocity, $v_g$ tends to $\frac{F}{\mu}$ as $k \rightarrow 0$; and:
 * The group velocity also drops to zero when $k = \frac{\pi}{a}$
 
-At the point when $k = \frac{\pi}{a}$, alternate atoms move in exact anti-phase, and we have the appearance of a standing wave (Figure \@ref(fig:ch12-dispersionlattice1)). Therefore there is an effective cut-off at $k = \frac{\pi}{a}$; waves with a greater wave number than this (shorter wavelength, higher frequency) cannot be supported by the lattice.^[This is a similar effect to the aliasing obserfved in sample signals in Experiment S]
+At the point when $k = \frac{\pi}{a}$, alternate atoms move in exact anti-phase, and we have the appearance of a standing wave (Figure \@ref(fig:ch12-dispersionlattice1)). Therefore there is an effective cut-off at $k = \frac{\\pi}{a}$; waves with a greater wave number than this (shorter wavelength, higher frequency) cannot be supported by the lattice.^[This is a similar effect to the aliasing obserfved in sample signals in Experiment S]
 
+```{r echo=FALSE, ch12-dispersionlattice1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="When the wavenumber $k = \\pi / a$, the atoms move in perfect anti-phase and the movement appears as a standing wave. The lattice can no longer support a higher wavenumber than this."}
+knitr::include_graphics("visualisations/ch12-phonons2.svg")
+```
 
-Note that the periodicity of the lattice, $a$ (also known as the molecular spacing) is typically around $10^{-9} --- 10^{-10}$ m, so this effect will only be observed for **very** high frequencies.
+Note that the periodicity of the lattice, $a$ (also known as the molecular spacing) is typically around $10^{-9} - 10^{-10}$ m, so this effect will only be observed for **very** high frequencies.

@@ -44,6 +44,8 @@ This iteration of the course has been written for the academic year 2020/21 by A
 
 ## Changelog {.unnumbered #sec:changelog}
 
+2021-03-07 Updated to address error reports, added additional detail for figures in Chapter 11, and including images for chapter 13
+
 2021-02-14 Updated to address error reports, and to include images and additional explanations for Chapters 10 and 11.
 
 2021-02-12 Updated to address error reports 1-13. Thank you all who sent them in.

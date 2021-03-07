@@ -36,8 +36,11 @@ Huygens' Principle is summarised as follows:
 
 While the propagation of light is in fact goverened by Maxwell's equations, Huygens' construction provides an extremely valuable way of analysing diffraction problems.  An illustration of Huygens' principle is shown in Figure \@ref(fig:ch13-huygenswavelets1); we only consider the *forward moving* portion of the wavelet, not the whole spherical wavelet.
 
-**Huygens' Wavelets**
-(\#fig:ch13-huygenswavelets1)
+
+```{r echo=FALSE, ch13-huygenswavelets1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The Huygens' wavelet construction. A wavefront is considered to be a source of secondary wavelets; each subsequent wavefront is the envelope of the forward moving component of the wavelets."}
+knitr::include_graphics("visualisations/ch13-huygenswavelets1.svg")
+```
+
 
 ## The two-slit interference pattern {#sec:ch13-twoslitinterference}
 
@@ -45,13 +48,18 @@ While the propagation of light is in fact goverened by Maxwell's equations, Huyg
 
 Consider a double slit experiment, where uniform coherent waves approach a pair of slits in a barrier (Figure \@ref(fig:ch13-doubleslit1)).  According to Huygens' Principle, each slit then becomes a source of wavelets, which then radiate outwards from this point and, since the wavelets from each source are coheret, they then interfere.
 
-**Figure of double slit experiment**
-(\#fig:ch13-doubleslit1)
+
+```{r echo=FALSE, ch13-doubleslit1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The configuration of the double slit experiment. Two narrow slits are separated at distance $d$, each of which becomes a source of secondary wavelets which can then create the interference pattern."}
+knitr::include_graphics("visualisations/LaTeX/ch13-doubleslits.svg")
+```
+
 
 If we examine the path of waves travelling in an arbitrary direction from each slit which converge on the observation screen (Figure \#ref(fig:ch13-doubleslit2)), we can start to consider the behaviour of our wavelets.
 
-**Figure of double slit experiment showing angles**
-(\#fig:ch13-doubleslit2)
+```{r echo=FALSE, ch13-doubleslit2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Looking at the whole double slit experiment, we can determine the angles within the experiment and define the observation position $X$ on the screen as a function of these angles. Under the Fraunhofer condition (long field interference), the rays can be considered parallel, allowing the path difference and hence phase offset to be determined."}
+knitr::include_graphics("visualisations/LaTeX/ch13-doubleslits2.svg")
+```
+
 
 If we assume that the distance to the screen $L$ is considerably larger than the distance between the slits $d$ then, since $L \gg d$, then we can say that the angles $\theta_1$, $\theta_2$ and $\theta$ are approxiamtely equal (*i.e.* $\theta_1 \approx \theta_2 \approx \theta$); the Fraunhofer diffraction condition.
 
@@ -90,15 +98,19 @@ I = A^2 = 4 A_0^2 \cos^2 \left(\frac{\delta}{2}\right)
 
 However, since we have the expression $\delta = \frac{2\pi d}{\lambda}\sin\theta \approx \frac{2\pi d X}{\lambda L}$ the phase difference $\delta$ is proportional to the distance of the fringe from the midpoint of the interference pattern, $X$. Therefore, since $\delta \propto X$, we expect to see fringes following the intensity of a $\cos^2$ function (Figure \@ref(fig:ch13-cos2fringes)).
 
-**Figure to show $\cos^2$ relationship of fringe intensities**
-(\#fig:ch13-cos2fringes)
+
+```{r echo=FALSE, ch13-cos2fringes, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The interference pattern from two narrow slits gives an intensity pattern proportional to a $\\cos^2$ function."}
+knitr::include_graphics("visualisations/LaTeX/ch13-cos2-interference.png")
+```
 
 ## Diffraction from a single wide slit {#sec:ch13-singlewideslit}
 
-Let's now turn to the effect of coherent plane wavefronts incident on a single wide slit (Figure \@re(fig:ch13-singlewideslit1)).
+Let's now turn to the effect of coherent plane wavefronts incident on a single wide slit (Figure \@ref(fig:ch13-singlewideslit1)).
 
-**Figure to show single wide slit**
-(\#fig:ch13-singlewideslit1)
+```{r echo=FALSE, ch13-singlewideslit1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A single wide slit of width $d$ can be thought of as a source of many different wavelets; here we have shown three rays to give an indication of the complexity of the interference pattern."}
+knitr::include_graphics("visualisations/LaTeX/ch13-singlewideslit1.svg")
+```
+
 
 In this situation, we imagine dividing the aperture into a set of secondary sources and use the Huygens' construction to consider secondary wavelets.  These 'diffracted waves' will appear to spread.  To find the diffracted intensity in a particualr direction, we add to gether the secondary waves travelling in that direction, taking into account the path (and hence phase) differences.
 
@@ -109,8 +121,10 @@ We will conduct our analysis in two stages:
 
 The workthrough for this example is slightly involved, so is shown elsewhere, however we show the elements of the solution here and, as for the two narrow slits example above,  use it to determine the amplitude of the superposition as a function of $X$, the distance on screen.
 
-**Figure to show construction of diffraction from a wide slit**
-(\#fig:ch13-singlewideslit2)
+```{r echo=FALSE, ch13-singlewideslit2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Construction of the diffraction pattern from a single wide slit involves looking at pairs of wavelets $\\Delta x$; through quantifying the phase difference between these two wavelets and summing over the slit we can reconstruct the diffraction pattern."}
+knitr::include_graphics("visualisations/LaTeX/ch13-singlewideslit2b.svg")
+```
+
 
 The result of the derivation is that the superposition observed as a function of $X$ is a travelling wave with amplitude as:
 
@@ -144,8 +158,10 @@ From Equation \@ref(eq:ch13-singlewideslit2), we can determine that our dark fri
 
 Once again, we have a series of coherent planar wavefronts approaching the barrier, this time with two wide slits present (Figure \@ref(fig:ch13-twowideslits1)).
 
-**Figure to show two wide slits**
-(\#fig:ch13-twowideslits1)
+
+```{r echo=FALSE, ch13-twowideslits1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The configuration for two wide slits of width $a$ at separation $b$ appears similar to the construction for narrow slits, except now each slit is a source of a number of wavelets, rather than a single wavelet. This has profound implications on the diffraction pattern observed."}
+knitr::include_graphics("visualisations/LaTeX/ch13-doubleslitswide1.svg")
+```
 
 We can use the same method as was used previously, but with different limits of integration, and we obtain a travelling wave with amplitude as given in Equation \@ref(eq:ch13-twowideslits1):
 
@@ -171,8 +187,11 @@ I \propto A^2 = \underbrace{a^2 A_0^2}_{\textsf{Constant scaling factors}}
 
 WHen we have two functions combined in this manner, we say that one is the 'envelope' of the other - it effectively "contains" and controls the intensity of the other.  In general, the lower frequency function is the 'envelope', so here the $\mathrm{sinc}^2$ function is the envelope of the $\cos^2$ function. The intensities of this combined function are shown in Figure \@ref(fig:ch13-twowideslits2)
 
-**Figure to show intensities of diffraction from two wide slits**
-(\#fig:ch13-twowideslits2)
+
+```{r echo=FALSE, ch13-twowideslits2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The diffraction pattern from two wide slits is a combination of the result of a single wide slit and that of two narrow slits. The sinc$^{2}$ function becomes the envelope shaping the intensities of the peaks from the narrow slit solution."}
+knitr::include_graphics("visualisations/ch13-doublewideslit1.svg")
+```
+
 
 
 ## Multiple slits with equal spacing {#sec:ch13-diffmultipleslits}
@@ -201,7 +220,6 @@ This integral is an example of a Fourier transform *i.e.* the *amplitude* of a (
 
 **Example** In Section \@ref(sec:ch11-fttophat) we demonstrated a 'top-hat' function, which could represent a broad slit. The Fourier tranform of this gave us the diffracted amplitude which, when squared, gives us the expected intensity pattern derived above.
 
-**Figure to show FT of top-hat function**
 
 ## Resolution limit of optical instruments {#sec:ch13-resolutionlimit}
 
@@ -209,8 +227,12 @@ This integral is an example of a Fourier transform *i.e.* the *amplitude* of a (
 
 Light from a point source will be diffracted by a circular aperture (*e.g. the objective lens of a telescope, microscope or even your eye) to give a pattern similar to that of a single wide slit, but with circular symmetry. This is illustrated in Figure \@ref(fig:ch13-circulardiffraction1).
 
-**Figure to show circular diffraction pattern**
-(\#fig:ch13-circulardiffraction1)
+
+```{r echo=FALSE, ch13-circulardiffraction1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A simulation of the diffraction pattern of a point source through an aperture. The defined disc in the center is known as the Airy disc image. The intensity across the diffraction pattern is as we have seen for the one dimensional slit, derived from the sinc function."}
+knitr::include_graphics("visualisations/ch13-singlesource-diffraction.svg")
+knitr::include_graphics("visualisations/ch13-singlesource-diffraction-b.svg")
+
+```
 
 Knowing that this intensity is based on the $\mathrm{sinc}^2$ function described in Equation \@ref(eq:ch13-singlewideslit1), we can determine the angular position of the first dark fringe (first zero point) is given by the angular position:
 
@@ -223,10 +245,12 @@ Knowing that this intensity is based on the $\mathrm{sinc}^2$ function described
 
 This is the end result for a single incoherent source passing through an aperture; however what happens if we consider more than one incoherent source? At what point is it impossible to determine the number of sources? It is this which determines the limit of optical resolution.
 
-Let's now consider two incoherent point sources with an angular separation $\alpha$ at the aperture. This is illustrated in Figure \@ref(fig:ch13-opticalreslimit1) below.
+Let's now consider two incoherent point sources with an angular separation $\alpha$ at the aperture. 
 
-**Figure to show interference with two point sources**
-(\#fig:ch13-opticalreslimit1)
+<!-- This is illustrated in Figure \@ref(fig:ch13-opticalreslimit1) below. -->
+
+<!-- **Figure to show interference with two point sources** -->
+<!-- (\#fig:ch13-opticalreslimit1) -->
 
 The sources are at the limit of resolution ("just resolved") if the maximum of the diffraction pattern of one point source (caused by the aperture) correponds to the first minimum of the diffraction pattern of the other; in other words; we see a 'bright spot' where we would expect to see darkness.  In terms of the angular separation $\alpha$, the two sources are just resolved if:
 
@@ -236,12 +260,23 @@ The sources are at the limit of resolution ("just resolved") if the maximum of t
 
 (note the use of the small angle approximation here)
 
+This is simulated in the intensity profile shown in Figure \@ref(fig:ch13-opticalreslimit1).
+
+```{r echo=FALSE, ch13-opticalreslimit1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The limit of optical resolution occurs if the maximum of one source aligns with the minimum of the second; this creates a 'dip' between the observed signal intensity allowing the sources to be separately resolved. Any closer however and these will merge into a single bright peak in the middle."}
+knitr::include_graphics("visualisations/ch13-opticalresolutionlimit1.svg")
+```
+
 Figure \@ref(fig:ch13-opticalreslimit2) shows two point sources which are clearly resolved ($\alpha > \frac{1.22 \lambda}{D}$), while Figure \@ref(fig:ch13-opticalreslimit3) shows two point sources which are just at the limit of resolution ($\alpha = \frac{1.22 \lambda}{D}$)
 
-**Figure to show sources clearly resolved**
-(\#fig:ch13-opticalreslimit2)
 
-**Figure to show sources at the resolution limit**
-(\#fig:ch13-opticalreslimit3)
+```{r echo=FALSE, ch13-opticalreslimit2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Sources can be clearly defined up to a certain limit; but diffraction patterns cause interference around the image plane, but each source still has its defined Airy disc."}
+knitr::include_graphics("visualisations/ch13-opticalresolutionlimit2.svg")
+```
+
+
+```{r echo=FALSE, ch13-opticalreslimit3, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="At the resolution limit, a 'dimming' can still be perceived between the sources. At closer separation however, the two Airy discs will blend into one bright source."}
+knitr::include_graphics("visualisations/ch13-opticalresolutionlimit3.svg")
+```
+
 
 It is easier to visualise this limit by plotting a graph of the expected intensities. We can resolve the two sources provided there is a clear "dip" in intensity of the resulting intensity sum between the peaks of the two interference patterns, however if they are close enough together such that the result has no dip in the middle we can no longer resolve the sources.
