@@ -100,7 +100,7 @@ However, since we have the expression $\delta = \frac{2\pi d}{\lambda}\sin\theta
 
 
 ```{r echo=FALSE, ch13-cos2fringes, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The interference pattern from two narrow slits gives an intensity pattern proportional to a $\\cos^2$ function."}
-knitr::include_graphics("visualisations/LaTeX/ch13-cos2-interference.png")
+knitr::include_graphics("visualisations/LaTeX/ch13-cos2-interference.svg")
 ```
 
 ## Diffraction from a single wide slit {#sec:ch13-singlewideslit}
