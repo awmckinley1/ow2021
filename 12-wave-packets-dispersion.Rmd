@@ -238,10 +238,10 @@ knitr::include_graphics("visualisations/ch12-dispersioncurve1.svg")
 ```
 
 
-From Equation \@ref(eq:ch12-phononvibration2), we can find the group velocity $v_p$ by differentiation:
+From Equation \@ref(eq:ch12-phononvibration2), we can find the group velocity $v_g$ by differentiation:
 
 \begin{equation}
-v_p = \frac{\mathrm{d}\omega}{\mathrm{d}k} = \frac{F}{\mu} \cos \left(\frac{ka}{2}\right)
+v_g = \frac{\mathrm{d}\omega}{\mathrm{d}k} = \frac{F}{\mu} \cos \left(\frac{ka}{2}\right)
 (\#eq:ch12-phononvibration3)
 \end{equation}
 

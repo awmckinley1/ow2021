@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2021-03-07}
+\date{2021-03-09}
 
 \begin{document}
 \maketitle
@@ -3071,7 +3068,7 @@ In other words, the intensity of the sound wave travelling at constant speed \(v
 \hypertarget{sec:ch9-intensitylevels}{%
 \section{Levels of intensity}\label{sec:ch9-intensitylevels}}
 
-The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound.} To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
+The human ear perceives sounds according to the logarithm of their intensity - not the absolute value of the intensity.\footnote{When you encounter electronics you will find potentiometers labelled ``audio taper''; this describes their use in audio applications in which the resistance is a logarithmic response to accommodate our logarithmic perception of sound. } To represent an \textbf{intensity level} we use the term \textbf{decibel} (dB). This intensity level, \(\beta\) is represented in Equation \eqref{eq:ch9-decibel1} as follows:
 
 \begin{equation}
 \beta = 10 \log_{10}\left(\frac{I}{I_0}\right)
@@ -4043,10 +4040,10 @@ If we plot the angular frequency \(\omega\) against the wavenumber \(k\), we obt
 \caption{The variation in angular frequency $\omega$ with wavenumber $k$ in a dispersive medium. There is an upper limit to the wavenumber which the medium can sustain, namely $\pi / a$}\label{fig:ch12-dispersioncurve1}
 \end{figure}
 
-From Equation \eqref{eq:ch12-phononvibration2}, we can find the group velocity \(v_p\) by differentiation:
+From Equation \eqref{eq:ch12-phononvibration2}, we can find the group velocity \(v_g\) by differentiation:
 
 \begin{equation}
-v_p = \frac{\mathrm{d}\omega}{\mathrm{d}k} = \frac{F}{\mu} \cos \left(\frac{ka}{2}\right)
+v_g = \frac{\mathrm{d}\omega}{\mathrm{d}k} = \frac{F}{\mu} \cos \left(\frac{ka}{2}\right)
 \label{eq:ch12-phononvibration3}
 \end{equation}
 
