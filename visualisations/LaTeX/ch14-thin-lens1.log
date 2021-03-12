@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"ray_trace_demo 2.tex"
-(./ray_trace_demo 2.tex
+**ch14-thin-lens1.tex
+(./ch14-thin-lens1.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/standalone/standalone.cls
@@ -729,8 +729,8 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen167
 \SOUL@ulht=\dimen168
 )
-(./ray_trace_demo 2.aux)
-\openout1 = `"ray_trace_demo 2.aux"'.
+(./ch14-thin-lens1.aux)
+\openout1 = `ch14-thin-lens1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -777,27 +777,27 @@ File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
 \makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks36
 )
-./ray_trace_demo 2.tex:33: Undefined control sequence.
+./ch14-thin-lens1.tex:34: Undefined control sequence.
 \c@lor@to@ps ->\PSTricks 
                          _Not_Configured_For_This_Format
-l.33 ]}
-       
+l.34 }
+      
 ? 
-./ray_trace_demo 2.tex:33: Emergency stop.
+./ch14-thin-lens1.tex:34: Emergency stop.
 \c@lor@to@ps ->\PSTricks 
                          _Not_Configured_For_This_Format
-l.33 ]}
-       
+l.34 }
+      
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
  11785 strings out of 492995
- 204595 string characters out of 6132704
+ 204587 string characters out of 6132704
  330239 words of memory out of 5000000
  15186 multiletter control sequences out of 15000+600000
  8024 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,56p,631b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-./ray_trace_demo 2.tex:33:  ==> Fatal error occurred, no output PDF file produc
-ed!
+ 43i,5n,56p,628b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+./ch14-thin-lens1.tex:34:  ==> Fatal error occurred, no output PDF file produce
+d!
