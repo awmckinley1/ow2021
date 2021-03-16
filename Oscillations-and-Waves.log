@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  16 MAR 2021 00:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  16 MAR 2021 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,7 +823,7 @@ File: visualisations/ch1-xvacomp.pdf Graphic file (type pdf)
 File: visualisations/ch1-shmcircular.pdf Graphic file (type pdf)
 <use visualisations/ch1-shmcircular.pdf>
 [15]
-Underfull \hbox (badness 1158) in paragraph at lines 540--541
+Underfull \hbox (badness 1158) in paragraph at lines 542--543
 []\TU/lmr/m/n/10 The $[]$-component of the motion is $[]$ out of phase wiht the
 
  []
@@ -891,7 +891,7 @@ File: visualisations/ch5-forcedosc4.pdf Graphic file (type pdf)
 File: visualisations/ch5-forcedosc5.pdf Graphic file (type pdf)
 <use visualisations/ch5-forcedosc5.pdf>
 [49]
-Overfull \hbox (172.63872pt too wide) detected at line 1779
+Overfull \hbox (172.63872pt too wide) detected at line 1781
 [][]
  []
 
@@ -928,7 +928,7 @@ File: visualisations/ch7-transversesine1.pdf Graphic file (type pdf)
 <use visualisations/ch7-transversesine1.pdf>
 
 LaTeX Warning: Reference `eq:ch7-tranversesine2' on page 65 undefined on input 
-line 2204.
+line 2206.
 
 [65
 
@@ -1010,7 +1010,7 @@ File: visualisations/slides-harmonicsum_clar.pdf Graphic file (type pdf)
 <use visualisations/slides-harmonicsum_clar.pdf>
 
 LaTeX Warning: Reference `fig:ch11-oboeclarinetharmonics' on page 107 undefined
- on input line 3679.
+ on input line 3681.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1032,7 +1032,7 @@ File: visualisations/ch12-wavepacketdispersion1.pdf Graphic file (type pdf)
 ] [112]
 
 LaTeX Warning: Reference `eq:ch12-addtwowavebeats5' on page 113 undefined on in
-put line 3847.
+put line 3849.
 
 File: visualisations/ch12-beats1.pdf Graphic file (type pdf)
 <use visualisations/ch12-beats1.pdf>
@@ -1044,7 +1044,7 @@ TU/lmr/m/n/10 113
 
 [113] [114] [115]
 
-LaTeX Warning: Command \v invalid in math mode on input line 3973.
+LaTeX Warning: Command \v invalid in math mode on input line 3975.
 
 Missing character: There is no ̌ in font lmmi7!
 Missing character: There is no ̌ in font lmmi10!
@@ -1121,7 +1121,7 @@ File: visualisations/LaTeX/ch15-planemirror1.pdf Graphic file (type pdf)
 [141]
 Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 4614--4615
+Underfull \hbox (badness 10000) in paragraph at lines 4616--4617
 
  []
 
@@ -1175,23 +1175,47 @@ Missing character: There is no 𝜃 in font [lmroman10-regular]:mapping=tex-text
 Chapter 17.
 [159
 
-] [160] [161] [162] [163] [164] [165] [166
-
-]
+] [160] [161] [162] [163] [164]
+File: visualisations/LaTeX/ch18-particleinbox123.pdf Graphic file (type pdf)
+<use visualisations/LaTeX/ch18-particleinbox123.pdf>
+[165] [166]
 Chapter 18.
-[167] [168] [169]
-Underfull \hbox (badness 1783) in paragraph at lines 5586--5586
+[167
+
+] [168] [169]
+File: visualisations/LaTeX/ch18-infinitefinite-well1.pdf Graphic file (type pdf
+)
+<use visualisations/LaTeX/ch18-infinitefinite-well1.pdf>
+File: visualisations/LaTeX/ch18-infinitefinite-well2.pdf Graphic file (type pdf
+)
+<use visualisations/LaTeX/ch18-infinitefinite-well2.pdf>
+File: visualisations/LaTeX/ch18-infinitefinite-well3.pdf Graphic file (type pdf
+)
+<use visualisations/LaTeX/ch18-infinitefinite-well3.pdf>
+
+Underfull \hbox (badness 1783) in paragraph at lines 5601--5601
 []\TU/lmr/bx/n/14.4 Reflection and transmission of particle
  []
 
-[170]
+File: visualisations/LaTeX/ch18-pestep1.pdf Graphic file (type pdf)
+<use visualisations/LaTeX/ch18-pestep1.pdf>
+File: visualisations/LaTeX/ch18-pestep2.pdf Graphic file (type pdf)
+<use visualisations/LaTeX/ch18-pestep2.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[170] [171]
+File: visualisations/LaTeX/ch18-pestep3.pdf Graphic file (type pdf)
+<use visualisations/LaTeX/ch18-pestep3.pdf>
+File: visualisations/LaTeX/ch18-pestep4.pdf Graphic file (type pdf)
+<use visualisations/LaTeX/ch18-pestep4.pdf>
 No file Oscillations-and-Waves.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5644.
-[171]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5644.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5677.
+[172] [173]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5677.
 (./Oscillations-and-Waves.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5644.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5644.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5677.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5677.
 
 LaTeX Warning: There were undefined references.
 
@@ -1200,12 +1224,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 19805 strings out of 479418
- 369803 string characters out of 5884585
- 821258 words of memory out of 5000000
- 36930 multiletter control sequences out of 15000+600000
+ 19862 strings out of 479418
+ 372257 string characters out of 5884585
+ 822367 words of memory out of 5000000
+ 36979 multiletter control sequences out of 15000+600000
  538901 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,11n,118p,1007b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Oscillations-and-Waves.pdf (171 pages).
+Output written on Oscillations-and-Waves.pdf (173 pages).

@@ -1,0 +1,41 @@
+\documentclass[convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+
+\usepackage{auto-pst-pdf}
+\usepackage{pst-optic}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{decorations.pathmorphing,patterns,arrows,shapes.arrows,shapes}
+\usepgfplotslibrary{fillbetween}
+
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\pgfplotsset{compat=1.10}
+\begin{document}
+
+\begin{tikzpicture}[xscale=1,yscale=0.5, path fading=fade down]
+  \draw[->] (0,-3)  --  (0,5) node[anchor=north east]{$\psi(x)$};
+%  \draw[->] (3.1415,0) -- (3.1415,5);
+  \draw[->] (-3,0)--(0,0)node[anchor=north east]{$0$}-- (3,0);
+%  \draw[thick,orange] (-3,0)--(-0.5,0) --(-0.5,3) -- (0.5,3) -- (0.5,0) -- (3,0) node[right]{$$};
+
+  \draw[thick,orange] (-0.5,-2) --(-0.5,3) node[right]{$$};
+  \draw[thick,orange] (0.5,-2) --(0.5,3) node[right]{$$};
+\fill [orange,opacity=0.3] (-0.5,-2) rectangle (0.5,3);
+%    \shade[top color=white, opacity=0.0, bottom color=gray, opacity=0.3] (0,5)--(-0.5,5)--(-0.5,6)--(0,6)--cycle;
+%    \shade[top color=gray, opacity=0.0, bottom color=gray, opacity=0.3] (0,0)--(0,5)--(-0.5,5)--(-0.5,0)--cycle;
+%    \shade[top color=white, opacity=0.0, bottom color=gray, opacity=0.3] (pi,5)--(pi,6)--(3.64,6)--(3.64,5)--cycle;
+%    \shade[top color=gray, opacity=0.0, bottom color=gray, opacity=0.3] (pi,0)--(pi,5)--(3.64,5)--(3.64,0)--cycle;
+%  \node[red,scale=0.5,below] at (0.5*pi,2) {Infinite well distribution};
+%  \draw[domain=0:pi,samples=2000,red] plot(\x,{sin(1*\x r)*sin(1*\x r) +2});
+
+  \draw[domain=-2:-0.5,samples=2000,blue] plot (\x,{2.5*cos((8*\x - 1.5) r)});
+  \draw[domain=-0.5:0.5,samples=100,blue] plot(\x,{1.08*e^(-\x)});
+  \draw[domain=0.5:2,samples=2000,blue] plot (\x,{0.85*cos((8*\x +3) r)});
+\end{tikzpicture}
+
+
+
+\end{document}

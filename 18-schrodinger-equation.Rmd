@@ -3,7 +3,7 @@
 
 *Textbook link: Tipler and Mosca, Section 35.1*
 
-The *time dependent* Schr$ouml;dinger equation in one dimension is given in Equation \@ref(eq:ch18-schrodingertd1):
+The *time dependent* Schr&ouml;dinger equation in one dimension is given in Equation \@ref(eq:ch18-schrodingertd1):
 
 \begin{equation}
 -\frac{\hbar^2}{2m} \frac{\partial^2 \psi(x,t)}{\partial x^2} + U \psi(x,t) = \mathrm{i}\hbar \frac{\partial \psi(x,t)}{\partial t}
@@ -111,14 +111,23 @@ It can be shown that a simple sinusoidal function such as $\psi = \sin(kx)$ will
 
 The $\pm$ solutions are exponential increase at $x<0$ and decrease at $x>L$ (*i.e.* there is an exponential 'tail-off' at either boundary of the box).  If the energy of the particle is less than $U_0$, the particle will be bound by the potential well, as expected, **however**, the wavefunctions will actually 'spill over' the edges of the box.  This implies that the particle will spend some of its time **outside the well**, contrary to classical expectations!
 
-**Figure to show wavefunctions in a finite well**
+```{r echo=FALSE, ch18-finitewell1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="In a finite potential well, there is an exponential 'tail off' in the probability of finding the particle at the edges of the box. In these circumstances, the wavefunction decays exponentially outside the boundaries, but there is a finite probability of finding the particle at these locations."}
+knitr::include_graphics("visualisations/LaTeX/ch18-infinitefinite-well1.svg")
+knitr::include_graphics("visualisations/LaTeX/ch18-infinitefinite-well2.svg")
+knitr::include_graphics("visualisations/LaTeX/ch18-infinitefinite-well3.svg")
+```
+
 
 ## Reflection and transmission of particle waves {#sec:ch18-reflectionparticlewaves}
 
 Let's now consider what happens as a particle of energy $E$ travels towards a potential energy step function of height $U_0$ (Figure \@ref(fig:ch18-reflectionparticlewave1)).
 
-**Figure to show a potential energy step function**
-(\#fig:ch18-reflectionparticlewave1)
+
+```{r echo=FALSE, ch18-reflectionparticlewave1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A potential energy step function such as that which might bound a finite well is shown here; a sudden step up in potential from one region of space to another. If the wavefunction does not have sufficient energy to pass the step, it will tunnel into the step and decay exponentially (lower diagram)."}
+knitr::include_graphics("visualisations/LaTeX/ch18-pestep1.svg")
+knitr::include_graphics("visualisations/LaTeX/ch18-pestep2.svg")
+```
+
 
 In a classical situation, we can consider the following situations:
 
@@ -146,13 +155,18 @@ k^2 = \frac{2mE}{\hbar^2} = \frac{p^2}{\hbar^2}
 
 Now, instead of a step potential, consider a potential barrier in the path of the particle, at a height sugh that the energy of the particle $E$ is slightly less than $U_0$ (Figure \@ref(fig:ch18-tunelling1)):
 
-**Figure to show potential barrier**
-(\#fig:ch18-tunelling1)
 
-As in Sectin \@ref(sec:ch18-reflectionparticlewaves), we expect the wacefunction to penetrate into the barrier, **however** if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure \@ref(fig:ch18-tunelling2)):
+```{r echo=FALSE, ch18-tunelling1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A potential barrier has finite width as shown above. This can stop a particle passing however a particle can tunnel through."}
+knitr::include_graphics("visualisations/LaTeX/ch18-pestep3.svg")
+```
 
-**Figure to show tunnelling**
-(\#fig:ch18-tunelling2)
+
+As in Sectin \@ref(sec:ch18-reflectionparticlewaves), we expect the wavefunction to penetrate into the barrier, **however** if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure \@ref(fig:ch18-tunelling2)):
+
+
+```{r echo=FALSE, ch18-tunelling2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A waveparticle approaching a potential barrier can tunnel through the barrier if it is sufficiently narrow. It will appear the other side of the barrier with a decayed amplitude, suggesting a smaller probability of finding the particle on the other side."}
+knitr::include_graphics("visualisations/LaTeX/ch18-pestep4.svg")
+```
 
 In other words, there is a probability that the particle will penetrate, or "tunnel through", the barrier.  The smaller amplitude on the other side of the barrier indicates that there is a smaller probability of finding the particle on the transmission side of the barrier.  In classical mechanics this would be a completely forbidden behaviour; though classical tunnelling of waves is possible (via evanescent modes when a wave is undergoing total internal reflection; see Section \@ref(sec:ch14-evanescence)).
 
