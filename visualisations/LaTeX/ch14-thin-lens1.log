@@ -1,85 +1,84 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.24)  12 MAR 2021 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.16)  14 MAR 2021 21:13
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **ch14-thin-lens1.tex
 (./ch14-thin-lens1.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2015/07/15 v1.2 Class to compile TeX sub-files stand
-alone
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count79
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\sa@internal=\count80
-\c@sapage=\count81
+\sa@internal=\count81
+\c@sapage=\count82
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/standalone/standalone.cfg
-File: standalone.cfg 2015/07/15 v1.2 Default configuration file for 'standalone
-' class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-\c@part=\count82
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@subparagraph=\count87
-\c@figure=\count88
-\c@table=\count89
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-\sa@box=\box26
+\sa@box=\box27
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pst-optic/pst-optic.sty
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pstricks/pstricks.sty
-Package: pstricks 2017/03/17 v0.63 LaTeX wrapper for `PSTricks' (RN,HV)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pst-optic/pst-optic.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count90
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
@@ -91,11 +90,11 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pstricks/pstricks.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
 File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pstricks/pst-fp.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.05, 2010/01/17 (hv)
 \pstFP@xs=\count91
 \pstFP@xia=\count92
@@ -107,26 +106,27 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 \pstFP@regs=\count98
 \pstFP@times=\count99
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks16
 \pgfutil@tempdima=\dimen103
 \pgfutil@tempdimb=\dimen104
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
 \pgfkeys@tmptoks=\toks19
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Loading pgffor.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
 \pgf@x=\dimen105
 \pgf@xa=\dimen106
 \pgf@xb=\dimen107
@@ -142,33 +142,33 @@ ode.tex
 \pgfutil@tempcnta=\count104
 \pgfutil@tempcntb=\count105
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen113
 \pgfmath@count=\count106
-\pgfmath@box=\box27
+\pgfmath@box=\box28
 \pgfmath@toks=\toks20
 \pgfmath@stack@operand=\toks21
 \pgfmath@stack@operation=\toks22
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
 nometric.code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
 m.code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
 rison.code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
 code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
 .code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count107
 ))
 \pgffor@iter=\dimen114
@@ -178,7 +178,7 @@ erarithmetics.code.tex)))
 )
 \psLoopIndex=\count108
 
-`PSTricks' v2.73  <2017/05/18> (tvz)
+`PSTricks' v2.96  <2019/02/23> (tvz,hv)
 \pst@dima=\dimen116
 \pst@dimb=\dimen117
 \pst@dimc=\dimen118
@@ -189,9 +189,9 @@ erarithmetics.code.tex)))
 \pst@dimn=\dimen123
 \pst@dimo=\dimen124
 \pst@dimp=\dimen125
-\pst@hbox=\box28
-\pst@ibox=\box29
-\pst@boxg=\box30
+\pst@hbox=\box29
+\pst@ibox=\box30
+\pst@boxg=\box31
 \pst@cnta=\count109
 \pst@cntb=\count110
 \pst@cntc=\count111
@@ -204,7 +204,7 @@ erarithmetics.code.tex)))
 \pst@cntp=\count118
 \@zero=\count119
 \pst@toks=\toks25
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pstricks/pstricks.con)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks.con)
 \psunit=\dimen126
 \psxunit=\dimen127
 \psyunit=\dimen128
@@ -224,16 +224,16 @@ erarithmetics.code.tex)))
 \sh@wgridYunit=\dimen139
 \pst@shift=\dimen140
 )
-File: pstricks.tex 2017/05/18 v2.73 `PSTricks' (tvz,hv)
+File: pstricks.tex 2019/02/23 v2.96 `PSTricks' (tvz,hv)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pstricks/pst-fp.tex)
-File: pst-fp.tex 2017/05/18 v2.73 `PST-fp' (hv)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2019/02/23 v2.96 `PST-fp' (hv)
 )
 Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-optic/pst-optic.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-node/pst-node.tex
- v1.39, 2017/01/20
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-optic/pst-optic.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.42, 2019/03/03
 \psrow=\count121
 \pscol=\count122
 \psmatrixcnt=\count123
@@ -243,40 +243,41 @@ Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 \num@pts=\count125
 \pst@argcnt=\count126
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-plot/pst-plot.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-tools/pst-tools.tex
-`PST-tools' v0.06, 2017/05/12 (hv))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.09b, 2017/12/03 (hv))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.01, 2016/09/01 (dr,hv)
 \pshooklength=\dimen141
 \pshookwidth=\dimen142
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-3d/pst-3d.tex
 `PST-3d' v1.11, 2010/02/14 (tvz))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/multido/multido.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
 \multido@count=\count127
 \multidocount=\count128
 \multido@stuff=\toks28
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-math/pst-math.tex
-`pst-math' v0.63 , (CJ,hv)) `pstricks-add' v3.83, 2017/05/10 (dr,hv)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.87, 2019/01/12 (dr,hv)
 \psparallelogramsep=\dimen143
 \pst@cntC=\count129
+\pst@stepcount=\count130
 \chart@ColorIndex=\dimen144
 \chart@ColorStep=\dimen145
 \pst@chartHeight=\dimen146
 \pst@chartStackDepth=\dimen147
 \pst@chartStackWidth=\dimen148
-\chart@Toggle=\count130
-\psVectorCtr=\count131
+\chart@Toggle=\count131
+\psVectorCtr=\count132
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/multido/multido.tex
- v1.42, 2010/05/14 <tvz>)  v1.78, 2017/04/16 (tvz,hv)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>)  v1.91, 2018/08/31 (tvz,hv)
 \pstRadUnit=\dimen149
 \pstRadUnitInv=\dimen150
-\pst@linecnt=\count132
+\pst@linecnt=\count133
 \RCD@file=\read1
 \psxlabelsep=\dimen151
 \psylabelsep=\dimen152
@@ -287,7 +288,7 @@ Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 \pst@yticksizeA=\dimen157
 \pst@yticksizeB=\dimen158
 \pst@yticksizeC=\dimen159
-\@digitcounter=\count133
+\@digitcounter=\count134
 \psk@llx=\dimen160
 \psk@lly=\dimen161
 \psk@urx=\dimen162
@@ -295,29 +296,29 @@ Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 \pst@xunit=\dimen164
 \pst@yunit=\dimen165
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pst-grad/pst-grad.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-grad/pst-grad.tex
 `pst-grad' v1.06, 2006/11/27 (tvz,dg,hv))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/multido/multido.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>)
 `PST-Optic' v1.02, 2016/07/10 (Manuel Luque and Herbert Voss))
 File: pst-optic.tex 2016/07/10 v1.02 `PST-optic' (ML,hv)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/arev.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arev.sty
 Package: arev 2005/06/14 0.1 Arev Sans package
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/arevtext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevtext.sty
 Package: arevtext 2005/09/01 0.1 Arev Sans Text package
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -331,9 +332,84 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
@@ -398,13 +474,13 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/arevmath.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevmath.sty
 Package: arevmath 2006/02/19 0.1 Arev Sans Math package
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks29
 \symAMSa=\mathgroup4
@@ -412,9 +488,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/ams-mdbch.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/ams-mdbch.sty
 Package: ams-mdbch 2005/05/08 v1.4 Bold mdbch (Math Design Project) to replace 
 AMS fonts
+Now handling font encoding MDA ...
+... no UTF-8 mapping file for font encoding MDA
 \symmathdesignA=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `mathdesignA' in version `bold'
 (Font)                  MDA/mdbch/b/n --> MDA/mdbch/b/n on input line 47.
@@ -659,7 +737,7 @@ LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 313.
 LaTeX Font Info:    Redeclaring math symbol \circledast on input line 314.
 LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 315.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -695,7 +773,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 124.
 \symextraup=\mathgroup7
 \symextraitalic=\mathgroup8
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/arevsymbols.tex
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevsymbols.tex
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 22.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 23.
 LaTeX Font Info:    Redeclaring math symbol \digamma on input line 25.
@@ -707,17 +785,17 @@ LaTeX Font Info:    Redeclaring math symbol \mho on input line 58.
 )
 LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 204.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/bera/beramono.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/soul/soul.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks30
 \SOUL@lasttoken=\toks31
@@ -747,34 +825,34 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 8.
 LaTeX Font Info:    Try loading font information for MDA+cmr on input line 8.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/mathdesign/mdacmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T1+fav on input line 8.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/arev/t1fav.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/t1fav.fd
 File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
+\scratchcounter=\count135
 \scratchdimen=\dimen169
-\scratchbox=\box31
-\nofMPsegments=\count135
-\nofMParguments=\count136
+\scratchbox=\box32
+\nofMPsegments=\count136
+\nofMParguments=\count137
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count137
+\MPscratchCnt=\count138
 \MPscratchDim=\dimen170
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
 \everyMPtoPDFconversion=\toks36
 )
 ./ch14-thin-lens1.tex:34: Undefined control sequence.
@@ -792,10 +870,10 @@ End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 11785 strings out of 492995
- 204587 string characters out of 6132704
- 330239 words of memory out of 5000000
- 15186 multiletter control sequences out of 15000+600000
+ 11757 strings out of 492616
+ 204906 string characters out of 6129481
+ 336711 words of memory out of 5000000
+ 15520 multiletter control sequences out of 15000+600000
  8024 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,5n,56p,628b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
