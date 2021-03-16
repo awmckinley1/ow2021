@@ -9,8 +9,10 @@ Having examined the principles of reflection in respect of curved mirrors, we no
 
 We will first consider how a light ray refracts when encountering a single curved interface between two media. In the example shown in Figure \@ref(fig:ch16-sphericalsurface1), the image is shown inside the more optically dense medium.
 
-**Figure of refraction at single spherical surface**
-(\#fig:ch16-sphericalsurface1)
+```{r echo=FALSE, ch16-sphericalsurface1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Refraction at a spherical surface involves the focussing of the rays to a real image. Note that this is not (yet) a lens as only a single refraction is considered. Rays through the center of curvature $C$ are perpendicular to the surface and are not refracted, while rays which are not perpendicular to the surface are subject to Snell's law and refract as expected. These rays converge with the central rays to create an image at $P'$."}
+knitr::include_graphics("visualisations/LaTeX/ch16-sphericalsurface.svg")
+```
+
 
 Examining the rays in Figure \@ref(fig:ch16-sphericalsurface1), we can use Snell's law and geometry to establish the relationships between the refractive indices and the image properties.
 
@@ -46,8 +48,11 @@ We can then substitute our expression for $\theta_1$ to eliminate this from the 
 
 As we are assuming small angles, we are also assuming that the rays are paraxial, we can then establish relations for the angles in relation to Figure \@ref(fig:ch16-sphericalsurface2):
 
-**Figure of refraction dimensions at single spherical surface**
-(\#fig:ch16-sphericalsurface2)
+
+```{r echo=FALSE, ch16-sphericalsurface2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="We can determine the position of the image at $s'$ from the refractive indices and the object position $s$ through determining the angles and assuming small values."}
+knitr::include_graphics("visualisations/LaTeX/ch16-sphericalsurfacedims.svg")
+```
+
 
 Assuming paraxial rays, then:
 
@@ -84,8 +89,10 @@ As with the mirror, there are a number of sign conventions to be aware of for a 
 
 As for the spherical mirror, the curved interface can be considered to have magnification properties.  We can consider these in terms of the angles of incidence and refraction along the optical axis of the surface (Figure \@ref(fig:ch16-sphericalsurfacemag1)).
 
-**Figure to show magnification on a spherical surface**
-(\#fig:ch16-sphericalsurfacemag1)
+```{r echo=FALSE, ch16-sphericalsurfacemag1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The magnification ratio between the object and image size is related to the angles $\\theta_1$ and $\\theta_2$."}
+knitr::include_graphics("visualisations/LaTeX/ch16-sphericalsurfacemag1.svg")
+```
+
 
 In this construction, we have defined two triangles, each of which give us expressions for the angles of incidence and refraction; the angle of incidence can be determined by the height of the object ($y$) and its distance from the surface ($s$), while the angle of refraction is defined by the height of the image ($y'$) and its distance behind the surface ($s'$).
 
@@ -114,8 +121,11 @@ We now consider a thin lens.  The term "thin" is a way of describing the lens su
 
 Refraction occurs at two surfaces of radius $r_1$ and $r_2$ respectively.  Generally we assume the lens is in air, so the refractive index of the material is $n$ and we assume the refractive index of air to be $\sim 1$. We consider the refraction at each surface separately in order to build the overall picture of the light path shown in Figure \@ref(fig:ch16-thinlens1).
 
-**Ray diagram of light and thin lens**
-(\#fig:ch16-thinlens1)
+
+```{r echo=FALSE, ch16-thinlens1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A thin lens now has two refracting surfaces (some lenses are flat on one side; they still have refraction at these surfaces!). The first refraction from the object at point $P$ creates an apparent virtual object at $P'$ for the second refraction."}
+knitr::include_graphics("visualisations/LaTeX/ch16-thinlightlens1.svg")
+```
+
 
 The best way to understand what is happening in Figure \@ref(fig:ch16-thinlens1) is to look at each interface in turn:
 
@@ -169,8 +179,9 @@ Having derived the lens equation, we now look at the different forms which lense
 
   Any lens (with material of $n$ greater than that of the surrounding medium) which is **thicker** in the middle than at the edges will be a **converging lens** *i.e.* parallel rays from any direction are brought to a focus on the focal plane (Figure \@ref(fig:ch16-converginglens1)).
 
-**Figure to show converging lens**
-(\#fig:ch16-converginglens1)
+```{r echo=FALSE, ch16-converginglens1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A converging lens is shown to be thicker in the middle than at the edges. This causes light rays to converge(!), creating a real image. In this example,rays from infinity (parallel rays) are focussed onto the focal point $F$. Any rays from 'infinity' at any angle will be focussed onto this focal plane."}
+knitr::include_graphics("visualisations/LaTeX/ch16-focalplane1.svg")
+```
 
 $F$ and $F'$ are the first and second focal points respectively, each at a distance $f$ from the lens.
 
@@ -178,8 +189,10 @@ $F$ and $F'$ are the first and second focal points respectively, each at a dista
 
 In contrast to the converging lens (Section \@ref(sec:ch16-converginglens1)), a **diverging lens** will be any lens (where $n$ is greater than the surrounding medium) which is **thinner** in the middle than at the edges.  In this case, parallel rays from any direction are diverged as though originating *from* the focual point $F$ on the incident side of the lends (Figure \@ref(fig:ch16-diverginglens1)) 
 
-**Figure to show diverging lens**
-(\#fig:ch16-diverginglens1)
+```{r echo=FALSE, ch16-diverginglens1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="A diverging lens is shown to be thinner in the middle than at the edges. This causes light rays to diverge(!), however the rays do not converge to form an image. Instead, rays are projected backwards to the point at which they would converge (where the light rays appear to come from); this is a virtual image. "}
+knitr::include_graphics("visualisations/LaTeX/ch16-diverginglens1.svg")
+```
+
 
 ## Ray diagrams {#sec:ch16-raydiagrams1}
 
@@ -193,8 +206,10 @@ We consider three principal rays:
 
 ### Ray diagram for a converging lens {#sec:ch16-rayconverge1}
 
-**Ray diagram for converging lens**
-(\#fig:ch16-rayconverge1)
+
+```{r echo=FALSE, ch16-rayconverge1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The rays in a converging lens shown in this example converge to create a real image. The distances $s$, $s'$ can be used to determine the magnification ratio $y'/y$ for the image."}
+knitr::include_graphics("visualisations/LaTeX/ch16-converginglens1.svg")
+```
 
 Using Figure \@ref(fig:ch16-rayconverge1) we can see that, for an object between $\infty$ and $F$, the image is **real** and **inverted**.  We can then determine the magnification by using geometry:
 
@@ -215,8 +230,10 @@ The negative term in the magnification tells us that the image is inverted.
 
 ### Ray diagram for a diverging lens {#sec:ch16-raydiverge1}
 
-**Ray diagram for diverging lens**
-(\#fig:ch16-raydiverge1)
+```{r echo=FALSE, ch16-raydiverge1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The rays in a diverging lens shown in this example do not converge; instead we look at the point where rays appear to come from to create a virtual image. The distances $s$, $s'$ can again be used to determine the magnification ratio $y'/y$ for the image."}
+knitr::include_graphics("visualisations/LaTeX/ch16-diverginglens2a.svg")
+```
+
 
 Using Figure \@ref(fig:ch16-raydiverge1) we can see that, for an object between $\infty$ and $F$, the image is **virtual** and **erect**.  We can then determine the magnification $m$ by using geometry as before:
 
@@ -259,11 +276,20 @@ We can now add together Equations \@ref(eq:ch16-lenscombination1) and \@ref(eq:c
 
 We can carry out the same analysis as in Section \@ref(sec:ch16-2lenszerodistance) and obtain the same result, however it will be more instructive this time to look at ray diagrams as this will help to explain what is happening, particularly in respect of the "virtual object" phenomenon.
 
-**Step One: consider the first lens**
+**Step One: consider the first lens** (Figure \@ref(fig:ch16-convergingset1a))
+
+```{r echo=FALSE, ch16-convergingset1a, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="For a pair of converging lenses, the image from the first lens creates the object for the second. In this example, the second lens blocks formation of the otherwise 'real' image from the first lens."}
+knitr::include_graphics("visualisations/LaTeX/ch16-convergingset1a.svg")
+```
 
 We draw the ray diagram for the first lens, following the conventions for ray paths as laid out in Section \@ref(sec:ch16-raydiagrams1); we can see that the image formed by the first lens in this example lies past the second lens.
 
-**Step Two: consider the second lens**
+**Step Two: consider the second lens** (Figure \@ref(fig:ch16-convergingset2a))
+
+```{r echo=FALSE, ch16-convergingset2a, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The now virtual image from the first lens creates a virtual object for the second lens; rays are projected backwards to imagine where they come from in order to set up the refractions for the second lens and create the final object."}
+knitr::include_graphics("visualisations/LaTeX/ch16-convergingset2a.svg")
+```
+
 
 As the "object" which the second lens focuses is a "virtual object" (*i.e.* it lies on the transmission side of the lens), we need to treat the ray diagram for this second lens slightly differently; we need to project the rays *backwards* through the lens to the focal point and lens centre:
 
@@ -281,8 +307,10 @@ A basic telescope consists of two optical elements; for example two lenses, two 
 
 We can determine the angular magnification of a telescope through construction of an appropriate ray diagram.  A telescope is constructed by placing the lenses so that the image of the objective lens is formed at the focal plane of the objective lens, with the eyepiece lens being placed so that the image *also* lies on its focal plane.  This way the appearance of the light-rays coming from infinity (parallel rays) is preserved for the observer.
 
-**Figure to show optics of telescope**
-(\#fig:ch16-telescopeoptics1)
+```{r echo=FALSE, ch16-telescopeoptics1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The two lenses in an astronomical telescope are positioned so their focal points are coincident. This means that parallel rays from infinity come into the telescope and parallel rays come from the eyepiece. This allows the observer to focus on an image which is much smaller than the object but, because it is closer to the observer, it has a large angular magnification."}
+knitr::include_graphics("visualisations/LaTeX/ch16-telescopeset1a.svg")
+```
+
 
 The angular magnification is defined in a similar way to the linear magnification described in Section \@ref(sec:ch16-magnificationcurvedsurface1); namely the ratio of the eyepiece observation angle ($\theta_{\textsf{e}}$) and the objective observation angle (\theta_{\textsf{o}}), *i.e.*:
 

@@ -1,0 +1,21 @@
+\documentclass[convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+
+\usepackage{auto-pst-pdf}
+\usepackage{pst-optic}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{decorations.pathmorphing,patterns,arrows,shapes.arrows,shapes}
+\usepgfplotslibrary{fillbetween}
+
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\pgfplotsset{compat=1.10}
+\begin{document}
+
+\includegraphics[scale=0.7]{ch17-photoelectric}
+
+
+\end{document}

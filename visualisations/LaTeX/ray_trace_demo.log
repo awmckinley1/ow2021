@@ -1,86 +1,79 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.16)  11 NOV 2020 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.13)  13 MAR 2021 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **ray_trace_demo.tex
 (./ray_trace_demo.tex
-LaTeX2e <2018-12-01>
-(/usr/local/texlive/2019/texmf-dist/tex/latex/standalone/standalone.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks14
-\XKV@tempa@toks=\toks15
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count80
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count167
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\sa@internal=\count81
-\c@sapage=\count82
+\sa@internal=\count168
+\c@sapage=\count169
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/standalone/standalone.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/standalone/standalone.cfg
 File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
 e' class
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count83
-\c@section=\count84
-\c@subsection=\count85
-\c@subsubsection=\count86
-\c@paragraph=\count87
-\c@subparagraph=\count88
-\c@figure=\count89
-\c@table=\count90
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count170
+\c@section=\count171
+\c@subsection=\count172
+\c@subsubsection=\count173
+\c@paragraph=\count174
+\c@subparagraph=\count175
+\c@figure=\count176
+\c@table=\count177
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
 )
-\sa@box=\box27
+\sa@box=\box45
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/pst-optic/pst-optic.sty
-(/usr/local/texlive/2019/texmf-dist/tex/latex/pstricks/pstricks.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
-and LuaTeX
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -89,357 +82,256 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
 File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.05, 2010/01/17 (hv)
-\pstFP@xs=\count91
-\pstFP@xia=\count92
-\pstFP@xib=\count93
-\pstFP@xfa=\count94
-\pstFP@xfb=\count95
-\pstFP@rega=\count96
-\pstFP@regb=\count97
-\pstFP@regs=\count98
-\pstFP@times=\count99
+\pstFP@xs=\count178
+\pstFP@xia=\count179
+\pstFP@xib=\count180
+\pstFP@xfa=\count181
+\pstFP@xfb=\count182
+\pstFP@rega=\count183
+\pstFP@regb=\count184
+\pstFP@regs=\count185
+\pstFP@times=\count186
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks16
-\pgfutil@tempdima=\dimen103
-\pgfutil@tempdimb=\dimen104
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen135
+\pgfutil@tempdimb=\dimen136
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks17
-\pgfkeys@temptoks=\toks18
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks19
+\pgfkeys@tmptoks=\toks20
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Loading pgffor.code.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen105
-\pgf@xa=\dimen106
-\pgf@xb=\dimen107
-\pgf@xc=\dimen108
-\pgf@y=\dimen109
-\pgf@ya=\dimen110
-\pgf@yb=\dimen111
-\pgf@yc=\dimen112
-\c@pgf@counta=\count100
-\c@pgf@countb=\count101
-\c@pgf@countc=\count102
-\c@pgf@countd=\count103
-\pgfutil@tempcnta=\count104
-\pgfutil@tempcntb=\count105
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen137
+\pgf@xa=\dimen138
+\pgf@xb=\dimen139
+\pgf@xc=\dimen140
+\pgf@y=\dimen141
+\pgf@ya=\dimen142
+\pgf@yb=\dimen143
+\pgf@yc=\dimen144
+\c@pgf@counta=\count187
+\c@pgf@countb=\count188
+\c@pgf@countc=\count189
+\c@pgf@countd=\count190
+\pgfutil@tempcnta=\count191
+\pgfutil@tempcntb=\count192
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen113
-\pgfmath@count=\count106
-\pgfmath@box=\box28
-\pgfmath@toks=\toks20
-\pgfmath@stack@operand=\toks21
-\pgfmath@stack@operation=\toks22
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen145
+\pgfmath@count=\count193
+\pgfmath@box=\box46
+\pgfmath@toks=\toks21
+\pgfmath@stack@operand=\toks22
+\pgfmath@stack@operation=\toks23
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
 nometric.code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
 m.code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
 rison.code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
 code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
 .code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count107
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count194
 ))
-\pgffor@iter=\dimen114
-\pgffor@skip=\dimen115
-\pgffor@stack=\toks23
-\pgffor@toks=\toks24
+\pgffor@iter=\dimen146
+\pgffor@skip=\dimen147
+\pgffor@stack=\toks24
+\pgffor@toks=\toks25
 )
-\psLoopIndex=\count108
+\psLoopIndex=\count195
 
-`PSTricks' v2.96  <2019/02/23> (tvz,hv)
-\pst@dima=\dimen116
-\pst@dimb=\dimen117
-\pst@dimc=\dimen118
-\pst@dimd=\dimen119
-\pst@dimg=\dimen120
-\pst@dimh=\dimen121
-\pst@dimm=\dimen122
-\pst@dimn=\dimen123
-\pst@dimo=\dimen124
-\pst@dimp=\dimen125
-\pst@hbox=\box29
-\pst@ibox=\box30
-\pst@boxg=\box31
-\pst@cnta=\count109
-\pst@cntb=\count110
-\pst@cntc=\count111
-\pst@cntd=\count112
-\pst@cntg=\count113
-\pst@cnth=\count114
-\pst@cntm=\count115
-\pst@cntn=\count116
-\pst@cnto=\count117
-\pst@cntp=\count118
-\@zero=\count119
-\pst@toks=\toks25
-(/usr/local/texlive/2019/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
-\psunit=\dimen126
-\psxunit=\dimen127
-\psyunit=\dimen128
-\pst@C@@rType=\count120
-\pslinewidth=\dimen129
-\psk@startLW=\dimen130
-\psk@endLW=\dimen131
-\pst@customdefs=\toks26
-\pslinearc=\dimen132
-\pst@symbolStep=\dimen133
-\pst@symbolWidth=\dimen134
-\pst@symbolLinewidth=\dimen135
-\everypsbox=\toks27
-\psframesep=\dimen136
-\pslabelsep=\dimen137
-\sh@wgridXunit=\dimen138
-\sh@wgridYunit=\dimen139
-\pst@shift=\dimen140
-(/usr/local/texlive/2019/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
-Using PSTricks configuration for XeTeX+xdvipdfmx
-)))
-File: pstricks.tex 2019/02/23 v2.96 `PSTricks' (tvz,hv)
- (/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pst-fp.tex)
-File: pst-fp.tex 2019/02/23 v2.96 `PST-fp' (hv)
+`PSTricks' v2.97  <2019/05/11> (tvz,hv)
+\pst@dima=\dimen148
+\pst@dimb=\dimen149
+\pst@dimc=\dimen150
+\pst@dimd=\dimen151
+\pst@dimg=\dimen152
+\pst@dimh=\dimen153
+\pst@dimm=\dimen154
+\pst@dimn=\dimen155
+\pst@dimo=\dimen156
+\pst@dimp=\dimen157
+\pst@hbox=\box47
+\pst@ibox=\box48
+\pst@boxg=\box49
+\pst@cnta=\count196
+\pst@cntb=\count197
+\pst@cntc=\count198
+\pst@cntd=\count199
+\pst@cntg=\count266
+\pst@cnth=\count267
+\pst@cntm=\count268
+\pst@cntn=\count269
+\pst@cnto=\count270
+\pst@cntp=\count271
+\@zero=\count272
+\pst@toks=\toks26
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen158
+\psxunit=\dimen159
+\psyunit=\dimen160
+\pst@C@@rType=\count273
+\pslinewidth=\dimen161
+\psk@startLW=\dimen162
+\psk@endLW=\dimen163
+\pst@customdefs=\toks27
+\pslinearc=\dimen164
+\pst@symbolStep=\dimen165
+\pst@symbolWidth=\dimen166
+\pst@symbolLinewidth=\dimen167
+\everypsbox=\toks28
+\psframesep=\dimen168
+\pslabelsep=\dimen169
+\sh@wgridXunit=\dimen170
+\sh@wgridYunit=\dimen171
+\pst@shift=\dimen172
+)
+File: pstricks.tex 2019/05/11 v2.97 `PSTricks' (tvz,hv)
 
->>> Loading XeTeX special macros
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks/pstricks-xetex.def))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2019/05/11 v2.97 `PST-fp' (hv)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pst-optic/pst-optic.sty
 Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-optic/pst-optic.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-node/pst-node.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-optic/pst-optic.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-node/pst-node.tex
  v1.42, 2019/03/03
-\psrow=\count121
-\pscol=\count122
-\psmatrixcnt=\count123
-\psrowsep=\skip43
-\pscolsep=\skip44
-\pst@args=\count124
-\num@pts=\count125
-\pst@argcnt=\count126
+\psrow=\count274
+\pscol=\count275
+\psmatrixcnt=\count276
+\psrowsep=\skip49
+\pscolsep=\skip50
+\pst@args=\count277
+\num@pts=\count278
+\pst@argcnt=\count279
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-plot/pst-plot.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-tools/pst-tools.tex
-`PST-tools' v0.09b, 2017/12/03 (hv))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.10, 2020/03/24 (hv)
+\randomi=\count280
+\ranval=\count281
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.01, 2016/09/01 (dr,hv)
-\pshooklength=\dimen141
-\pshookwidth=\dimen142
+\pshooklength=\dimen173
+\pshookwidth=\dimen174
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-3d/pst-3d.tex
 `PST-3d' v1.11, 2010/02/14 (tvz))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
-\multido@count=\count127
-\multidocount=\count128
-\multido@stuff=\toks28
+\multido@count=\count282
+\multidocount=\count283
+\multido@stuff=\toks29
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-math/pst-math.tex
-`pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.87, 2019/01/12 (dr,hv)
-\psparallelogramsep=\dimen143
-\pst@cntC=\count129
-\pst@stepcount=\count130
-\chart@ColorIndex=\dimen144
-\chart@ColorStep=\dimen145
-\pst@chartHeight=\dimen146
-\pst@chartStackDepth=\dimen147
-\pst@chartStackWidth=\dimen148
-\chart@Toggle=\count131
-\psVectorCtr=\count132
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.89a, 2020/02/12 (dr,hv)
+\psparallelogramsep=\dimen175
+\pst@cntC=\count284
+\pst@stepcount=\count285
+\chart@ColorIndex=\dimen176
+\chart@ColorStep=\dimen177
+\pst@chartHeight=\dimen178
+\pst@chartStackDepth=\dimen179
+\pst@chartStackWidth=\dimen180
+\chart@Toggle=\count286
+\psVectorCtr=\count287
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
- v1.42, 2010/05/14 <tvz>)  v1.91, 2018/08/31 (tvz,hv)
-\pstRadUnit=\dimen149
-\pstRadUnitInv=\dimen150
-\pst@linecnt=\count133
-\RCD@file=\read1
-\psxlabelsep=\dimen151
-\psylabelsep=\dimen152
-\psk@subticksize=\dimen153
-\pst@xticksizeA=\dimen154
-\pst@xticksizeB=\dimen155
-\pst@xticksizeC=\dimen156
-\pst@yticksizeA=\dimen157
-\pst@yticksizeB=\dimen158
-\pst@yticksizeC=\dimen159
-\@digitcounter=\count134
-\psk@llx=\dimen160
-\psk@lly=\dimen161
-\psk@urx=\dimen162
-\psk@ury=\dimen163
-\pst@xunit=\dimen164
-\pst@yunit=\dimen165
+(/usr/local/texlive/2020/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>)  v1.92, 2019/05/16 (tvz,hv)
+\pstRadUnit=\dimen181
+\pstRadUnitInv=\dimen182
+\pst@linecnt=\count288
+\RCD@file=\read2
+\psxlabelsep=\dimen183
+\psylabelsep=\dimen184
+\psk@subticksize=\dimen185
+\pst@xticksizeA=\dimen186
+\pst@xticksizeB=\dimen187
+\pst@xticksizeC=\dimen188
+\pst@yticksizeA=\dimen189
+\pst@yticksizeB=\dimen190
+\pst@yticksizeC=\dimen191
+\@digitcounter=\count289
+\psk@llx=\dimen192
+\psk@lly=\dimen193
+\psk@urx=\dimen194
+\psk@ury=\dimen195
+\pst@xunit=\dimen196
+\pst@yunit=\dimen197
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pst-grad/pst-grad.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pst-grad/pst-grad.tex
 `pst-grad' v1.06, 2006/11/27 (tvz,dg,hv))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/multido/multido.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>)
-`PST-Optic' v1.02, 2016/07/10 (Manuel Luque and Herbert Voss)
-Invalid UTF-8 byte or sequence at line 932 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 932 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 971 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1534 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1535 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1536 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1536 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1536 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1537 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1537 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1537 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1759 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1781 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1926 replaced by U+FFFD.
-)
+`PST-Optic' v1.02, 2016/07/10 (Manuel Luque and Herbert Voss))
 File: pst-optic.tex 2016/07/10 v1.02 `PST-optic' (ML,hv)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arev.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/arev.sty
 Package: arev 2005/06/14 0.1 Arev Sans package
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevtext.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/arevtext.sty
 Package: arevtext 2005/09/01 0.1 Arev Sans Text package
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevmath.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/arevmath.sty
 Package: arevmath 2006/02/19 0.1 Arev Sans Math package
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks29
+\@emptytoks=\toks30
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/ams-mdbch.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/ams-mdbch.sty
 Package: ams-mdbch 2005/05/08 v1.4 Bold mdbch (Math Design Project) to replace 
 AMS fonts
+Now handling font encoding MDA ...
+... no UTF-8 mapping file for font encoding MDA
 \symmathdesignA=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `mathdesignA' in version `bold'
 (Font)                  MDA/mdbch/b/n --> MDA/mdbch/b/n on input line 47.
@@ -684,7 +576,7 @@ LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 313.
 LaTeX Font Info:    Redeclaring math symbol \circledast on input line 314.
 LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 315.
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -720,7 +612,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 124.
 \symextraup=\mathgroup7
 \symextraitalic=\mathgroup8
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/arevsymbols.tex
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/arevsymbols.tex
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 22.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 23.
 LaTeX Font Info:    Redeclaring math symbol \digamma on input line 25.
@@ -732,131 +624,95 @@ LaTeX Font Info:    Redeclaring math symbol \mho on input line 58.
 )
 LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 204.
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/bera/beramono.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+fav on input line 11
+2.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/arev/t1fav.fd
+File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks30
-\SOUL@lasttoken=\toks31
-\SOUL@cmds=\toks32
-\SOUL@buffer=\toks33
-\SOUL@token=\toks34
-\SOUL@spaceskip=\skip45
-\SOUL@ttwidth=\dimen166
-\SOUL@uldp=\dimen167
-\SOUL@ulht=\dimen168
+\SOUL@word=\toks31
+\SOUL@lasttoken=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@spaceskip=\skip51
+\SOUL@ttwidth=\dimen198
+\SOUL@uldp=\dimen199
+\SOUL@ulht=\dimen256
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count290
+\l__pdf_internal_box=\box50
 )
 (./ray_trace_demo.aux)
 \openout1 = `ray_trace_demo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 8.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 8
+.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdacmr.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Try loading font information for T1+fav on input line 8.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/t1fav.fd
-File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count291
+\scratchdimen=\dimen257
+\scratchbox=\box51
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen258
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks37
 )
-LaTeX Font Info:    Try loading font information for OT1+zavm on input line 31.
+./ray_trace_demo.tex:31: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.31 	spotBi=270]}
+                  
+? 
+./ray_trace_demo.tex:31: Emergency stop.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.31 	spotBi=270]}
+                  
+End of file on the terminal!
 
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/ot1zavm.fd
-File: ot1zavm.fd 2006/05/30 Fontinst v1.929 font definitions for OT1/zavm.
-)
-LaTeX Font Info:    Try loading font information for OML+zavm on input line 31.
-
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/omlzavm.fd
-File: omlzavm.fd 2006/05/30 Fontinst v1.929 font definitions for OML/zavm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zavm on input line 31.
-
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/omszavm.fd
-File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
-)
-LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 31
-.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
-File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
-)
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 31.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.29605pt on input line 31.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 31
-.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
-File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
-)
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 31.
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.29605pt on input line 31.
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 31.
-LaTeX Font Info:    Try loading font information for U+zavm on input line 31.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/arev/uzavm.fd
-File: uzavm.fd 2006/05/30 Fontinst v1.929 font definitions for U/zavm.
-) [1
-
-]
-(./ray_trace_demo.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 11498 strings out of 492916
- 203637 string characters out of 6133345
- 426500 words of memory out of 5000000
- 15347 multiletter control sequences out of 15000+600000
- 20649 words of font info for 45 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 43i,7n,56p,627b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on ray_trace_demo.pdf (1 page).
+ 11783 strings out of 480608
+ 205097 string characters out of 5903630
+ 514238 words of memory out of 5000000
+ 27536 multiletter control sequences out of 15000+600000
+ 536722 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,5n,60p,627b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+./ray_trace_demo.tex:31:  ==> Fatal error occurred, no output PDF file produced
+!

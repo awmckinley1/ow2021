@@ -66,7 +66,7 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX,
 and LuaTeX
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -108,9 +108,9 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks16
-\pgfutil@tempdima=\dimen103
-\pgfutil@tempdimb=\dimen104
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen135
+\pgfutil@tempdimb=\dimen136
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -120,7 +120,7 @@ sts.tex))
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks19
+\pgfkeys@tmptoks=\toks20
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Loading pgffor.code.tex
@@ -249,8 +249,8 @@ Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.01, 2016/09/01 (dr,hv)
-\pshooklength=\dimen141
-\pshookwidth=\dimen142
+\pshooklength=\dimen173
+\pshookwidth=\dimen174
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pst-3d/pst-3d.tex
 `PST-3d' v1.11, 2010/02/14 (tvz))
@@ -482,14 +482,15 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks29
+\@emptytoks=\toks30
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/arev/ams-mdbch.sty
-Package: ams-mdbch 2005/05/08 v1.4 Bold mdbch (Math Design Project) to replace 
+Package: ams-mdbch 2005/05/08 v1.4 Bold mdbch (Math Design Project) to replace
 AMS fonts
 Now handling font encoding MDA ...
 ... no UTF-8 mapping file for font encoding MDA
@@ -644,7 +645,7 @@ LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 224.
 LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 225.
 LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 226.
 
-LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line
 227.
 LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 228.
 LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 229.
@@ -797,26 +798,33 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks30
-\SOUL@lasttoken=\toks31
-\SOUL@cmds=\toks32
-\SOUL@buffer=\toks33
-\SOUL@token=\toks34
-\SOUL@spaceskip=\skip45
-\SOUL@ttwidth=\dimen166
-\SOUL@uldp=\dimen167
-\SOUL@ulht=\dimen168
+\SOUL@word=\toks31
+\SOUL@lasttoken=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@spaceskip=\skip51
+\SOUL@ttwidth=\dimen198
+\SOUL@uldp=\dimen199
+\SOUL@ulht=\dimen256
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count290
+\l__pdf_internal_box=\box50
 )
 (./ch14-thin-lens1.aux)
 \openout1 = `ch14-thin-lens1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -830,13 +838,13 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 8.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 8
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdacmr.fd
-File: mdacmr.fd 
+File: mdacmr.fd
 )
 LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Try loading font information for T1+fav on input line 8.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/arev/t1fav.fd
 File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
@@ -856,19 +864,19 @@ File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
 \everyMPtoPDFconversion=\toks36
 )
 ./ch14-thin-lens1.tex:34: Undefined control sequence.
-\c@lor@to@ps ->\PSTricks 
+\c@lor@to@ps ->\PSTricks
                          _Not_Configured_For_This_Format
 l.34 }
-      
-? 
+
+?
 ./ch14-thin-lens1.tex:34: Emergency stop.
-\c@lor@to@ps ->\PSTricks 
+\c@lor@to@ps ->\PSTricks
                          _Not_Configured_For_This_Format
 l.34 }
-      
+
 End of file on the terminal!
 
- 
+
 Here is how much of TeX's memory you used:
  11757 strings out of 492616
  204906 string characters out of 6129481
@@ -876,6 +884,6 @@ Here is how much of TeX's memory you used:
  15520 multiletter control sequences out of 15000+600000
  8024 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,56p,628b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,5n,60p,628b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 ./ch14-thin-lens1.tex:34:  ==> Fatal error occurred, no output PDF file produce
 d!

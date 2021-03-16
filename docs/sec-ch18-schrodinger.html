@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2021-03-09" />
+<meta name="date" content="2021-03-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -276,7 +276,7 @@
 <div id="sec:ch18-schrodinger" class="section level1">
 <h1><span class="header-section-number">Chapter 18</span> The Schrödinger Equation</h1>
 <p><em>Textbook link: Tipler and Mosca, Section 35.1</em></p>
-<p>The <em>time dependent</em> Schr$ouml;dinger equation in one dimension is given in Equation <a href="sec-ch18-schrodinger.html#eq:ch18-schrodingertd1">(18.1)</a>:</p>
+<p>The <em>time dependent</em> Schrödinger equation in one dimension is given in Equation <a href="sec-ch18-schrodinger.html#eq:ch18-schrodingertd1">(18.1)</a>:</p>
 <p><span class="math display" id="eq:ch18-schrodingertd1">\[\begin{equation}
 -\frac{\hbar^2}{2m} \frac{\partial^2 \psi(x,t)}{\partial x^2} + U \psi(x,t) = \mathrm{i}\hbar \frac{\partial \psi(x,t)}{\partial t}
 \tag{18.1}
@@ -350,14 +350,23 @@ k^2 = \frac{2mE}{\hbar} = \frac{p^2}{\hbar^2} \quad \textsf{as expected}
 \kappa = \frac{\sqrt{2m(U_0 - E)}}{\hbar}
 \end{equation}\]</span></p>
 <p>The <span class="math inline">\(\pm\)</span> solutions are exponential increase at <span class="math inline">\(x&lt;0\)</span> and decrease at <span class="math inline">\(x&gt;L\)</span> (<em>i.e.</em> there is an exponential ‘tail-off’ at either boundary of the box). If the energy of the particle is less than <span class="math inline">\(U_0\)</span>, the particle will be bound by the potential well, as expected, <strong>however</strong>, the wavefunctions will actually ‘spill over’ the edges of the box. This implies that the particle will spend some of its time <strong>outside the well</strong>, contrary to classical expectations!</p>
-<p><strong>Figure to show wavefunctions in a finite well</strong></p>
+<div class="figure" style="text-align: center"><span id="fig:ch18-finitewell1"></span>
+<img src="visualisations/LaTeX/ch18-infinitefinite-well1.svg" alt="In a finite potential well, there is an exponential 'tail off' in the probability of finding the particle at the edges of the box. In these circumstances, the wavefunction decays exponentially outside the boundaries, but there is a finite probability of finding the particle at these locations." width="70%" /><img src="visualisations/LaTeX/ch18-infinitefinite-well2.svg" alt="In a finite potential well, there is an exponential 'tail off' in the probability of finding the particle at the edges of the box. In these circumstances, the wavefunction decays exponentially outside the boundaries, but there is a finite probability of finding the particle at these locations." width="70%" /><img src="visualisations/LaTeX/ch18-infinitefinite-well3.svg" alt="In a finite potential well, there is an exponential 'tail off' in the probability of finding the particle at the edges of the box. In these circumstances, the wavefunction decays exponentially outside the boundaries, but there is a finite probability of finding the particle at these locations." width="70%" />
+<p class="caption">
+Figure 18.1: In a finite potential well, there is an exponential ‘tail off’ in the probability of finding the particle at the edges of the box. In these circumstances, the wavefunction decays exponentially outside the boundaries, but there is a finite probability of finding the particle at these locations.
+</p>
+</div>
 </div>
 </div>
 <div id="sec:ch18-reflectionparticlewaves" class="section level2">
 <h2><span class="header-section-number">18.2</span> Reflection and transmission of particle waves</h2>
-<p>Let’s now consider what happens as a particle of energy <span class="math inline">\(E\)</span> travels towards a potential energy step function of height <span class="math inline">\(U_0\)</span> (Figure <a href="#fig:ch18-reflectionparticlewave1">18.1</a>).</p>
-<p><strong>Figure to show a potential energy step function</strong>
+<p>Let’s now consider what happens as a particle of energy <span class="math inline">\(E\)</span> travels towards a potential energy step function of height <span class="math inline">\(U_0\)</span> (Figure <a href="sec-ch18-schrodinger.html#fig:ch18-reflectionparticlewave1">18.2</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch18-reflectionparticlewave1"></span>
+<img src="visualisations/LaTeX/ch18-pestep1.svg" alt="A potential energy step function such as that which might bound a finite well is shown here; a sudden step up in potential from one region of space to another. If the wavefunction does not have sufficient energy to pass the step, it will tunnel into the step and decay exponentially (lower diagram)." width="70%" /><img src="visualisations/LaTeX/ch18-pestep2.svg" alt="A potential energy step function such as that which might bound a finite well is shown here; a sudden step up in potential from one region of space to another. If the wavefunction does not have sufficient energy to pass the step, it will tunnel into the step and decay exponentially (lower diagram)." width="70%" />
+<p class="caption">
+Figure 18.2: A potential energy step function such as that which might bound a finite well is shown here; a sudden step up in potential from one region of space to another. If the wavefunction does not have sufficient energy to pass the step, it will tunnel into the step and decay exponentially (lower diagram).
 </p>
+</div>
 <p>In a classical situation, we can consider the following situations:</p>
 <ul>
 <li>If <span class="math inline">\(E&lt;U_0\)</span>, the particle would be completely reflected</li>
@@ -379,12 +388,20 @@ k^2 = \frac{2mE}{\hbar^2} = \frac{p^2}{\hbar^2}
 </div>
 <div id="sec:ch18-tunnelling1" class="section level2">
 <h2><span class="header-section-number">18.3</span> Barrier penetration - ‘tunnelling’</h2>
-<p>Now, instead of a step potential, consider a potential barrier in the path of the particle, at a height sugh that the energy of the particle <span class="math inline">\(E\)</span> is slightly less than <span class="math inline">\(U_0\)</span> (Figure <a href="#fig:ch18-tunelling1">18.2</a>):</p>
-<p><strong>Figure to show potential barrier</strong>
+<p>Now, instead of a step potential, consider a potential barrier in the path of the particle, at a height sugh that the energy of the particle <span class="math inline">\(E\)</span> is slightly less than <span class="math inline">\(U_0\)</span> (Figure <a href="sec-ch18-schrodinger.html#fig:ch18-tunelling1">18.3</a>):</p>
+<div class="figure" style="text-align: center"><span id="fig:ch18-tunelling1"></span>
+<img src="visualisations/LaTeX/ch18-pestep3.svg" alt="A potential barrier has finite width as shown above. This can stop a particle passing however a particle can tunnel through." width="70%" />
+<p class="caption">
+Figure 18.3: A potential barrier has finite width as shown above. This can stop a particle passing however a particle can tunnel through.
 </p>
-<p>As in Sectin <a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves">18.2</a>, we expect the wacefunction to penetrate into the barrier, <strong>however</strong> if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure <a href="#fig:ch18-tunelling2">18.3</a>):</p>
-<p><strong>Figure to show tunnelling</strong>
+</div>
+<p>As in Sectin <a href="sec-ch18-schrodinger.html#sec:ch18-reflectionparticlewaves">18.2</a>, we expect the wavefunction to penetrate into the barrier, <strong>however</strong> if the barrier is sufficiently narrow, the wavefunction will have a finite amplitude when it reaches the end of the barrier, and the wavefunction returns from exponential behaviour to oscillating sinusoidal behaviour once again, though with a reduced amplitude (Figure <a href="sec-ch18-schrodinger.html#fig:ch18-tunelling2">18.4</a>):</p>
+<div class="figure" style="text-align: center"><span id="fig:ch18-tunelling2"></span>
+<img src="visualisations/LaTeX/ch18-pestep4.svg" alt="A waveparticle approaching a potential barrier can tunnel through the barrier if it is sufficiently narrow. It will appear the other side of the barrier with a decayed amplitude, suggesting a smaller probability of finding the particle on the other side." width="70%" />
+<p class="caption">
+Figure 18.4: A waveparticle approaching a potential barrier can tunnel through the barrier if it is sufficiently narrow. It will appear the other side of the barrier with a decayed amplitude, suggesting a smaller probability of finding the particle on the other side.
 </p>
+</div>
 <p>In other words, there is a probability that the particle will penetrate, or “tunnel through”, the barrier. The smaller amplitude on the other side of the barrier indicates that there is a smaller probability of finding the particle on the transmission side of the barrier. In classical mechanics this would be a completely forbidden behaviour; though classical tunnelling of waves is possible (via evanescent modes when a wave is undergoing total internal reflection; see Section <a href="sec-ch14-propertieslight.html#sec:ch14-evanescence">14.2.1</a>).</p>
 <p>Quantum mechanical tunnelling has been proposed as the mechanism by which <span class="math inline">\(\alpha\)</span> particles are spontaneously and unpredictably ejected from radioactive nuclei, and the phenomenon sees application in the scanning tunnelling microscope (STM) to obtain atomic resolution images of certain surfaces by monitoring the current as electrons tunnel across a gap between a probe and the surface.</p>
 

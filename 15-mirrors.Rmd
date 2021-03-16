@@ -7,8 +7,10 @@ We have introduced the properties of light as it interacts with different materi
 
 Consider an object placed at point $P$, shown in Figure \@ref(fig:ch15-planemirror1); light rays coming from this object are reflected by a mirror to reach the observer.
 
-**Figure to show plane mirror**
-(\#fig:ch15-planemirror1)
+```{r echo=FALSE, ch15-planemirror1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Reflection from a plane mirror occurs when the angle of incidence from $P$ is equal to the angle of reflection to the observer.To the observer, the light appears to come from point $P'$ behind the mirror; a *virtual image* which cannot be projected onto a screen."}
+knitr::include_graphics("visualisations/LaTeX/ch15-planemirror1.svg")
+```
+
 
 As shown in Figure \@ref(fig:ch15-planemirror1) the observer perceives the light rays as though they are coming from point $P'$; we call this point the **image** of the object $P$.  This image is called a **virtual** image because the rays coming from the object do not converge onto $P'$, When rays from the object converge on the image, the image is called **real**.  A real image can be observed on a screen or recorded on a film/CCD sensor without the use of lenses.
 
@@ -24,9 +26,10 @@ To locate the the image of an object produced by a plane mirror, we follow a ser
 ## A spherical mirror {#sec:ch15-sphericalmirror1}
 
 We follow a similar process as we did for the plane mirror (Section \@ref(sec:ch15-planemirror1)) in considering the nature of the image.  Once again, we place an object at point $P$ and consider how the light rays from this object are reflected from a concave mirror (Figure \@ref(fig:ch15-sphericalconcave1)).  
+```{r echo=FALSE, ch15-sphericalconcave1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Rays coming from point $P$ are focussed at point $P'$ provided they do not deviate too much from the optical axis (paraxial rays); Wide deviations result in imperfect image formation (spherical aberrations)."}
+knitr::include_graphics("visualisations/LaTeX/ch15-sphericalmirror1.svg")
+```
 
-**Ray diagram of spherical concave mirror**
-(\#fig:ch15-sphericalconcave1)
 
 This time, rays coming from point $P$, located on the optical axis of the concave mirror, are refleced by the mirror and focussed to a point $P'$ (a 'real' image, as the rays converge).  Any rays which are far from the optical axis (non-paraxial) are not focussed on $P'$; a term known as *spherical aberration*.
 
@@ -34,8 +37,11 @@ This time, rays coming from point $P$, located on the optical axis of the concav
 
 The 'mirror equation' is a tool to calculate the position of an image of a spherical concave mirror relative to the object position and the centre point of the mirror.  Figure \@ref(fig:ch15-concavesphericalmirroreq1) shows all the relevant distances and angles which are needed for considering the mirror equation.
 
-**Rays needed for mirror equation**
-(\#fig:ch15-concavesphericalmirroreq1)
+
+```{r echo=FALSE, ch15-concavesphericalmirroreq1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Building the mirror equation requires the measurements $s$, $s'$, $r$ and $l$, as well as the angles $\\alpha$, $\\beta$, $\\gamma$ and $\\theta$."}
+knitr::include_graphics("visualisations/LaTeX/ch15-mirrorequation.svg")
+```
+
 
 We can use geometric relations in Figure \@ref(fig:ch15-concavesphericalmirroreq1) to determine relationships between the labelled angles:
 

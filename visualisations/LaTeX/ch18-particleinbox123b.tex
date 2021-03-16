@@ -1,0 +1,61 @@
+\documentclass[convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+
+\usepackage{auto-pst-pdf}
+\usepackage{pst-optic}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{decorations.pathmorphing,patterns,arrows,shapes.arrows,shapes}
+\usepgfplotslibrary{fillbetween}
+
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\pgfplotsset{compat=1.10}
+\begin{document}
+
+\begin{tikzpicture}[xscale=1,yscale=0.5, path fading=fade down]
+  \draw[->] (0,0)  --  (0,10) node[anchor=north east]{$\infty$};
+  \draw[->] (3.1415,0) -- (3.1415,10);
+  \draw[->] (-0.5,0)--(0,0)node[anchor=north]{$0$}-- node[anchor=north]{$x$} (pi,0) node[anchor=north]{$L$}--(3.64,0);
+  \draw[thick] (0,1) -- node[above]{$$}(pi,1) node[right]{$n=1$};
+  \draw[thick] (0,4) -- node[above]{$$}(pi,4) node[right]{$n=2$};
+  \draw[thick] (0,9) -- node[above]{$$}(pi,9) node[right]{$n=3$};
+%  \draw[thick] (0,16) -- node[above]{$n^2 = 16$}(pi,16) node[right]{$n=4$};
+%  \draw[thick] (0,25) -- node[above]{$n^2 = 25$}(pi,25) node[right]{$n=5$};
+%  \draw[thick] (0,36) -- node[above]{$n^2 = 36$}(pi,36) node[right]{$n=6$};
+%  \draw[thick] (0,49) -- node[above]{$n^2 = 49$}(pi,49) node[right]{$n=7$};
+%  \draw[thick] (0,64) -- node[above]{$n^2 = 64$}(pi,64) node[right]{$n=8$};
+%  \draw[thick] (0,81) -- node[above]{$n^2 = 81$}(pi,81) node[right]{$n=9$};
+%  \draw[thick] (0,100) -- node[above]{$n^2 = 100$}(pi,100) node[right]{$n=10$};
+%    \pattern[pattern=north west lines] (0,0)--(0,5.5)--(-0.5,5.5)--(-0.5,0)--cycle;
+%    \fill[red,path fading,fading transform={rotate=90}] (0,0)--(0,5.5)--(-0.5,5.5)--(-0.5,0)--cycle;
+%    \pattern[pattern=north west lines] (pi,0)--(pi,5.5)--(3.64,5.5)--(3.64,0)--cycle;
+    \shade[top color=white, opacity=0.0, bottom color=gray, opacity=0.3] (0,10)--(-0.5,10)--(-0.5,11)--(0,11)--cycle;
+    \shade[top color=gray, opacity=0.0, bottom color=gray, opacity=0.3] (0,0)--(0,10)--(-0.5,10)--(-0.5,0)--cycle;
+%    \fill[fill=gray, fill opacity = 0.3] (pi,0)--(pi,5.5)--(3.64,5.5)--(3.64,0)--cycle;
+    \shade[top color=white, opacity=0.0, bottom color=gray, opacity=0.3] (pi,10)--(pi,11)--(3.64,11)--(3.64,10)--cycle;
+    \shade[top color=gray, opacity=0.0, bottom color=gray, opacity=0.3] (pi,0)--(pi,10)--(3.64,10)--(3.64,0)--cycle;
+%    \draw[dashed] (0,2) -- (1,2);
+%  \draw[dotted] (0,3) --(pi,3) node[right]{$n=2$};
+%  \draw[dotted] (0,5) --(pi,5) node[right]{$n=3$};
+  \draw[domain=0:pi,samples=100,blue,dashed] plot(\x,{sin(1*\x r) +1});
+  \draw[domain=0:pi,samples=100,blue,dashed] plot(\x,{sin(2*\x r) +4});
+  \draw[domain=0:pi,samples=100,blue,dashed] plot(\x,{sin(3*\x r) +9});
+  \draw[domain=0:pi,samples=100,red] plot(\x,{1.5*sin(1*\x r)*sin(1*\x r) +1});
+  \draw[domain=0:pi,samples=100,red] plot(\x,{1.5*sin(2*\x r)*sin(2*\x r) +4});
+  \draw[domain=0:pi,samples=100,red] plot(\x,{1.5*sin(3*\x r)*sin(3*\x r) +9});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(4*\x r) +16});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(5*\x r) +25});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(6*\x r) +36});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(7*\x r) +49});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(8*\x r) +64});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(9*\x r) +81});
+%  \draw[domain=0:pi,samples=100,red] plot(\x,{sin(10*\x r) +100});
+%  \draw[<->] (pi/2,1.15) -- node[above]{\small $\Delta t$} (pi/2+1,1.15);
+\end{tikzpicture}
+
+
+
+\end{document}

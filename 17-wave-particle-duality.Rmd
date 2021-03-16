@@ -220,8 +220,10 @@ In other words, Equation \@ref(eq:ch17-partbox1) shows how only energy levels $E
 
 **The position of the particle** cannot be exatly determined in a quantum mechanical system. While a classical particle could be anywhere within the box, the quantum particle's position is given when we determine its probability of existence *via* $\psi^2(x)$ (see Section \@ref(sec:ch17-wavefunction1)).  When we plot the square of the wavefunction we see that a quantum mechanical particle is more likely be be in certain regions in the box, and there will be nodes in the box where the particle will not reside (Figure \@ref(fig:ch17-partbox1)).
 
-**Figure to show particle distribution at different $n$**
-(\#fig:ch17-partbox1)
+```{r echo=FALSE, ch17-partbox1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The relative energies of the first three quantum numbers $n = 1, 2, 3$ for the particle in a box. The wave function of the particle ($\\psi(x)$; dotted blue line) is shown along with the probability of finding the particle at each energy state ($\\psi^2(x)$; solid red line). "}
+knitr::include_graphics("visualisations/LaTeX/ch18-particleinbox123.svg")
+```
+
 
 For a large $n$, the maxima and minima of the quantity $\psi^2(x)$ become very close together and the particle is then likely to be found more-or-less anywhere wihtin the box, just as for a classical particle.
 

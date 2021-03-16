@@ -30,8 +30,9 @@ It is worth noting that the **frequency** of light remains unchanged while passi
 
 When a beam of light encounters an interface between two transparent media of different refractive indices, part of the light is reflected from the interface, and part of the beam is refracted through the interface (Figure \@ref(fig:ch14-reflectionrefraction)).
 
-**Figure showing reflection/refraction**
-(\#fig:ch14-reflectionrefraction)
+```{r echo=FALSE, ch14-reflectionrefraction, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The path of a light ray passing into a medium of higher refractive index $n_2$. The angles of incidence and reflection are equal($\\theta_1$), while the angle of refraction ($\\theta_2$) is determined from the ratio of the refractive indices via Snell's law."}
+knitr::include_graphics("visualisations/LaTeX/ch14-reflection-refraction1.svg")
+```
 
 From Figure \@ref(fig:ch14-reflectionrefraction), we note the following:
 
@@ -42,8 +43,10 @@ From Figure \@ref(fig:ch14-reflectionrefraction), we note the following:
 
 The paths that the light rays take through either reflection or refraction are described by **Fermat's principle**, namely that the light travels along the path of least time; however due to the variation of the speed of light, this path is not necessarily the shortest path between the two points. Let's first consider the case of reflection (Figure \@ref(fig:ch14-fermatsprinciple)).
 
-**Figure showing Fermat's principle**
-(\#fig:ch14-fermatsprinciple)
+```{r echo=FALSE, ch14-fermatsprinciple, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Fermat's principle states that a light ray takes the route (whether refraction or reflection) which is the shortest time. When the light ray remains in the same medium through reflection, the shortest path APB is one where the line A'PB is straight; *i.e.* the angle of reflection is equal to the angle of incidence."}
+knitr::include_graphics("visualisations/LaTeX/ch14-fermatsprinciple1.svg")
+```
+
 
 Consider a light ray travelling from $A$ to $B$ by reflection from the interface at point $P$. The distance $APB$ is at a minimum when the angles $\theta_1$ and $\theta_1'$ are equal, where the light ray reflects at point $P_{\textsf{min}}$.
 
@@ -93,13 +96,18 @@ A full solution of the wave equations for light undergoing total internal reflec
 
 The solution to these equations is a decaying exponential, known as an **evanescent "wave"** (Figure \@ref(fig:ch14-evanescentwave1))
 
-**Figure to show evanescent "wave"**
-(\#fig:ch14-evanescentwave1)
+```{r echo=FALSE, ch14-evanescentwave1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The intensity of an evanescent 'wave' decays exponentially with distance from the surface of the interface on the same approximate scale as the wavelength. It can be thought of as a 'spreading of energy' rather than an actual wave."}
+knitr::include_graphics("visualisations/ch14-evansecent1.svg")
+```
+
 
 The decay length of this evanescent "wave" is approximately equal to the wavelength of the incident beam, $\lambda$.  The reason for terming this a "wave" is that it does not propagate - *i.e.* it is not a travelling wave.  The evanescent "wave" stores energy and, if a second glass block is placed "close" to the first (*i.e.* within one micron), the energy may be taken from the evanescent wave and a travelling wave produced in the second block (albeit with a smaller amplitude to the incident wave).
 
-**Figure to show evanescent wave extractin**
-(\#fig:ch14-evanescentwave2)
+
+```{r echo=FALSE, ch14-evanescentwave2, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="If a medium of sufficiently high refractive index is brought close to the surface where total internal reflection is taking place, energy can be extracted from the evanescent 'wave'; this is the basis of fingerprint scanners."}
+knitr::include_graphics("visualisations/ch14-evansecent2.svg")
+```
+
 
 This example of extracting enerby from an evanescent wave (Figure \@ref(fig:ch14-evanescentwave2)) is known as 'frustrated total internal reflection'; the photons have 'tunneled' across the air gap.^[We often use the term "tunneling" to describe quantum phenomena passing through a barrier; you will meet the term frequently!]
 
