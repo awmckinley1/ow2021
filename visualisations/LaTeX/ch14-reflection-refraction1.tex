@@ -1,0 +1,62 @@
+\documentclass[convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+
+\usepackage{auto-pst-pdf}
+\usepackage{pst-optic}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle reverse directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrowreversed[arrowstyle]{stealth};}}}]
+    
+    \usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\begin{document}
+
+\begin{tikzpicture}
+\newcommand \interfaceheight{0} % y coordinate of interface
+\newcommand \normalposition{0} % x coordinate of normal
+\newcommand \leftlimit{-8}
+\newcommand \rightlimit{8}
+\newcommand \bottomlimit{-3}
+\newcommand \toplimit{3}
+\newcommand \angleofincidence{60}
+\newcommand \refractivenA{1}
+\newcommand \refractivenB{1.8}
+
+%\newcommand \pointAx{
+
+    % define coordinates
+    \coordinate (O) at (\interfaceheight,\normalposition) ;
+    \coordinate (A) at (\normalposition,\toplimit) ;
+    \coordinate (B) at (\normalposition,\bottomlimit) ;
+    
+    % media
+    \fill[blue!25!,opacity=.05] (\leftlimit,0) rectangle (\rightlimit,\toplimit);
+    \fill[blue!60!,opacity=.3] (\leftlimit,0) rectangle (\rightlimit,\bottomlimit);
+    \node[] at ({0.85*\rightlimit},{\interfaceheight+0.25}) {$n_1$};
+    \node[] at ({0.85*\rightlimit},{\interfaceheight-0.25}) {$n_2$};
+
+    % axis
+    \draw[dash pattern=on5pt off3pt] (A) -- (B) ;
+
+    % rays
+    \draw[red,ultra thick,reverse directed] (O) -- ({90+\angleofincidence}:{2*\toplimit});
+    \draw[red,ultra thick, directed] (O) -- ({90-\angleofincidence}:{2*\toplimit});
+    \draw[red,directed,ultra thick] (O) -- ({270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:{-0.95*\bottomlimit/cos(asin(\refractivenA*sin(\angleofincidence)/\refractivenB))});
+
+    % angles
+    \draw (0,1) arc (90:{90+\angleofincidence}:1);
+    \draw (0,1) arc (90:{90-\angleofincidence}:1);
+    \draw (0,-1.4) arc (270:{270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:1.4) ;
+    \node[] at (280:1.8)  {$\theta_{2}$};
+    \node[] at (110:1.4)  {$\theta_{1}$};
+    \node[] at (70:1.4)  {$\theta_{1}$};
+\end{tikzpicture}
+
+\end{document}

@@ -30,8 +30,9 @@ It is worth noting that the **frequency** of light remains unchanged while passi
 
 When a beam of light encounters an interface between two transparent media of different refractive indices, part of the light is reflected from the interface, and part of the beam is refracted through the interface (Figure \@ref(fig:ch14-reflectionrefraction)).
 
-**Figure showing reflection/refraction**
-(\#fig:ch14-reflectionrefraction)
+```{r echo=FALSE, ch14-reflectionrefraction, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The path of a light ray passing into a medium of higher refractive index $n_2$. The angles of incidence and reflection are equal($\\theta_1$), while the angle of refraction ($\\theta_2$) is determined from the ratio of the refractive indices via Snell's law."}
+knitr::include_graphics("visualisations/LaTeX/ch14-reflection-refraction1.svg")
+```
 
 From Figure \@ref(fig:ch14-reflectionrefraction), we note the following:
 
@@ -41,6 +42,10 @@ From Figure \@ref(fig:ch14-reflectionrefraction), we note the following:
 * The angle of refractin $\theta_2$ is the angle between the refracted beam and the same normal.
 
 The paths that the light rays take through either reflection or refraction are described by **Fermat's principle**, namely that the light travels along the path of least time; however due to the variation of the speed of light, this path is not necessarily the shortest path between the two points. Let's first consider the case of reflection (Figure \@ref(fig:ch14-fermatsprinciple)).
+
+```{r echo=FALSE, ch14-fermatsprinciple, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Fermat's principle states that a light ray takes the route (whether refraction or reflection) which is the shortest time. When the light ray remains in the same medium through reflection, the shortest path APB is one where the line A'PB is straight; *i.e.* the angle of reflection is equal to the angle of incidence."}
+knitr::include_graphics("visualisations/LaTeX/ch14-fermatsprinciple1.svg")
+```
 
 **Figure showing Fermat's principle**
 (\#fig:ch14-fermatsprinciple)

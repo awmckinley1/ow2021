@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.13)  13 MAR 2021 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.13)  15 MAR 2021 23:49
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"ray_trace_demo 2.tex"
-(./ray_trace_demo 2.tex
+**ch16-converginglensgroup1a.tex
+(./ch16-converginglensgroup1a.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/standalone/standalone.cls
@@ -12,7 +12,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -57,8 +57,123 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \bibindent=\dimen134
 )
 \sa@box=\box45
+runsystem(pdflatex  -shell-escape  -jobname 'ch16-converginglensgroup1a' '\expa
+ndafter\def\csname sa@internal@run\endcsname{1}\input{ch16-converginglensgroup1
+a}')...executed.
+
+\sa@read=\read2
+runsystem(pdf2svg ch16-converginglensgroup1a.pdf ch16-converginglensgroup1a.svg
+)...executed.
+
+
+Class standalone:
+Output written on ch16-converginglensgroup1a.svg.
+ ) ) 
+Here is how much of TeX's memory you used:
+ 752 strings out of 480608
+ 11790 string characters out of 5903630
+ 246251 words of memory out of 5000000
+ 16705 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,1n,60p,205b,55s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+nfo: \pdfdraftmode found.
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/pst-optic/pst-optic.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+runsystem(uname -s > "ch16-converginglensgroup1a.w18")...executed.
+
+
+(./ch16-converginglensgroup1a.w18)
+runsystem(rm -- "ch16-converginglensgroup1a.w18")...executed.
+
+)
+\c@app@runs=\count178
+runsystem(echo " ")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(rm -- "ch16-converginglensgroup1a-pics.pdf")...executed.
+
+runsystem(latex -no-shell-escape -jobname="ch16-converginglensgroup1a-autopp" -
+interaction=batchmode  "\let \APPmakepictures \empty \input  ch16-converginglen
+sgroup1a.tex")...executed.
+
+runsystem(dvips -Ppdf -o "ch16-converginglensgroup1a-autopp.ps" "ch16-convergin
+glensgroup1a-autopp.dvi")...executed.
+
+runsystem(ps2pdf -dAutoRotatePages=/None "ch16-converginglensgroup1a-autopp.ps"
+ "ch16-converginglensgroup1a-autopp.pdf")...executed.
+
+runsystem(pdfcrop  "ch16-converginglensgroup1a-autopp.pdf" "ch16-converginglens
+group1a-pics.pdf")...executed.
+
+runsystem(rm -- "ch16-converginglensgroup1a-autopp.log")...executed.
+
+runsystem(rm -- "ch16-converginglensgroup1a-autopp.dvi")...executed.
+
+runsystem(rm -- "ch16-converginglensgroup1a-autopp.ps")...executed.
+
+runsystem(rm -- "ch16-converginglensgroup1a-autopp.pdf")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pst-pdf/pst-pdf.sty
+Package: pst-pdf 2019/11/15 v1.2e PS graphics for pdfLaTeX (RN,HjG)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+\c@pspicture=\count179
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 216.
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
 
@@ -69,10 +184,6 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -89,21 +200,21 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pstricks.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.05, 2010/01/17 (hv)
-\pstFP@xs=\count178
-\pstFP@xia=\count179
-\pstFP@xib=\count180
-\pstFP@xfa=\count181
-\pstFP@xfb=\count182
-\pstFP@rega=\count183
-\pstFP@regb=\count184
-\pstFP@regs=\count185
-\pstFP@times=\count186
+\pstFP@xs=\count180
+\pstFP@xia=\count181
+\pstFP@xib=\count182
+\pstFP@xfa=\count183
+\pstFP@xfb=\count184
+\pstFP@rega=\count185
+\pstFP@regb=\count186
+\pstFP@regs=\count187
+\pstFP@times=\count188
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks17
-\pgfutil@tempdima=\dimen135
-\pgfutil@tempdimb=\dimen136
+\pgfutil@tempdima=\dimen137
+\pgfutil@tempdimb=\dimen138
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -120,24 +231,24 @@ Loading pgffor.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen137
-\pgf@xa=\dimen138
-\pgf@xb=\dimen139
-\pgf@xc=\dimen140
-\pgf@y=\dimen141
-\pgf@ya=\dimen142
-\pgf@yb=\dimen143
-\pgf@yc=\dimen144
-\c@pgf@counta=\count187
-\c@pgf@countb=\count188
-\c@pgf@countc=\count189
-\c@pgf@countd=\count190
-\pgfutil@tempcnta=\count191
-\pgfutil@tempcntb=\count192
+\pgf@x=\dimen139
+\pgf@xa=\dimen140
+\pgf@xb=\dimen141
+\pgf@xc=\dimen142
+\pgf@y=\dimen143
+\pgf@ya=\dimen144
+\pgf@yb=\dimen145
+\pgf@yc=\dimen146
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
+\pgfutil@tempcnta=\count193
+\pgfutil@tempcntb=\count194
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen145
-\pgfmath@count=\count193
+\pgfmath@dimen=\dimen147
+\pgfmath@count=\count195
 \pgfmath@box=\box46
 \pgfmath@toks=\toks21
 \pgfmath@stack@operand=\toks22
@@ -162,135 +273,159 @@ code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count194
+\c@pgfmathroundto@lastzeros=\count196
 ))
-\pgffor@iter=\dimen146
-\pgffor@skip=\dimen147
+\pgffor@iter=\dimen148
+\pgffor@skip=\dimen149
 \pgffor@stack=\toks24
 \pgffor@toks=\toks25
 )
-\psLoopIndex=\count195
+\psLoopIndex=\count197
 
 `PSTricks' v2.97  <2019/05/11> (tvz,hv)
-\pst@dima=\dimen148
-\pst@dimb=\dimen149
-\pst@dimc=\dimen150
-\pst@dimd=\dimen151
-\pst@dimg=\dimen152
-\pst@dimh=\dimen153
-\pst@dimm=\dimen154
-\pst@dimn=\dimen155
-\pst@dimo=\dimen156
-\pst@dimp=\dimen157
+\pst@dima=\dimen150
+\pst@dimb=\dimen151
+\pst@dimc=\dimen152
+\pst@dimd=\dimen153
+\pst@dimg=\dimen154
+\pst@dimh=\dimen155
+\pst@dimm=\dimen156
+\pst@dimn=\dimen157
+\pst@dimo=\dimen158
+\pst@dimp=\dimen159
 \pst@hbox=\box47
 \pst@ibox=\box48
 \pst@boxg=\box49
-\pst@cnta=\count196
-\pst@cntb=\count197
-\pst@cntc=\count198
-\pst@cntd=\count199
-\pst@cntg=\count266
-\pst@cnth=\count267
-\pst@cntm=\count268
-\pst@cntn=\count269
-\pst@cnto=\count270
-\pst@cntp=\count271
-\@zero=\count272
+\pst@cnta=\count198
+\pst@cntb=\count199
+\pst@cntc=\count266
+\pst@cntd=\count267
+\pst@cntg=\count268
+\pst@cnth=\count269
+\pst@cntm=\count270
+\pst@cntn=\count271
+\pst@cnto=\count272
+\pst@cntp=\count273
+\@zero=\count274
 \pst@toks=\toks26
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pstricks.con)
-\psunit=\dimen158
-\psxunit=\dimen159
-\psyunit=\dimen160
-\pst@C@@rType=\count273
-\pslinewidth=\dimen161
-\psk@startLW=\dimen162
-\psk@endLW=\dimen163
+\psunit=\dimen160
+\psxunit=\dimen161
+\psyunit=\dimen162
+\pst@C@@rType=\count275
+\pslinewidth=\dimen163
+\psk@startLW=\dimen164
+\psk@endLW=\dimen165
 \pst@customdefs=\toks27
-\pslinearc=\dimen164
-\pst@symbolStep=\dimen165
-\pst@symbolWidth=\dimen166
-\pst@symbolLinewidth=\dimen167
+\pslinearc=\dimen166
+\pst@symbolStep=\dimen167
+\pst@symbolWidth=\dimen168
+\pst@symbolLinewidth=\dimen169
 \everypsbox=\toks28
-\psframesep=\dimen168
-\pslabelsep=\dimen169
-\sh@wgridXunit=\dimen170
-\sh@wgridYunit=\dimen171
-\pst@shift=\dimen172
+\psframesep=\dimen170
+\pslabelsep=\dimen171
+\sh@wgridXunit=\dimen172
+\sh@wgridYunit=\dimen173
+\pst@shift=\dimen174
 )
 File: pstricks.tex 2019/05/11 v2.97 `PSTricks' (tvz,hv)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks/pst-fp.tex)
 File: pst-fp.tex 2019/05/11 v2.97 `PST-fp' (hv)
 )
+\ppf@output=\toks29
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 12.2 (AUCTeX/preview-latex)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen175
+)
+\pr@snippet=\count276
+\pr@box=\box50
+\pr@output=\toks30
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks31
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pst-optic/pst-optic.sty
 Package: pst-optic 2004/10/18 package wrapper for pst-optic.tex (hv)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-optic/pst-optic.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-node/pst-node.tex
  v1.42, 2019/03/03
-\psrow=\count274
-\pscol=\count275
-\psmatrixcnt=\count276
+\psrow=\count277
+\pscol=\count278
+\psmatrixcnt=\count279
 \psrowsep=\skip49
 \pscolsep=\skip50
-\pst@args=\count277
-\num@pts=\count278
-\pst@argcnt=\count279
+\pst@args=\count280
+\num@pts=\count281
+\pst@argcnt=\count282
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-plot/pst-plot.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-tools/pst-tools.tex
 `PST-tools' v0.10, 2020/03/24 (hv)
-\randomi=\count280
-\ranval=\count281
+\randomi=\count283
+\ranval=\count284
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.01, 2016/09/01 (dr,hv)
-\pshooklength=\dimen173
-\pshookwidth=\dimen174
+\pshooklength=\dimen176
+\pshookwidth=\dimen177
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-3d/pst-3d.tex
 `PST-3d' v1.11, 2010/02/14 (tvz))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
-\multido@count=\count282
-\multidocount=\count283
-\multido@stuff=\toks29
+\multido@count=\count285
+\multidocount=\count286
+\multido@stuff=\toks32
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-math/pst-math.tex
 `pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.89a, 2020/02/12 (dr,hv)
-\psparallelogramsep=\dimen175
-\pst@cntC=\count284
-\pst@stepcount=\count285
-\chart@ColorIndex=\dimen176
-\chart@ColorStep=\dimen177
-\pst@chartHeight=\dimen178
-\pst@chartStackDepth=\dimen179
-\pst@chartStackWidth=\dimen180
-\chart@Toggle=\count286
-\psVectorCtr=\count287
+\psparallelogramsep=\dimen178
+\pst@cntC=\count287
+\pst@stepcount=\count288
+\chart@ColorIndex=\dimen179
+\chart@ColorStep=\dimen180
+\pst@chartHeight=\dimen181
+\pst@chartStackDepth=\dimen182
+\pst@chartStackWidth=\dimen183
+\chart@Toggle=\count289
+\psVectorCtr=\count290
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>)  v1.92, 2019/05/16 (tvz,hv)
-\pstRadUnit=\dimen181
-\pstRadUnitInv=\dimen182
-\pst@linecnt=\count288
+\pstRadUnit=\dimen184
+\pstRadUnitInv=\dimen185
+\pst@linecnt=\count291
 \RCD@file=\read2
-\psxlabelsep=\dimen183
-\psylabelsep=\dimen184
-\psk@subticksize=\dimen185
-\pst@xticksizeA=\dimen186
-\pst@xticksizeB=\dimen187
-\pst@xticksizeC=\dimen188
-\pst@yticksizeA=\dimen189
-\pst@yticksizeB=\dimen190
-\pst@yticksizeC=\dimen191
-\@digitcounter=\count289
-\psk@llx=\dimen192
-\psk@lly=\dimen193
-\psk@urx=\dimen194
-\psk@ury=\dimen195
-\pst@xunit=\dimen196
-\pst@yunit=\dimen197
+\psxlabelsep=\dimen186
+\psylabelsep=\dimen187
+\psk@subticksize=\dimen188
+\pst@xticksizeA=\dimen189
+\pst@xticksizeB=\dimen190
+\pst@xticksizeC=\dimen191
+\pst@yticksizeA=\dimen192
+\pst@yticksizeB=\dimen193
+\pst@yticksizeC=\dimen194
+\@digitcounter=\count292
+\psk@llx=\dimen195
+\psk@lly=\dimen196
+\psk@urx=\dimen197
+\psk@ury=\dimen198
+\pst@xunit=\dimen199
+\pst@yunit=\dimen256
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pst-grad/pst-grad.tex
@@ -320,7 +455,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks30
+\@emptytoks=\toks33
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -637,82 +772,92 @@ File: t1fav.fd 2006/05/30 Fontinst v1.929 font definitions for T1/fav.
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks31
-\SOUL@lasttoken=\toks32
-\SOUL@cmds=\toks33
-\SOUL@buffer=\toks34
-\SOUL@token=\toks35
+\SOUL@word=\toks34
+\SOUL@lasttoken=\toks35
+\SOUL@cmds=\toks36
+\SOUL@buffer=\toks37
+\SOUL@token=\toks38
 \SOUL@spaceskip=\skip51
-\SOUL@ttwidth=\dimen198
-\SOUL@uldp=\dimen199
-\SOUL@ulht=\dimen256
+\SOUL@ttwidth=\dimen257
+\SOUL@uldp=\dimen258
+\SOUL@ulht=\dimen259
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count290
-\l__pdf_internal_box=\box50
+\l__kernel_color_stack_int=\count293
+\l__pdf_internal_box=\box51
 )
-(./ray_trace_demo 2.aux)
-\openout1 = `"ray_trace_demo 2.aux"'.
+(./ch16-converginglensgroup1a.aux)
+\openout1 = `ch16-converginglensgroup1a.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 8.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 8
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
+0.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen257
-\scratchbox=\box51
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen258
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count294
+\scratchdimen=\dimen260
+\scratchbox=\box52
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen261
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks40
 )
-./ray_trace_demo 2.tex:33: Undefined control sequence.
-\c@lor@to@ps ->\PSTricks 
-                         _Not_Configured_For_This_Format
-l.33 ]}
-       
-? 
-./ray_trace_demo 2.tex:33: Emergency stop.
-\c@lor@to@ps ->\PSTricks 
-                         _Not_Configured_For_This_Format
-l.33 ]}
-       
-End of file on the terminal!
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+<ch16-converginglensgroup1a-pics.pdf, id=2, page=1, 427.5975pt x 117.43875pt>
+File: ch16-converginglensgroup1a-pics.pdf Graphic file (type pdf)
+<use ch16-converginglensgroup1a-pics.pdf, page 1>
+Package pdftex.def Info: ch16-converginglensgroup1a-pics.pdf , page1 used on in
+put line 15.
+(pdftex.def)             Requested size: 427.59645pt x 117.43845pt.
+[1
 
- 
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+ <./ch16-converginglensgroup1a-pics.pdf>] (./ch16-converginglensgroup1a.aux) ) 
 Here is how much of TeX's memory you used:
- 11783 strings out of 480608
- 205115 string characters out of 5903630
- 514246 words of memory out of 5000000
- 27536 multiletter control sequences out of 15000+600000
+ 12677 strings out of 480608
+ 220314 string characters out of 5903630
+ 528375 words of memory out of 5000000
+ 28347 multiletter control sequences out of 15000+600000
  536722 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,5n,60p,631b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-./ray_trace_demo 2.tex:33:  ==> Fatal error occurred, no output PDF file produc
-ed!
+ 56i,5n,62p,695b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ch16-converginglensgroup1a.pdf (1 page, 5550 bytes).
+PDF statistics:
+ 26 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

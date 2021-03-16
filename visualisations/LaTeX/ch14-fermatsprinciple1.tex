@@ -1,0 +1,84 @@
+\documentclass[convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+
+\usepackage{auto-pst-pdf}
+\usepackage{pst-optic}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle reverse directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrowreversed[arrowstyle]{stealth};}}}]
+    
+    \usepackage{arev}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+
+\begin{document}
+
+\begin{tikzpicture}
+\newcommand \interfaceheight{0} % y coordinate of interface
+\newcommand \normalposition{0} % x coordinate of normal
+\newcommand \leftlimit{-8}
+\newcommand \rightlimit{8}
+\newcommand \bottomlimit{-3}
+\newcommand \toplimit{3}
+\newcommand \angleofincidence{60}
+\newcommand \refractivenA{1}
+\newcommand \refractivenB{1.8}
+\newcommand \pointx{3}
+\newcommand \pointy{2}
+
+%\newcommand \pointAx{
+
+    % define coordinates
+    \coordinate (O) at (\interfaceheight,\normalposition) ;
+    \coordinate (A) at (\normalposition,\toplimit) ;
+    \coordinate (B) at (\normalposition,\bottomlimit) ;
+    \coordinate (Aobs) at (-\pointx,\pointy);
+    \coordinate (Bobs) at (\pointx,\pointy);
+    \coordinate (Aprime) at (-\pointx,-\pointy);
+    \coordinate (Oprime) at (1,0);
+    
+    % media
+    \fill[blue!25!,opacity=.05] (\leftlimit,0) rectangle (\rightlimit,\toplimit);
+    \fill[blue!60!,opacity=.3] (\leftlimit,0) rectangle (\rightlimit,\bottomlimit);
+    \node[] at ({0.8*\rightlimit},{\interfaceheight+0.5}) {$n_1$};
+    \node[] at ({0.8*\rightlimit},{\interfaceheight-0.5}) {$n_2$};
+
+    % axis
+    \draw[dash pattern=on5pt off3pt] (A) -- (B) ;
+    \draw[dash pattern=on5pt off3pt] (1,\toplimit) -- (1,\bottomlimit) ;
+    % rays
+    \draw[blue,ultra thick,reverse directed] (O) -- (Aobs);
+    \draw[blue,ultra thick, directed] (O) -- (Bobs);
+    \draw[blue,ultra thick, reverse directed,dashed] (O) -- (Aprime);
+    \draw[orange,ultra thick,reverse directed] (Oprime) -- (Aobs);
+    \draw[orange,ultra thick, directed] (Oprime) -- (Bobs);
+    \draw[orange,ultra thick, reverse directed,dashed] (Oprime) -- (Aprime);
+%    \draw[red,ultra thick, reverse directed,dashed] (O) -- ({270-\angleofincidence}:{1.3*\toplimit});
+    
+%    \draw[red,directed,ultra thick] (O) -- ({270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:{-0.95*\bottomlimit/cos(asin(\refractivenA*sin(\angleofincidence)/\refractivenB))});
+
+    % angles
+    \draw (0,1) arc (90:{90+55}:1);
+    \draw (1,1) arc (90:{90+65}:1);
+%    \draw (0,-1.4) arc (270:{270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:1.4) ;
+%    \node[] at (280:1.8)  {$\theta_{2}$};
+    \node[] at (110:1.4)  {$\theta_{i,1}$};
+    \node[] at (70:1.4)  {$\theta_{i,2}$};
+    % points
+%    \node[left] at ({90+\angleofincidence}:{2*\toplimit})  {$A$};
+    \node[below right] at (\normalposition,\interfaceheight)  {$P$};
+     \node[below right] at ({\normalposition+1},\interfaceheight)  {$P'$};
+% \node[above right] at ({270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:{-0.9*\bottomlimit/cos(asin(\refractivenA*sin(\angleofincidence)/\refractivenB))})  {$B$};
+    
+    \draw[fill] (Aobs) circle (0.05 cm) node[left] {$A$};
+    \draw[fill] (Aprime) circle (0.05 cm) node[left] {$A'$};
+    \draw[fill] (Bobs) circle (0.05 cm) node[right] {$B$};
+%    \draw[fill] ({270+asin(\refractivenA*sin(\angleofincidence)/\refractivenB)}:{-0.95*\bottomlimit/cos(asin(\refractivenA*sin(\angleofincidence)/\refractivenB))}) circle (0.05 cm) node[above right] {$B$};
+\end{tikzpicture}
+
+\end{document}
