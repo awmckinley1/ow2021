@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. Andrew McKinley" />
 
 
-<meta name="date" content="2021-03-09" />
+<meta name="date" content="2021-03-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -318,19 +318,27 @@ n = \frac{c}{v}
 <p><span class="math display">\[\begin{equation}
 \lambda_n = \frac{\lambda}{n}
 \end{equation}\]</span></p>
-<p>When a beam of light encounters an interface between two transparent media of different refractive indices, part of the light is reflected from the interface, and part of the beam is refracted through the interface (Figure <a href="#fig:ch14-reflectionrefraction">14.1</a>).</p>
-<p><strong>Figure showing reflection/refraction</strong>
+<p>When a beam of light encounters an interface between two transparent media of different refractive indices, part of the light is reflected from the interface, and part of the beam is refracted through the interface (Figure <a href="sec-ch14-propertieslight.html#fig:ch14-reflectionrefraction">14.1</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch14-reflectionrefraction"></span>
+<img src="visualisations/LaTeX/ch14-reflection-refraction1.svg" alt="The path of a light ray passing into a medium of higher refractive index $n_2$. The angles of incidence and reflection are equal($\theta_1$), while the angle of refraction ($\theta_2$) is determined from the ratio of the refractive indices via Snell's law." width="70%" />
+<p class="caption">
+Figure 14.1: The path of a light ray passing into a medium of higher refractive index <span class="math inline">\(n_2\)</span>. The angles of incidence and reflection are equal(<span class="math inline">\(\theta_1\)</span>), while the angle of refraction (<span class="math inline">\(\theta_2\)</span>) is determined from the ratio of the refractive indices via Snell’s law.
 </p>
-<p>From Figure <a href="#fig:ch14-reflectionrefraction">14.1</a>, we note the following:</p>
+</div>
+<p>From Figure <a href="sec-ch14-propertieslight.html#fig:ch14-reflectionrefraction">14.1</a>, we note the following:</p>
 <ul>
 <li>The reflected beam has an angle of reflection equal to the angle of incidence</li>
 <li>The angle of incidence <span class="math inline">\(\theta_1\)</span> is the angle between the incident beam and the normal to the surface</li>
 <li>The angle of reflection <span class="math inline">\(\theta_1&#39;\)</span> is the angle between the reflected beam and the normal to the surface</li>
 <li>The angle of refractin <span class="math inline">\(\theta_2\)</span> is the angle between the refracted beam and the same normal.</li>
 </ul>
-<p>The paths that the light rays take through either reflection or refraction are described by <strong>Fermat’s principle</strong>, namely that the light travels along the path of least time; however due to the variation of the speed of light, this path is not necessarily the shortest path between the two points. Let’s first consider the case of reflection (Figure <a href="#fig:ch14-fermatsprinciple">14.2</a>).</p>
-<p><strong>Figure showing Fermat’s principle</strong>
+<p>The paths that the light rays take through either reflection or refraction are described by <strong>Fermat’s principle</strong>, namely that the light travels along the path of least time; however due to the variation of the speed of light, this path is not necessarily the shortest path between the two points. Let’s first consider the case of reflection (Figure <a href="sec-ch14-propertieslight.html#fig:ch14-fermatsprinciple">14.2</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:ch14-fermatsprinciple"></span>
+<img src="visualisations/LaTeX/ch14-fermatsprinciple1.svg" alt="Fermat's principle states that a light ray takes the route (whether refraction or reflection) which is the shortest time. When the light ray remains in the same medium through reflection, the shortest path APB is one where the line A'PB is straight; *i.e.* the angle of reflection is equal to the angle of incidence." width="70%" />
+<p class="caption">
+Figure 14.2: Fermat’s principle states that a light ray takes the route (whether refraction or reflection) which is the shortest time. When the light ray remains in the same medium through reflection, the shortest path APB is one where the line A’PB is straight; <em>i.e.</em> the angle of reflection is equal to the angle of incidence.
 </p>
+</div>
 <p>Consider a light ray travelling from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> by reflection from the interface at point <span class="math inline">\(P\)</span>. The distance <span class="math inline">\(APB\)</span> is at a minimum when the angles <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_1&#39;\)</span> are equal, where the light ray reflects at point <span class="math inline">\(P_{\textsf{min}}\)</span>.</p>
 <p>For a light ray travelling from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span> by refraction through the interface at point <span class="math inline">\(P\)</span>, a similar principle may be used. Since the light travels more slowly in the bottom material, there is a balance to be found in minimising the time taken to travel from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span>. This is akin to a lifeguard racing to save a swimmer in difficulty; the lifeguard can run faster over sand than swimming through the sea, but the quickest path to the swimmer is not a direct line.</p>
 <p>Through following Fermat’s principle, we arrive at <strong>Snell’s law of refraction</strong> (Equation <a href="sec-ch14-propertieslight.html#eq:ch14-snellslaw1">(14.1)</a>), allowing us to calculate the angles of reflection and refraction of a light ray passing from one material into another.</p>
@@ -364,13 +372,21 @@ R = \left( \frac{n_1 - n_2}{n_1 + n_2} \right)^2
 <div id="sec:ch14-evanescence" class="section level3">
 <h3><span class="header-section-number">14.2.1</span> Evanescence</h3>
 <p>A full solution of the wave equations for light undergoing total internal reflection reveals a solution within the low refractive index region. This is a consequence of the continuity equations <em>i.e.</em> the wave amplitude must be continuous across the interface.</p>
-<p>The solution to these equations is a decaying exponential, known as an <strong>evanescent “wave”</strong> (Figure <a href="#fig:ch14-evanescentwave1">14.3</a>)</p>
-<p><strong>Figure to show evanescent “wave”</strong>
+<p>The solution to these equations is a decaying exponential, known as an <strong>evanescent “wave”</strong> (Figure <a href="sec-ch14-propertieslight.html#fig:ch14-evanescentwave1">14.3</a>)</p>
+<div class="figure" style="text-align: center"><span id="fig:ch14-evanescentwave1"></span>
+<img src="visualisations/ch14-evansecent1.svg" alt="The intensity of an evanescent 'wave' decays exponentially with distance from the surface of the interface on the same approximate scale as the wavelength. It can be thought of as a 'spreading of energy' rather than an actual wave." width="70%" />
+<p class="caption">
+Figure 14.3: The intensity of an evanescent ‘wave’ decays exponentially with distance from the surface of the interface on the same approximate scale as the wavelength. It can be thought of as a ‘spreading of energy’ rather than an actual wave.
 </p>
+</div>
 <p>The decay length of this evanescent “wave” is approximately equal to the wavelength of the incident beam, <span class="math inline">\(\lambda\)</span>. The reason for terming this a “wave” is that it does not propagate - <em>i.e.</em> it is not a travelling wave. The evanescent “wave” stores energy and, if a second glass block is placed “close” to the first (<em>i.e.</em> within one micron), the energy may be taken from the evanescent wave and a travelling wave produced in the second block (albeit with a smaller amplitude to the incident wave).</p>
-<p><strong>Figure to show evanescent wave extractin</strong>
+<div class="figure" style="text-align: center"><span id="fig:ch14-evanescentwave2"></span>
+<img src="visualisations/ch14-evansecent2.svg" alt="If a medium of sufficiently high refractive index is brought close to the surface where total internal reflection is taking place, energy can be extracted from the evanescent 'wave'; this is the basis of fingerprint scanners." width="70%" />
+<p class="caption">
+Figure 14.4: If a medium of sufficiently high refractive index is brought close to the surface where total internal reflection is taking place, energy can be extracted from the evanescent ‘wave’; this is the basis of fingerprint scanners.
 </p>
-<p>This example of extracting enerby from an evanescent wave (Figure <a href="#fig:ch14-evanescentwave2">14.4</a>) is known as ‘frustrated total internal reflection’; the photons have ‘tunneled’ across the air gap.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></p>
+</div>
+<p>This example of extracting enerby from an evanescent wave (Figure <a href="sec-ch14-propertieslight.html#fig:ch14-evanescentwave2">14.4</a>) is known as ‘frustrated total internal reflection’; the photons have ‘tunneled’ across the air gap.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></p>
 </div>
 <div id="sec:ch14-tirapplications" class="section level3">
 <h3><span class="header-section-number">14.2.2</span> Applications of total internal reflection</h3>

@@ -80,7 +80,7 @@
 
 \title{Oscillations and Waves}
 \author{Dr.~Andrew McKinley}
-\date{2021-03-09}
+\date{2021-03-16}
 
 \begin{document}
 \maketitle
@@ -128,6 +128,8 @@ This iteration of the course has been written for the academic year 2020/21 by A
 \hypertarget{sec:changelog}{%
 \section*{Changelog}\label{sec:changelog}}
 \addcontentsline{toc}{section}{Changelog}
+
+2021-03-16 Updated to address image problems in chapters 14-16. These should (hopefully!) now be working!
 
 2021-03-07 Updated to address error reports, added additional detail for figures in Chapter 11, and including images for chapter 13
 
@@ -4446,8 +4448,14 @@ It is worth noting that the \textbf{frequency} of light remains unchanged while 
 
 When a beam of light encounters an interface between two transparent media of different refractive indices, part of the light is reflected from the interface, and part of the beam is refracted through the interface (Figure \ref{fig:ch14-reflectionrefraction}).
 
-\textbf{Figure showing reflection/refraction}
-\label{fig:ch14-reflectionrefraction}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch14-reflection-refraction1} 
+
+}
+
+\caption{The path of a light ray passing into a medium of higher refractive index $n_2$. The angles of incidence and reflection are equal($\theta_1$), while the angle of refraction ($\theta_2$) is determined from the ratio of the refractive indices via Snell's law.}\label{fig:ch14-reflectionrefraction}
+\end{figure}
 
 From Figure \ref{fig:ch14-reflectionrefraction}, we note the following:
 
@@ -4465,8 +4473,14 @@ From Figure \ref{fig:ch14-reflectionrefraction}, we note the following:
 
 The paths that the light rays take through either reflection or refraction are described by \textbf{Fermat's principle}, namely that the light travels along the path of least time; however due to the variation of the speed of light, this path is not necessarily the shortest path between the two points. Let's first consider the case of reflection (Figure \ref{fig:ch14-fermatsprinciple}).
 
-\textbf{Figure showing Fermat's principle}
-\label{fig:ch14-fermatsprinciple}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch14-fermatsprinciple1} 
+
+}
+
+\caption{Fermat's principle states that a light ray takes the route (whether refraction or reflection) which is the shortest time. When the light ray remains in the same medium through reflection, the shortest path APB is one where the line A'PB is straight; *i.e.* the angle of reflection is equal to the angle of incidence.}\label{fig:ch14-fermatsprinciple}
+\end{figure}
 
 Consider a light ray travelling from \(A\) to \(B\) by reflection from the interface at point \(P\). The distance \(APB\) is at a minimum when the angles \(\theta_1\) and \(\theta_1'\) are equal, where the light ray reflects at point \(P_{\textsf{min}}\).
 
@@ -4524,13 +4538,25 @@ A full solution of the wave equations for light undergoing total internal reflec
 
 The solution to these equations is a decaying exponential, known as an \textbf{evanescent ``wave''} (Figure \ref{fig:ch14-evanescentwave1})
 
-\textbf{Figure to show evanescent ``wave''}
-\label{fig:ch14-evanescentwave1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch14-evansecent1} 
+
+}
+
+\caption{The intensity of an evanescent 'wave' decays exponentially with distance from the surface of the interface on the same approximate scale as the wavelength. It can be thought of as a 'spreading of energy' rather than an actual wave.}\label{fig:ch14-evanescentwave1}
+\end{figure}
 
 The decay length of this evanescent ``wave'' is approximately equal to the wavelength of the incident beam, \(\lambda\). The reason for terming this a ``wave'' is that it does not propagate - \emph{i.e.} it is not a travelling wave. The evanescent ``wave'' stores energy and, if a second glass block is placed ``close'' to the first (\emph{i.e.} within one micron), the energy may be taken from the evanescent wave and a travelling wave produced in the second block (albeit with a smaller amplitude to the incident wave).
 
-\textbf{Figure to show evanescent wave extractin}
-\label{fig:ch14-evanescentwave2}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/ch14-evansecent2} 
+
+}
+
+\caption{If a medium of sufficiently high refractive index is brought close to the surface where total internal reflection is taking place, energy can be extracted from the evanescent 'wave'; this is the basis of fingerprint scanners.}\label{fig:ch14-evanescentwave2}
+\end{figure}
 
 This example of extracting enerby from an evanescent wave (Figure \ref{fig:ch14-evanescentwave2}) is known as `frustrated total internal reflection'; the photons have `tunneled' across the air gap.\footnote{We often use the term ``tunneling'' to describe quantum phenomena passing through a barrier; you will meet the term frequently!}
 
@@ -4553,8 +4579,14 @@ We have introduced the properties of light as it interacts with different materi
 
 Consider an object placed at point \(P\), shown in Figure \ref{fig:ch15-planemirror1}; light rays coming from this object are reflected by a mirror to reach the observer.
 
-\textbf{Figure to show plane mirror}
-\label{fig:ch15-planemirror1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch15-planemirror1} 
+
+}
+
+\caption{Reflection from a plane mirror occurs when the angle of incidence from $P$ is equal to the angle of reflection to the observer.To the observer, the light appears to come from point $P'$ behind the mirror; a *virtual image* which cannot be projected onto a screen.}\label{fig:ch15-planemirror1}
+\end{figure}
 
 As shown in Figure \ref{fig:ch15-planemirror1} the observer perceives the light rays as though they are coming from point \(P'\); we call this point the \textbf{image} of the object \(P\). This image is called a \textbf{virtual} image because the rays coming from the object do not converge onto \(P'\), When rays from the object converge on the image, the image is called \textbf{real}. A real image can be observed on a screen or recorded on a film/CCD sensor without the use of lenses.
 
@@ -4579,10 +4611,16 @@ To locate the the image of an object produced by a plane mirror, we follow a ser
 \hypertarget{sec:ch15-sphericalmirror1}{%
 \section{A spherical mirror}\label{sec:ch15-sphericalmirror1}}
 
-We follow a similar process as we did for the plane mirror (Section \ref{sec:ch15-planemirror1}) in considering the nature of the image. Once again, we place an object at point \(P\) and consider how the light rays from this object are reflected from a concave mirror (Figure \ref{fig:ch15-sphericalconcave1}).
+We follow a similar process as we did for the plane mirror (Section \ref{sec:ch15-planemirror1}) in considering the nature of the image. Once again, we place an object at point \(P\) and consider how the light rays from this object are reflected from a concave mirror (Figure \ref{fig:ch15-sphericalconcave1}).\\
 
-\textbf{Ray diagram of spherical concave mirror}
-\label{fig:ch15-sphericalconcave1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch15-sphericalmirror1} 
+
+}
+
+\caption{Rays coming from point $P$ are focussed at point $P'$ provided they do not deviate too much from the optical axis (paraxial rays); Wide deviations result in imperfect image formation (spherical aberrations).}\label{fig:ch15-sphericalconcave1}
+\end{figure}
 
 This time, rays coming from point \(P\), located on the optical axis of the concave mirror, are refleced by the mirror and focussed to a point \(P'\) (a `real' image, as the rays converge). Any rays which are far from the optical axis (non-paraxial) are not focussed on \(P'\); a term known as \emph{spherical aberration}.
 
@@ -4591,8 +4629,14 @@ This time, rays coming from point \(P\), located on the optical axis of the conc
 
 The `mirror equation' is a tool to calculate the position of an image of a spherical concave mirror relative to the object position and the centre point of the mirror. Figure \ref{fig:ch15-concavesphericalmirroreq1} shows all the relevant distances and angles which are needed for considering the mirror equation.
 
-\textbf{Rays needed for mirror equation}
-\label{fig:ch15-concavesphericalmirroreq1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch15-mirrorequation} 
+
+}
+
+\caption{Building the mirror equation requires the measurements $s$, $s'$, $r$ and $l$, as well as the angles $\alpha$, $\beta$, $\gamma$ and $\theta$.}\label{fig:ch15-concavesphericalmirroreq1}
+\end{figure}
 
 We can use geometric relations in Figure \ref{fig:ch15-concavesphericalmirroreq1} to determine relationships between the labelled angles:
 
@@ -4727,8 +4771,14 @@ Having examined the principles of reflection in respect of curved mirrors, we no
 
 We will first consider how a light ray refracts when encountering a single curved interface between two media. In the example shown in Figure \ref{fig:ch16-sphericalsurface1}, the image is shown inside the more optically dense medium.
 
-\textbf{Figure of refraction at single spherical surface}
-\label{fig:ch16-sphericalsurface1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-sphericalsurface} 
+
+}
+
+\caption{Refraction at a spherical surface involves the focussing of the rays to a real image. Note that this is not (yet) a lens as only a single refraction is considered. Rays through the center of curvature $C$ are perpendicular to the surface and are not refracted, while rays which are not perpendicular to the surface are subject to Snell's law and refract as expected. These rays converge with the central rays to create an image at $P'$.}\label{fig:ch16-sphericalsurface1}
+\end{figure}
 
 Examining the rays in Figure \ref{fig:ch16-sphericalsurface1}, we can use Snell's law and geometry to establish the relationships between the refractive indices and the image properties.
 
@@ -4764,8 +4814,14 @@ We can then substitute our expression for \(\theta_1\) to eliminate this from th
 
 As we are assuming small angles, we are also assuming that the rays are paraxial, we can then establish relations for the angles in relation to Figure \ref{fig:ch16-sphericalsurface2}:
 
-\textbf{Figure of refraction dimensions at single spherical surface}
-\label{fig:ch16-sphericalsurface2}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-sphericalsurfacedims} 
+
+}
+
+\caption{We can determine the position of the image at $s'$ from the refractive indices and the object position $s$ through determining the angles and assuming small values.}\label{fig:ch16-sphericalsurface2}
+\end{figure}
 
 Assuming paraxial rays, then:
 
@@ -4828,8 +4884,14 @@ As with the mirror, there are a number of sign conventions to be aware of for a 
 
 As for the spherical mirror, the curved interface can be considered to have magnification properties. We can consider these in terms of the angles of incidence and refraction along the optical axis of the surface (Figure \ref{fig:ch16-sphericalsurfacemag1}).
 
-\textbf{Figure to show magnification on a spherical surface}
-\label{fig:ch16-sphericalsurfacemag1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-sphericalsurfacemag1} 
+
+}
+
+\caption{The magnification ratio between the object and image size is related to the angles $\theta_1$ and $\theta_2$.}\label{fig:ch16-sphericalsurfacemag1}
+\end{figure}
 
 In this construction, we have defined two triangles, each of which give us expressions for the angles of incidence and refraction; the angle of incidence can be determined by the height of the object (\(y\)) and its distance from the surface (\(s\)), while the angle of refraction is defined by the height of the image (\(y'\)) and its distance behind the surface (\(s'\)).
 
@@ -4859,8 +4921,14 @@ We now consider a thin lens. The term ``thin'' is a way of describing the lens s
 
 Refraction occurs at two surfaces of radius \(r_1\) and \(r_2\) respectively. Generally we assume the lens is in air, so the refractive index of the material is \(n\) and we assume the refractive index of air to be \(\sim 1\). We consider the refraction at each surface separately in order to build the overall picture of the light path shown in Figure \ref{fig:ch16-thinlens1}.
 
-\textbf{Ray diagram of light and thin lens}
-\label{fig:ch16-thinlens1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-thinlightlens1} 
+
+}
+
+\caption{A thin lens now has two refracting surfaces (some lenses are flat on one side; they still have refraction at these surfaces!). The first refraction from the object at point $P$ creates an apparent virtual object at $P'$ for the second refraction.}\label{fig:ch16-thinlens1}
+\end{figure}
 
 The best way to understand what is happening in Figure \ref{fig:ch16-thinlens1} is to look at each interface in turn:
 
@@ -4925,8 +4993,14 @@ Having derived the lens equation, we now look at the different forms which lense
 
 Any lens (with material of \(n\) greater than that of the surrounding medium) which is \textbf{thicker} in the middle than at the edges will be a \textbf{converging lens} \emph{i.e.} parallel rays from any direction are brought to a focus on the focal plane (Figure \ref{fig:ch16-converginglens1}).
 
-\textbf{Figure to show converging lens}
-\label{fig:ch16-converginglens1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-focalplane1} 
+
+}
+
+\caption{A converging lens is shown to be thicker in the middle than at the edges. This causes light rays to converge(!), creating a real image. In this example,rays from infinity (parallel rays) are focussed onto the focal point $F$. Any rays from 'infinity' at any angle will be focussed onto this focal plane.}\label{fig:ch16-converginglens1}
+\end{figure}
 
 \(F\) and \(F'\) are the first and second focal points respectively, each at a distance \(f\) from the lens.
 
@@ -4935,8 +5009,14 @@ Any lens (with material of \(n\) greater than that of the surrounding medium) wh
 
 In contrast to the converging lens (Section \ref{sec:ch16-converginglens1}), a \textbf{diverging lens} will be any lens (where \(n\) is greater than the surrounding medium) which is \textbf{thinner} in the middle than at the edges. In this case, parallel rays from any direction are diverged as though originating \emph{from} the focual point \(F\) on the incident side of the lends (Figure \ref{fig:ch16-diverginglens1})
 
-\textbf{Figure to show diverging lens}
-\label{fig:ch16-diverginglens1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-diverginglens1} 
+
+}
+
+\caption{A diverging lens is shown to be thinner in the middle than at the edges. This causes light rays to diverge(!), however the rays do not converge to form an image. Instead, rays are projected backwards to the point at which they would converge (where the light rays appear to come from); this is a virtual image. }\label{fig:ch16-diverginglens1}
+\end{figure}
 
 \hypertarget{sec:ch16-raydiagrams1}{%
 \section{Ray diagrams}\label{sec:ch16-raydiagrams1}}
@@ -4959,8 +5039,14 @@ We consider three principal rays:
 \hypertarget{sec:ch16-rayconverge1}{%
 \subsection{Ray diagram for a converging lens}\label{sec:ch16-rayconverge1}}
 
-\textbf{Ray diagram for converging lens}
-\label{fig:ch16-rayconverge1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-converginglens1} 
+
+}
+
+\caption{The rays in a converging lens shown in this example converge to create a real image. The distances $s$, $s'$ can be used to determine the magnification ratio $y'/y$ for the image.}\label{fig:ch16-rayconverge1}
+\end{figure}
 
 Using Figure \ref{fig:ch16-rayconverge1} we can see that, for an object between \(\infty\) and \(F\), the image is \textbf{real} and \textbf{inverted}. We can then determine the magnification by using geometry:
 
@@ -4981,8 +5067,14 @@ The negative term in the magnification tells us that the image is inverted.
 \hypertarget{sec:ch16-raydiverge1}{%
 \subsection{Ray diagram for a diverging lens}\label{sec:ch16-raydiverge1}}
 
-\textbf{Ray diagram for diverging lens}
-\label{fig:ch16-raydiverge1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-diverginglens2a} 
+
+}
+
+\caption{The rays in a diverging lens shown in this example do not converge; instead we look at the point where rays appear to come from to create a virtual image. The distances $s$, $s'$ can again be used to determine the magnification ratio $y'/y$ for the image.}\label{fig:ch16-raydiverge1}
+\end{figure}
 
 Using Figure \ref{fig:ch16-raydiverge1} we can see that, for an object between \(\infty\) and \(F\), the image is \textbf{virtual} and \textbf{erect}. We can then determine the magnification \(m\) by using geometry as before:
 
@@ -5028,11 +5120,29 @@ We can now add together Equations \eqref{eq:ch16-lenscombination1} and \eqref{eq
 
 We can carry out the same analysis as in Section \ref{sec:ch16-2lenszerodistance} and obtain the same result, however it will be more instructive this time to look at ray diagrams as this will help to explain what is happening, particularly in respect of the ``virtual object'' phenomenon.
 
-\textbf{Step One: consider the first lens}
+\textbf{Step One: consider the first lens} (Figure \ref{fig:ch16-convergingset1a})
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-convergingset1a} 
+
+}
+
+\caption{For a pair of converging lenses, the image from the first lens creates the object for the second. In this example, the second lens blocks formation of the otherwise 'real' image from the first lens.}\label{fig:ch16-convergingset1a}
+\end{figure}
 
 We draw the ray diagram for the first lens, following the conventions for ray paths as laid out in Section \ref{sec:ch16-raydiagrams1}; we can see that the image formed by the first lens in this example lies past the second lens.
 
-\textbf{Step Two: consider the second lens}
+\textbf{Step Two: consider the second lens} (Figure \ref{fig:ch16-convergingset2a})
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-convergingset2a} 
+
+}
+
+\caption{The now virtual image from the first lens creates a virtual object for the second lens; rays are projected backwards to imagine where they come from in order to set up the refractions for the second lens and create the final object.}\label{fig:ch16-convergingset2a}
+\end{figure}
 
 As the ``object'' which the second lens focuses is a ``virtual object'' (\emph{i.e.} it lies on the transmission side of the lens), we need to treat the ray diagram for this second lens slightly differently; we need to project the rays \emph{backwards} through the lens to the focal point and lens centre:
 
@@ -5058,8 +5168,14 @@ A basic telescope consists of two optical elements; for example two lenses, two 
 
 We can determine the angular magnification of a telescope through construction of an appropriate ray diagram. A telescope is constructed by placing the lenses so that the image of the objective lens is formed at the focal plane of the objective lens, with the eyepiece lens being placed so that the image \emph{also} lies on its focal plane. This way the appearance of the light-rays coming from infinity (parallel rays) is preserved for the observer.
 
-\textbf{Figure to show optics of telescope}
-\label{fig:ch16-telescopeoptics1}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{visualisations/LaTeX/ch16-telescopeset1a} 
+
+}
+
+\caption{The two lenses in an astronomical telescope are positioned so their focal points are coincident. This means that parallel rays from infinity come into the telescope and parallel rays come from the eyepiece. This allows the observer to focus on an image which is much smaller than the object but, because it is closer to the observer, it has a large angular magnification.}\label{fig:ch16-telescopeoptics1}
+\end{figure}
 
 The angular magnification is defined in a similar way to the linear magnification described in Section \ref{sec:ch16-magnificationcurvedsurface1}; namely the ratio of the eyepiece observation angle (\(\theta_{\textsf{e}}\)) and the objective observation angle (\theta\_\{\textsf{o}\}), \emph{i.e.}:
 
