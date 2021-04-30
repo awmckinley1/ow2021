@@ -230,7 +230,7 @@ In contrast to a vibrating string, wind instruments rely on a resonance within a
 
 In this model, the column of air is able to vibrate at its ends, so we have a similar set of harmonics as for a string, but with displacement antinodes at its ends (the air can vibrate freely at the ends of the tube).  There is a second set of nodes/antinodes corresponding to the pressure; these do not align with the displacement nodes/antinodes; rather a **pressure node** aligns with a **displacement antinode** and vice versa. (if an air molecule does not move, we have a displacement node, but it is continuously 'squashed' from both sides by the oscillating air molecules, so experiences the biggest pressure change).
 
-```{r echo=FALSE, ch10-waves-closedtube, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="This image shows the node/antinode structure of a standing wave in a closed tube. Note the presence of a displacement node at either end where molecules are compressed against the end of the tube "}
+```{r echo=FALSE, ch10-waves-closedtube, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="This image shows the node/antinode structure of a standing wave in a **closed tube**. Note the presence of a displacement node at either end where molecules are compressed against the end of the tube "}
 knitr::include_graphics("visualisations/ch10-longitudinal-standingwave-n6closed.gif")
 ```
 
